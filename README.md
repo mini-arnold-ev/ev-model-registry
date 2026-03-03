@@ -2,7 +2,7 @@
 
 AI model registry for Exponential View services. Tracks flagship models, pricing, and capabilities across all major providers.
 
-**Updated:** 4× daily (00:50, 06:50, 12:50, 18:50 UTC)  
+**Updated:** Regularly  
 **Source:** OpenRouter API  
 **Schema version:** 2
 
@@ -43,29 +43,19 @@ Top-level `capability_index` lets you query across providers:
 
 Anthropic, OpenAI, Google, xAI, Meta, Mistral, Qwen, DeepSeek, Liquid AI, Perplexity, Cohere, Baidu, ByteDance
 
-## Flagship change alerts
-
-When a provider's flagship model changes, a Discord alert fires to `#model-registry` on the EV server.
-
-## Usage in Replit services
+## Usage
 
 ```javascript
-const REGISTRY_URL = 'https://raw.githubusercontent.com/mini-arnold-ev/ev-model-registry/main/registry.json';
+const reg = await fetch(
+  'https://raw.githubusercontent.com/mini-arnold-ev/ev-model-registry/main/registry.json'
+).then(r => r.json());
 
-async function getRegistry() {
-  const res = await fetch(REGISTRY_URL);
-  return res.json();
-}
+// Current Anthropic flagship:
+reg.providers.anthropic.flagship
 
-// Get cheapest model with reasoning + web search
-async function getBestSearchReasoner() {
-  const reg = await getRegistry();
-  return reg.capability_index.web_search_and_reasoning[0];
-}
+// Models with web search + reasoning:
+reg.capability_index.web_search_and_reasoning
 
-// Get current Anthropic flagship
-async function getAnthropicFlagship() {
-  const reg = await getRegistry();
-  return reg.providers.anthropic.flagship;
-}
+// All models under $5/MTok input:
+reg.providers.perplexity.models.filter(m => m.input_mtok < 5)
 ```
