@@ -1,0 +1,893 @@
+{
+  "schema_version": 2,
+  "updated_at": "2026-03-03T22:21:05Z",
+  "update_source": "openrouter-api",
+  "flagships": {
+    "google": "google/gemini-3.1-pro-preview-customtools",
+    "bytedance": "bytedance-seed/seed-2.0-mini",
+    "qwen": "qwen/qwen3.5-plus-02-15",
+    "liquid": "liquid/lfm-2-24b-a2b",
+    "openai": "openai/gpt-5.3-codex",
+    "anthropic": "anthropic/claude-opus-4.6",
+    "mistral": "mistralai/mistral-large-2512",
+    "deepseek": "deepseek/deepseek-r1-0528",
+    "xai": "x-ai/grok-4.1-fast",
+    "perplexity": "perplexity/sonar-pro-search",
+    "baidu": "baidu/ernie-4.5-21b-a3b-thinking",
+    "meta": "meta-llama/llama-4-maverick",
+    "cohere": "cohere/command-r-plus-08-2024"
+  },
+  "capability_index": {
+    "web_search": [
+      "x-ai/grok-4.1-fast",
+      "x-ai/grok-code-fast-1",
+      "x-ai/grok-4-fast",
+      "x-ai/grok-3-mini",
+      "x-ai/grok-3-mini-beta",
+      "x-ai/grok-4",
+      "perplexity/sonar-pro-search",
+      "perplexity/sonar-pro",
+      "perplexity/sonar-reasoning-pro",
+      "perplexity/sonar"
+    ],
+    "reasoning": [
+      "qwen/qwen-plus-2025-07-28:thinking",
+      "qwen/qwen3-max-thinking",
+      "openai/o3-pro",
+      "openai/o1-pro",
+      "anthropic/claude-3.7-sonnet:thinking",
+      "deepseek/deepseek-r1-0528",
+      "deepseek/deepseek-r1-distill-llama-70b",
+      "deepseek/deepseek-r1",
+      "deepseek/deepseek-r1-distill-qwen-32b",
+      "perplexity/sonar-reasoning-pro",
+      "baidu/ernie-4.5-21b-a3b-thinking"
+    ],
+    "vision": [
+      "google/gemini-3.1-pro-preview-customtools",
+      "google/gemini-3.1-pro-preview",
+      "google/gemini-3-pro-preview",
+      "google/gemini-2.5-pro",
+      "google/gemini-2.5-pro-preview",
+      "google/gemini-2.5-pro-preview-05-06",
+      "bytedance-seed/seed-2.0-mini",
+      "bytedance-seed/seed-1.6-flash",
+      "bytedance-seed/seed-1.6",
+      "qwen/qwen3.5-plus-02-15",
+      "openai/gpt-5.3-codex",
+      "openai/gpt-5.2-pro",
+      "openai/gpt-5.1-codex-max",
+      "openai/gpt-5-pro",
+      "openai/o3-pro",
+      "openai/o1-pro",
+      "anthropic/claude-opus-4.6",
+      "anthropic/claude-opus-4.5",
+      "anthropic/claude-opus-4.1",
+      "anthropic/claude-opus-4",
+      "anthropic/claude-3.7-sonnet:thinking",
+      "anthropic/claude-sonnet-4.6",
+      "mistralai/mistral-large-2512",
+      "mistralai/pixtral-large-2411",
+      "x-ai/grok-4.1-fast",
+      "x-ai/grok-4-fast",
+      "x-ai/grok-4",
+      "perplexity/sonar-pro-search",
+      "perplexity/sonar-pro",
+      "perplexity/sonar-reasoning-pro",
+      "perplexity/sonar",
+      "baidu/ernie-4.5-vl-424b-a47b",
+      "baidu/ernie-4.5-vl-28b-a3b",
+      "meta-llama/llama-4-maverick",
+      "meta-llama/llama-4-scout",
+      "meta-llama/llama-guard-4-12b",
+      "meta-llama/llama-3.2-11b-vision-instruct"
+    ],
+    "web_search_and_reasoning": [
+      "perplexity/sonar-reasoning-pro"
+    ]
+  },
+  "providers": {
+    "anthropic": {
+      "flagship": "anthropic/claude-opus-4.6",
+      "models": [
+        {
+          "id": "anthropic/claude-opus-4.6",
+          "name": "Anthropic: Claude Opus 4.6",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 5.0,
+          "output_mtok": 25.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "anthropic/claude-opus-4.5",
+          "name": "Anthropic: Claude Opus 4.5",
+          "context_k": 200,
+          "tier": "flagship",
+          "input_mtok": 5.0,
+          "output_mtok": 25.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "anthropic/claude-opus-4.1",
+          "name": "Anthropic: Claude Opus 4.1",
+          "context_k": 200,
+          "tier": "flagship",
+          "input_mtok": 15.0,
+          "output_mtok": 75.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "anthropic/claude-opus-4",
+          "name": "Anthropic: Claude Opus 4",
+          "context_k": 200,
+          "tier": "flagship",
+          "input_mtok": 15.0,
+          "output_mtok": 75.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "anthropic/claude-3.7-sonnet:thinking",
+          "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
+          "context_k": 200,
+          "tier": "reasoning",
+          "input_mtok": 3.0,
+          "output_mtok": 15.0,
+          "reasoning": true,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "anthropic/claude-sonnet-4.6",
+          "name": "Anthropic: Claude Sonnet 4.6",
+          "context_k": 1000,
+          "tier": "balanced",
+          "input_mtok": 3.0,
+          "output_mtok": 15.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        }
+      ]
+    },
+    "baidu": {
+      "flagship": "baidu/ernie-4.5-21b-a3b-thinking",
+      "models": [
+        {
+          "id": "baidu/ernie-4.5-21b-a3b-thinking",
+          "name": "Baidu: ERNIE 4.5 21B A3B Thinking",
+          "context_k": 131,
+          "tier": "reasoning",
+          "input_mtok": 0.07,
+          "output_mtok": 0.28,
+          "reasoning": true,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "baidu/ernie-4.5-vl-424b-a47b",
+          "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
+          "context_k": 123,
+          "tier": "balanced",
+          "input_mtok": 0.42,
+          "output_mtok": 1.25,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "baidu/ernie-4.5-300b-a47b",
+          "name": "Baidu: ERNIE 4.5 300B A47B ",
+          "context_k": 123,
+          "tier": "balanced",
+          "input_mtok": 0.28,
+          "output_mtok": 1.1,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "baidu/ernie-4.5-21b-a3b",
+          "name": "Baidu: ERNIE 4.5 21B A3B",
+          "context_k": 120,
+          "tier": "balanced",
+          "input_mtok": 0.07,
+          "output_mtok": 0.28,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "baidu/ernie-4.5-vl-28b-a3b",
+          "name": "Baidu: ERNIE 4.5 VL 28B A3B",
+          "context_k": 30,
+          "tier": "balanced",
+          "input_mtok": 0.14,
+          "output_mtok": 0.56,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        }
+      ]
+    },
+    "bytedance": {
+      "flagship": "bytedance-seed/seed-2.0-mini",
+      "models": [
+        {
+          "id": "bytedance-seed/seed-2.0-mini",
+          "name": "ByteDance Seed: Seed-2.0-Mini",
+          "context_k": 262,
+          "tier": "fast",
+          "input_mtok": 0.1,
+          "output_mtok": 0.4,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "bytedance-seed/seed-1.6-flash",
+          "name": "ByteDance Seed: Seed 1.6 Flash",
+          "context_k": 262,
+          "tier": "fast",
+          "input_mtok": 0.075,
+          "output_mtok": 0.3,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "bytedance-seed/seed-1.6",
+          "name": "ByteDance Seed: Seed 1.6",
+          "context_k": 262,
+          "tier": "standard",
+          "input_mtok": 0.25,
+          "output_mtok": 2.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        }
+      ]
+    },
+    "cohere": {
+      "flagship": "cohere/command-r-plus-08-2024",
+      "models": [
+        {
+          "id": "cohere/command-r-plus-08-2024",
+          "name": "Cohere: Command R+ (08-2024)",
+          "context_k": 128,
+          "tier": "flagship",
+          "input_mtok": 2.5,
+          "output_mtok": 10.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "cohere/command-a",
+          "name": "Cohere: Command A",
+          "context_k": 256,
+          "tier": "standard",
+          "input_mtok": 2.5,
+          "output_mtok": 10.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "cohere/command-r7b-12-2024",
+          "name": "Cohere: Command R7B (12-2024)",
+          "context_k": 128,
+          "tier": "standard",
+          "input_mtok": 0.0375,
+          "output_mtok": 0.15,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "cohere/command-r-08-2024",
+          "name": "Cohere: Command R (08-2024)",
+          "context_k": 128,
+          "tier": "standard",
+          "input_mtok": 0.15,
+          "output_mtok": 0.6,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        }
+      ]
+    },
+    "deepseek": {
+      "flagship": "deepseek/deepseek-r1-0528",
+      "models": [
+        {
+          "id": "deepseek/deepseek-r1-0528",
+          "name": "DeepSeek: R1 0528",
+          "context_k": 164,
+          "tier": "reasoning",
+          "input_mtok": 0.45,
+          "output_mtok": 2.15,
+          "reasoning": true,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "deepseek/deepseek-r1-distill-llama-70b",
+          "name": "DeepSeek: R1 Distill Llama 70B",
+          "context_k": 131,
+          "tier": "reasoning",
+          "input_mtok": 0.7,
+          "output_mtok": 0.8,
+          "reasoning": true,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "deepseek/deepseek-r1",
+          "name": "DeepSeek: R1",
+          "context_k": 64,
+          "tier": "reasoning",
+          "input_mtok": 0.7,
+          "output_mtok": 2.5,
+          "reasoning": true,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "deepseek/deepseek-r1-distill-qwen-32b",
+          "name": "DeepSeek: R1 Distill Qwen 32B",
+          "context_k": 33,
+          "tier": "reasoning",
+          "input_mtok": 0.29,
+          "output_mtok": 0.29,
+          "reasoning": true,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "deepseek/deepseek-v3.2-speciale",
+          "name": "DeepSeek: DeepSeek V3.2 Speciale",
+          "context_k": 164,
+          "tier": "standard",
+          "input_mtok": 0.4,
+          "output_mtok": 1.2,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "deepseek/deepseek-v3.2",
+          "name": "DeepSeek: DeepSeek V3.2",
+          "context_k": 164,
+          "tier": "standard",
+          "input_mtok": 0.25,
+          "output_mtok": 0.4,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        }
+      ]
+    },
+    "google": {
+      "flagship": "google/gemini-3.1-pro-preview-customtools",
+      "models": [
+        {
+          "id": "google/gemini-3.1-pro-preview-customtools",
+          "name": "Google: Gemini 3.1 Pro Preview Custom Tools",
+          "context_k": 1049,
+          "tier": "flagship",
+          "input_mtok": 2.0,
+          "output_mtok": 12.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "google/gemini-3.1-pro-preview",
+          "name": "Google: Gemini 3.1 Pro Preview",
+          "context_k": 1049,
+          "tier": "flagship",
+          "input_mtok": 2.0,
+          "output_mtok": 12.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "google/gemini-3-pro-preview",
+          "name": "Google: Gemini 3 Pro Preview",
+          "context_k": 1049,
+          "tier": "flagship",
+          "input_mtok": 2.0,
+          "output_mtok": 12.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "google/gemini-2.5-pro",
+          "name": "Google: Gemini 2.5 Pro",
+          "context_k": 1049,
+          "tier": "flagship",
+          "input_mtok": 1.25,
+          "output_mtok": 10.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "google/gemini-2.5-pro-preview",
+          "name": "Google: Gemini 2.5 Pro Preview 06-05",
+          "context_k": 1049,
+          "tier": "flagship",
+          "input_mtok": 1.25,
+          "output_mtok": 10.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "google/gemini-2.5-pro-preview-05-06",
+          "name": "Google: Gemini 2.5 Pro Preview 05-06",
+          "context_k": 1049,
+          "tier": "flagship",
+          "input_mtok": 1.25,
+          "output_mtok": 10.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        }
+      ]
+    },
+    "liquid": {
+      "flagship": "liquid/lfm-2-24b-a2b",
+      "models": [
+        {
+          "id": "liquid/lfm-2-24b-a2b",
+          "name": "LiquidAI: LFM2-24B-A2B",
+          "context_k": 33,
+          "tier": "flagship",
+          "input_mtok": 0.03,
+          "output_mtok": 0.12,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "liquid/lfm2-8b-a1b",
+          "name": "LiquidAI: LFM2-8B-A1B",
+          "context_k": 33,
+          "tier": "flagship",
+          "input_mtok": 0.01,
+          "output_mtok": 0.02,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "liquid/lfm-2.2-6b",
+          "name": "LiquidAI: LFM2-2.6B",
+          "context_k": 33,
+          "tier": "flagship",
+          "input_mtok": 0.01,
+          "output_mtok": 0.02,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        }
+      ]
+    },
+    "meta": {
+      "flagship": "meta-llama/llama-4-maverick",
+      "models": [
+        {
+          "id": "meta-llama/llama-4-maverick",
+          "name": "Meta: Llama 4 Maverick",
+          "context_k": 1049,
+          "tier": "standard",
+          "input_mtok": 0.15,
+          "output_mtok": 0.6,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "meta-llama/llama-4-scout",
+          "name": "Meta: Llama 4 Scout",
+          "context_k": 328,
+          "tier": "standard",
+          "input_mtok": 0.08,
+          "output_mtok": 0.3,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "meta-llama/llama-guard-4-12b",
+          "name": "Meta: Llama Guard 4 12B",
+          "context_k": 164,
+          "tier": "standard",
+          "input_mtok": 0.18,
+          "output_mtok": 0.18,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "meta-llama/llama-guard-3-8b",
+          "name": "Llama Guard 3 8B",
+          "context_k": 131,
+          "tier": "standard",
+          "input_mtok": 0.02,
+          "output_mtok": 0.06,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "meta-llama/llama-3.3-70b-instruct",
+          "name": "Meta: Llama 3.3 70B Instruct",
+          "context_k": 131,
+          "tier": "standard",
+          "input_mtok": 0.1,
+          "output_mtok": 0.32,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "meta-llama/llama-3.2-11b-vision-instruct",
+          "name": "Meta: Llama 3.2 11B Vision Instruct",
+          "context_k": 131,
+          "tier": "standard",
+          "input_mtok": 0.049,
+          "output_mtok": 0.049,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        }
+      ]
+    },
+    "mistral": {
+      "flagship": "mistralai/mistral-large-2512",
+      "models": [
+        {
+          "id": "mistralai/mistral-large-2512",
+          "name": "Mistral: Mistral Large 3 2512",
+          "context_k": 262,
+          "tier": "flagship",
+          "input_mtok": 0.5,
+          "output_mtok": 1.5,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "mistralai/mistral-large-2411",
+          "name": "Mistral Large 2411",
+          "context_k": 131,
+          "tier": "flagship",
+          "input_mtok": 2.0,
+          "output_mtok": 6.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "mistralai/mistral-large-2407",
+          "name": "Mistral Large 2407",
+          "context_k": 131,
+          "tier": "flagship",
+          "input_mtok": 2.0,
+          "output_mtok": 6.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "mistralai/pixtral-large-2411",
+          "name": "Mistral: Pixtral Large 2411",
+          "context_k": 131,
+          "tier": "flagship",
+          "input_mtok": 2.0,
+          "output_mtok": 6.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "mistralai/mistral-large",
+          "name": "Mistral Large",
+          "context_k": 128,
+          "tier": "flagship",
+          "input_mtok": 2.0,
+          "output_mtok": 6.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "mistralai/devstral-2512",
+          "name": "Mistral: Devstral 2 2512",
+          "context_k": 262,
+          "tier": "code",
+          "input_mtok": 0.4,
+          "output_mtok": 2.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        }
+      ]
+    },
+    "openai": {
+      "flagship": "openai/gpt-5.3-codex",
+      "models": [
+        {
+          "id": "openai/gpt-5.3-codex",
+          "name": "OpenAI: GPT-5.3-Codex",
+          "context_k": 400,
+          "tier": "flagship",
+          "input_mtok": 1.75,
+          "output_mtok": 14.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "openai/gpt-5.2-pro",
+          "name": "OpenAI: GPT-5.2 Pro",
+          "context_k": 400,
+          "tier": "flagship",
+          "input_mtok": 21.0,
+          "output_mtok": 168.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "openai/gpt-5.1-codex-max",
+          "name": "OpenAI: GPT-5.1-Codex-Max",
+          "context_k": 400,
+          "tier": "flagship",
+          "input_mtok": 1.25,
+          "output_mtok": 10.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "openai/gpt-5-pro",
+          "name": "OpenAI: GPT-5 Pro",
+          "context_k": 400,
+          "tier": "flagship",
+          "input_mtok": 15.0,
+          "output_mtok": 120.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "openai/o3-pro",
+          "name": "OpenAI: o3 Pro",
+          "context_k": 200,
+          "tier": "flagship",
+          "input_mtok": 20.0,
+          "output_mtok": 80.0,
+          "reasoning": true,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "openai/o1-pro",
+          "name": "OpenAI: o1-pro",
+          "context_k": 200,
+          "tier": "flagship",
+          "input_mtok": 150.0,
+          "output_mtok": 600.0,
+          "reasoning": true,
+          "web_search": false,
+          "vision": true
+        }
+      ]
+    },
+    "perplexity": {
+      "flagship": "perplexity/sonar-pro-search",
+      "models": [
+        {
+          "id": "perplexity/sonar-pro-search",
+          "name": "Perplexity: Sonar Pro Search",
+          "context_k": 200,
+          "tier": "flagship",
+          "input_mtok": 3.0,
+          "output_mtok": 15.0,
+          "reasoning": false,
+          "web_search": true,
+          "vision": true
+        },
+        {
+          "id": "perplexity/sonar-pro",
+          "name": "Perplexity: Sonar Pro",
+          "context_k": 200,
+          "tier": "flagship",
+          "input_mtok": 3.0,
+          "output_mtok": 15.0,
+          "reasoning": false,
+          "web_search": true,
+          "vision": true
+        },
+        {
+          "id": "perplexity/sonar-reasoning-pro",
+          "name": "Perplexity: Sonar Reasoning Pro",
+          "context_k": 128,
+          "tier": "flagship",
+          "input_mtok": 2.0,
+          "output_mtok": 8.0,
+          "reasoning": true,
+          "web_search": true,
+          "vision": true
+        },
+        {
+          "id": "perplexity/sonar",
+          "name": "Perplexity: Sonar",
+          "context_k": 127,
+          "tier": "fast",
+          "input_mtok": 1.0,
+          "output_mtok": 1.0,
+          "reasoning": false,
+          "web_search": true,
+          "vision": true
+        }
+      ]
+    },
+    "qwen": {
+      "flagship": "qwen/qwen3.5-plus-02-15",
+      "models": [
+        {
+          "id": "qwen/qwen3.5-plus-02-15",
+          "name": "Qwen: Qwen3.5 Plus 2026-02-15",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 0.4,
+          "output_mtok": 2.4,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "qwen/qwen3-coder-plus",
+          "name": "Qwen: Qwen3 Coder Plus",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 1.0,
+          "output_mtok": 5.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "qwen/qwen-plus-2025-07-28:thinking",
+          "name": "Qwen: Qwen Plus 0728 (thinking)",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 0.4,
+          "output_mtok": 1.2,
+          "reasoning": true,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "qwen/qwen-plus-2025-07-28",
+          "name": "Qwen: Qwen Plus 0728",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 0.4,
+          "output_mtok": 1.2,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "qwen/qwen-plus",
+          "name": "Qwen: Qwen-Plus",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 0.4,
+          "output_mtok": 1.2,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
+        {
+          "id": "qwen/qwen3-max-thinking",
+          "name": "Qwen: Qwen3 Max Thinking",
+          "context_k": 262,
+          "tier": "flagship",
+          "input_mtok": 1.2,
+          "output_mtok": 6.0,
+          "reasoning": true,
+          "web_search": false,
+          "vision": false
+        }
+      ]
+    },
+    "xai": {
+      "flagship": "x-ai/grok-4.1-fast",
+      "models": [
+        {
+          "id": "x-ai/grok-4.1-fast",
+          "name": "xAI: Grok 4.1 Fast",
+          "context_k": 2000,
+          "tier": "flagship",
+          "input_mtok": 0.2,
+          "output_mtok": 0.5,
+          "reasoning": false,
+          "web_search": true,
+          "vision": true
+        },
+        {
+          "id": "x-ai/grok-code-fast-1",
+          "name": "xAI: Grok Code Fast 1",
+          "context_k": 256,
+          "tier": "code",
+          "input_mtok": 0.2,
+          "output_mtok": 1.5,
+          "reasoning": false,
+          "web_search": true,
+          "vision": false
+        },
+        {
+          "id": "x-ai/grok-4-fast",
+          "name": "xAI: Grok 4 Fast",
+          "context_k": 2000,
+          "tier": "fast",
+          "input_mtok": 0.2,
+          "output_mtok": 0.5,
+          "reasoning": false,
+          "web_search": true,
+          "vision": true
+        },
+        {
+          "id": "x-ai/grok-3-mini",
+          "name": "xAI: Grok 3 Mini",
+          "context_k": 131,
+          "tier": "fast",
+          "input_mtok": 0.3,
+          "output_mtok": 0.5,
+          "reasoning": false,
+          "web_search": true,
+          "vision": false
+        },
+        {
+          "id": "x-ai/grok-3-mini-beta",
+          "name": "xAI: Grok 3 Mini Beta",
+          "context_k": 131,
+          "tier": "fast",
+          "input_mtok": 0.3,
+          "output_mtok": 0.5,
+          "reasoning": false,
+          "web_search": true,
+          "vision": false
+        },
+        {
+          "id": "x-ai/grok-4",
+          "name": "xAI: Grok 4",
+          "context_k": 256,
+          "tier": "standard",
+          "input_mtok": 3.0,
+          "output_mtok": 15.0,
+          "reasoning": false,
+          "web_search": true,
+          "vision": true
+        }
+      ]
+    }
+  }
+}
