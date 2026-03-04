@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-03-04T00:50:04Z",
+  "updated_at": "2026-03-04T06:50:06Z",
   "update_source": "openrouter-api",
   "flagships": {
     "openai": "openai/gpt-5.3-codex",
