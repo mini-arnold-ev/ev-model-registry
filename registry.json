@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-03-11T12:50:03Z",
+  "updated_at": "2026-03-11T18:50:04Z",
   "update_source": "openrouter-api",
   "flagships": {
     "bytedance": "bytedance-seed/seed-2.0-lite",
@@ -379,8 +379,8 @@
           "name": "DeepSeek: DeepSeek V3.2",
           "context_k": 164,
           "tier": "standard",
-          "input_mtok": 0.25,
-          "output_mtok": 0.4,
+          "input_mtok": 0.26,
+          "output_mtok": 0.38,
           "reasoning": false,
           "web_search": false,
           "vision": false
