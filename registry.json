@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-03-13T18:50:04Z",
+  "updated_at": "2026-03-16T18:36:53Z",
   "update_source": "openrouter-api",
   "flagships": {
     "xai": "x-ai/grok-4.1-fast",
@@ -810,8 +810,8 @@
           "name": "Qwen: Qwen-Plus",
           "context_k": 1000,
           "tier": "flagship",
-          "input_mtok": 0.4,
-          "output_mtok": 1.2,
+          "input_mtok": 0.26,
+          "output_mtok": 0.78,
           "reasoning": false,
           "web_search": false,
           "vision": false
