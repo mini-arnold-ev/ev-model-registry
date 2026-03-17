@@ -1,8 +1,9 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-03-17T06:53:33Z",
+  "updated_at": "2026-03-17T12:50:05Z",
   "update_source": "openrouter-api",
   "flagships": {
+    "mistral": "mistralai/mistral-large-2512",
     "xai": "x-ai/grok-4.1-fast",
     "bytedance": "bytedance-seed/seed-2.0-lite",
     "qwen": "qwen/qwen3.5-plus-02-15",
@@ -10,7 +11,6 @@
     "google": "google/gemini-3.1-pro-preview-customtools",
     "liquid": "liquid/lfm-2-24b-a2b",
     "anthropic": "anthropic/claude-opus-4.6",
-    "mistral": "mistralai/mistral-large-2512",
     "deepseek": "deepseek/deepseek-r1-0528",
     "perplexity": "perplexity/sonar-pro-search",
     "baidu": "baidu/ernie-4.5-21b-a3b-thinking",
@@ -43,6 +43,8 @@
       "baidu/ernie-4.5-21b-a3b-thinking"
     ],
     "vision": [
+      "mistralai/mistral-large-2512",
+      "mistralai/pixtral-large-2411",
       "x-ai/grok-4.1-fast",
       "x-ai/grok-4-fast",
       "x-ai/grok-4.20-multi-agent-beta",
@@ -69,8 +71,6 @@
       "anthropic/claude-opus-4",
       "anthropic/claude-3.7-sonnet:thinking",
       "anthropic/claude-sonnet-4.6",
-      "mistralai/mistral-large-2512",
-      "mistralai/pixtral-large-2411",
       "perplexity/sonar-pro-search",
       "perplexity/sonar-pro",
       "perplexity/sonar-reasoning-pro",
