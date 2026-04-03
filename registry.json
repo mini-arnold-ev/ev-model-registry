@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-04-03T00:50:05Z",
+  "updated_at": "2026-04-03T06:50:09Z",
   "update_source": "openrouter-api",
   "flagships": {
     "google": "google/lyria-3-pro-preview",
@@ -468,28 +468,6 @@
           "tier": "flagship",
           "input_mtok": 0.03,
           "output_mtok": 0.12,
-          "reasoning": false,
-          "web_search": false,
-          "vision": false
-        },
-        {
-          "id": "liquid/lfm2-8b-a1b",
-          "name": "LiquidAI: LFM2-8B-A1B",
-          "context_k": 33,
-          "tier": "flagship",
-          "input_mtok": 0.01,
-          "output_mtok": 0.02,
-          "reasoning": false,
-          "web_search": false,
-          "vision": false
-        },
-        {
-          "id": "liquid/lfm-2.2-6b",
-          "name": "LiquidAI: LFM2-2.6B",
-          "context_k": 33,
-          "tier": "flagship",
-          "input_mtok": 0.01,
-          "output_mtok": 0.02,
           "reasoning": false,
           "web_search": false,
           "vision": false
