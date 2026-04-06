@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-04-06T00:50:06Z",
+  "updated_at": "2026-04-06T06:50:05Z",
   "update_source": "openrouter-api",
   "flagships": {
     "google": "google/lyria-3-pro-preview",
