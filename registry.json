@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-04-20T12:57:12Z",
+  "updated_at": "2026-04-20T18:50:09Z",
   "update_source": "openrouter-api",
   "flagships": {
     "anthropic": "anthropic/claude-opus-4.7",
@@ -374,12 +374,12 @@
           "vision": false
         },
         {
-          "id": "deepseek/deepseek-v3.2",
-          "name": "DeepSeek: DeepSeek V3.2",
+          "id": "deepseek/deepseek-v3.2-exp",
+          "name": "DeepSeek: DeepSeek V3.2 Exp",
           "context_k": 164,
           "tier": "standard",
-          "input_mtok": 0.259,
-          "output_mtok": 0.42,
+          "input_mtok": 0.27,
+          "output_mtok": 0.41,
           "reasoning": false,
           "web_search": false,
           "vision": false
