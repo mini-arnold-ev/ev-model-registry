@@ -1,16 +1,16 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-04-07T18:50:06Z",
+  "updated_at": "2026-04-20T12:57:12Z",
   "update_source": "openrouter-api",
   "flagships": {
+    "anthropic": "anthropic/claude-opus-4.7",
     "google": "google/lyria-3-pro-preview",
+    "qwen": "qwen/qwen3.6-plus",
     "xai": "x-ai/grok-4.1-fast",
     "openai": "openai/gpt-5.4-pro",
     "mistral": "mistralai/mistral-large-2512",
     "bytedance": "bytedance-seed/seed-2.0-lite",
-    "qwen": "qwen/qwen3.5-plus-02-15",
     "liquid": "liquid/lfm-2-24b-a2b",
-    "anthropic": "anthropic/claude-opus-4.6",
     "deepseek": "deepseek/deepseek-r1-0528",
     "perplexity": "perplexity/sonar-pro-search",
     "baidu": "baidu/ernie-4.5-21b-a3b-thinking",
@@ -31,10 +31,8 @@
       "perplexity/sonar"
     ],
     "reasoning": [
-      "openai/o3-pro",
       "qwen/qwen-plus-2025-07-28:thinking",
-      "qwen/qwen3-max-thinking",
-      "anthropic/claude-3.7-sonnet:thinking",
+      "openai/o3-pro",
       "deepseek/deepseek-r1-0528",
       "deepseek/deepseek-r1-distill-llama-70b",
       "deepseek/deepseek-r1",
@@ -43,12 +41,20 @@
       "baidu/ernie-4.5-21b-a3b-thinking"
     ],
     "vision": [
+      "anthropic/claude-opus-4.7",
+      "anthropic/claude-opus-4.6-fast",
+      "anthropic/claude-opus-4.6",
+      "anthropic/claude-opus-4.5",
+      "anthropic/claude-opus-4.1",
+      "anthropic/claude-opus-4",
       "google/lyria-3-pro-preview",
       "google/gemini-3.1-pro-preview-customtools",
       "google/gemini-3.1-pro-preview",
       "google/gemini-2.5-pro",
       "google/gemini-2.5-pro-preview",
       "google/gemini-2.5-pro-preview-05-06",
+      "qwen/qwen3.6-plus",
+      "qwen/qwen3.5-plus-02-15",
       "x-ai/grok-4.1-fast",
       "x-ai/grok-4-fast",
       "x-ai/grok-4.20-multi-agent",
@@ -64,13 +70,6 @@
       "bytedance-seed/seed-2.0-mini",
       "bytedance-seed/seed-1.6-flash",
       "bytedance-seed/seed-1.6",
-      "qwen/qwen3.5-plus-02-15",
-      "anthropic/claude-opus-4.6",
-      "anthropic/claude-opus-4.5",
-      "anthropic/claude-opus-4.1",
-      "anthropic/claude-opus-4",
-      "anthropic/claude-3.7-sonnet:thinking",
-      "anthropic/claude-sonnet-4.6",
       "perplexity/sonar-pro-search",
       "perplexity/sonar-pro",
       "perplexity/sonar-reasoning-pro",
@@ -88,8 +87,30 @@
   },
   "providers": {
     "anthropic": {
-      "flagship": "anthropic/claude-opus-4.6",
+      "flagship": "anthropic/claude-opus-4.7",
       "models": [
+        {
+          "id": "anthropic/claude-opus-4.7",
+          "name": "Anthropic: Claude Opus 4.7",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 5.0,
+          "output_mtok": 25.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "anthropic/claude-opus-4.6-fast",
+          "name": "Anthropic: Claude Opus 4.6 (Fast)",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 30.0,
+          "output_mtok": 150.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
         {
           "id": "anthropic/claude-opus-4.6",
           "name": "Anthropic: Claude Opus 4.6",
@@ -130,28 +151,6 @@
           "tier": "flagship",
           "input_mtok": 15.0,
           "output_mtok": 75.0,
-          "reasoning": false,
-          "web_search": false,
-          "vision": true
-        },
-        {
-          "id": "anthropic/claude-3.7-sonnet:thinking",
-          "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
-          "context_k": 200,
-          "tier": "reasoning",
-          "input_mtok": 3.0,
-          "output_mtok": 15.0,
-          "reasoning": true,
-          "web_search": false,
-          "vision": true
-        },
-        {
-          "id": "anthropic/claude-sonnet-4.6",
-          "name": "Anthropic: Claude Sonnet 4.6",
-          "context_k": 1000,
-          "tier": "balanced",
-          "input_mtok": 3.0,
-          "output_mtok": 15.0,
           "reasoning": false,
           "web_search": false,
           "vision": true
@@ -324,7 +323,7 @@
           "name": "DeepSeek: R1 0528",
           "context_k": 164,
           "tier": "reasoning",
-          "input_mtok": 0.45,
+          "input_mtok": 0.5,
           "output_mtok": 2.15,
           "reasoning": true,
           "web_search": false,
@@ -379,8 +378,8 @@
           "name": "DeepSeek: DeepSeek V3.2",
           "context_k": 164,
           "tier": "standard",
-          "input_mtok": 0.26,
-          "output_mtok": 0.38,
+          "input_mtok": 0.259,
+          "output_mtok": 0.42,
           "reasoning": false,
           "web_search": false,
           "vision": false
@@ -515,8 +514,8 @@
           "name": "Llama Guard 3 8B",
           "context_k": 131,
           "tier": "standard",
-          "input_mtok": 0.02,
-          "output_mtok": 0.06,
+          "input_mtok": 0.48,
+          "output_mtok": 0.03,
           "reasoning": false,
           "web_search": false,
           "vision": false
@@ -526,8 +525,8 @@
           "name": "Meta: Llama 3.3 70B Instruct",
           "context_k": 131,
           "tier": "standard",
-          "input_mtok": 0.1,
-          "output_mtok": 0.32,
+          "input_mtok": 0.12,
+          "output_mtok": 0.38,
           "reasoning": false,
           "web_search": false,
           "vision": false
@@ -537,8 +536,8 @@
           "name": "Meta: Llama 3.2 11B Vision Instruct",
           "context_k": 131,
           "tier": "standard",
-          "input_mtok": 0.049,
-          "output_mtok": 0.049,
+          "input_mtok": 0.245,
+          "output_mtok": 0.245,
           "reasoning": false,
           "web_search": false,
           "vision": true
@@ -737,8 +736,19 @@
       ]
     },
     "qwen": {
-      "flagship": "qwen/qwen3.5-plus-02-15",
+      "flagship": "qwen/qwen3.6-plus",
       "models": [
+        {
+          "id": "qwen/qwen3.6-plus",
+          "name": "Qwen: Qwen3.6 Plus",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 0.325,
+          "output_mtok": 1.95,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
         {
           "id": "qwen/qwen3.5-plus-02-15",
           "name": "Qwen: Qwen3.5 Plus 2026-02-15",
@@ -791,17 +801,6 @@
           "input_mtok": 0.26,
           "output_mtok": 0.78,
           "reasoning": false,
-          "web_search": false,
-          "vision": false
-        },
-        {
-          "id": "qwen/qwen3-max-thinking",
-          "name": "Qwen: Qwen3 Max Thinking",
-          "context_k": 262,
-          "tier": "flagship",
-          "input_mtok": 0.78,
-          "output_mtok": 3.9,
-          "reasoning": true,
           "web_search": false,
           "vision": false
         }
