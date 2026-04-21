@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-04-20T18:50:09Z",
+  "updated_at": "2026-04-21T00:50:11Z",
   "update_source": "openrouter-api",
   "flagships": {
     "anthropic": "anthropic/claude-opus-4.7",
