@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-04-23T00:50:07Z",
+  "updated_at": "2026-04-23T08:26:17Z",
   "update_source": "openrouter-api",
   "flagships": {
     "openai": "openai/gpt-5.4-pro",
