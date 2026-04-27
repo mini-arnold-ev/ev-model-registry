@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-04-24T18:50:04Z",
+  "updated_at": "2026-04-27T06:50:35Z",
   "update_source": "openrouter-api",
   "flagships": {
+    "qwen": "qwen/qwen3.5-plus-20260420",
     "openai": "openai/gpt-5.5-pro",
     "deepseek": "deepseek/deepseek-v4-pro",
     "anthropic": "anthropic/claude-opus-4.7",
     "google": "google/lyria-3-pro-preview",
-    "qwen": "qwen/qwen3.6-plus",
     "xai": "x-ai/grok-4.1-fast",
     "mistral": "mistralai/mistral-large-2512",
     "bytedance": "bytedance-seed/seed-2.0-lite",
@@ -31,15 +31,18 @@
       "perplexity/sonar"
     ],
     "reasoning": [
+      "qwen/qwen-plus-2025-07-28:thinking",
       "deepseek/deepseek-r1-0528",
       "deepseek/deepseek-r1-distill-llama-70b",
       "deepseek/deepseek-r1",
       "deepseek/deepseek-r1-distill-qwen-32b",
-      "qwen/qwen-plus-2025-07-28:thinking",
       "perplexity/sonar-reasoning-pro",
       "baidu/ernie-4.5-21b-a3b-thinking"
     ],
     "vision": [
+      "qwen/qwen3.5-plus-20260420",
+      "qwen/qwen3.6-plus",
+      "qwen/qwen3.5-plus-02-15",
       "openai/gpt-5.5-pro",
       "openai/gpt-5.4-pro",
       "openai/gpt-5.3-codex",
@@ -58,8 +61,6 @@
       "google/gemini-2.5-pro",
       "google/gemini-2.5-pro-preview",
       "google/gemini-2.5-pro-preview-05-06",
-      "qwen/qwen3.6-plus",
-      "qwen/qwen3.5-plus-02-15",
       "x-ai/grok-4.1-fast",
       "x-ai/grok-4-fast",
       "x-ai/grok-4.20-multi-agent",
@@ -322,8 +323,8 @@
           "name": "DeepSeek: DeepSeek V4 Pro",
           "context_k": 1049,
           "tier": "flagship",
-          "input_mtok": 1.74,
-          "output_mtok": 3.48,
+          "input_mtok": 0.435,
+          "output_mtok": 0.87,
           "reasoning": false,
           "web_search": false,
           "vision": false
@@ -735,8 +736,19 @@
       ]
     },
     "qwen": {
-      "flagship": "qwen/qwen3.6-plus",
+      "flagship": "qwen/qwen3.5-plus-20260420",
       "models": [
+        {
+          "id": "qwen/qwen3.5-plus-20260420",
+          "name": "Qwen: Qwen3.5 Plus 2026-04-20",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 0.4,
+          "output_mtok": 2.4,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
         {
           "id": "qwen/qwen3.6-plus",
           "name": "Qwen: Qwen3.6 Plus",
@@ -784,17 +796,6 @@
         {
           "id": "qwen/qwen-plus-2025-07-28",
           "name": "Qwen: Qwen Plus 0728",
-          "context_k": 1000,
-          "tier": "flagship",
-          "input_mtok": 0.26,
-          "output_mtok": 0.78,
-          "reasoning": false,
-          "web_search": false,
-          "vision": false
-        },
-        {
-          "id": "qwen/qwen-plus",
-          "name": "Qwen: Qwen-Plus",
           "context_k": 1000,
           "tier": "flagship",
           "input_mtok": 0.26,
