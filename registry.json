@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-04-27T12:50:40Z",
+  "updated_at": "2026-04-27T18:50:42Z",
   "update_source": "openrouter-api",
   "flagships": {
     "qwen": "qwen/qwen3.5-plus-20260420",
