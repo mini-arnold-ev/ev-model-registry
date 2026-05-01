@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-04-30T18:50:19Z",
+  "updated_at": "2026-05-01T00:50:28Z",
   "update_source": "openrouter-api",
   "flagships": {
+    "xai": "x-ai/grok-4.1-fast",
     "qwen": "qwen/qwen3.5-plus-20260420",
     "openai": "openai/gpt-5.5-pro",
     "deepseek": "deepseek/deepseek-v4-pro",
     "anthropic": "anthropic/claude-opus-4.7",
     "google": "google/lyria-3-pro-preview",
-    "xai": "x-ai/grok-4.1-fast",
     "mistral": "mistralai/mistral-large-2512",
     "bytedance": "bytedance-seed/seed-2.0-lite",
     "liquid": "liquid/lfm-2-24b-a2b",
@@ -40,6 +40,9 @@
       "baidu/ernie-4.5-21b-a3b-thinking"
     ],
     "vision": [
+      "x-ai/grok-4.1-fast",
+      "x-ai/grok-4-fast",
+      "x-ai/grok-4.20-multi-agent",
       "qwen/qwen3.5-plus-20260420",
       "qwen/qwen3.6-plus",
       "qwen/qwen3.5-plus-02-15",
@@ -61,9 +64,6 @@
       "google/gemini-2.5-pro",
       "google/gemini-2.5-pro-preview",
       "google/gemini-2.5-pro-preview-05-06",
-      "x-ai/grok-4.1-fast",
-      "x-ai/grok-4-fast",
-      "x-ai/grok-4.20-multi-agent",
       "mistralai/mistral-large-2512",
       "mistralai/pixtral-large-2411",
       "bytedance-seed/seed-2.0-lite",
