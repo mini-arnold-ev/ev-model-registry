@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-05-01T00:50:28Z",
+  "updated_at": "2026-05-01T06:50:38Z",
   "update_source": "openrouter-api",
   "flagships": {
     "xai": "x-ai/grok-4.1-fast",
