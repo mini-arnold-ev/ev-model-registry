@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-05-14T12:50:08Z",
+  "updated_at": "2026-05-14T18:50:10Z",
   "update_source": "openrouter-api",
   "flagships": {
     "anthropic": "anthropic/claude-opus-4.7-fast",
@@ -10,10 +10,10 @@
     "mistral": "mistralai/mistral-large-2512",
     "qwen": "qwen/qwen3.5-plus-20260420",
     "deepseek": "deepseek/deepseek-v4-pro",
+    "baidu": "baidu/ernie-4.5-21b-a3b-thinking",
     "bytedance": "bytedance-seed/seed-2.0-lite",
     "liquid": "liquid/lfm-2-24b-a2b",
     "perplexity": "perplexity/sonar-pro-search",
-    "baidu": "baidu/ernie-4.5-21b-a3b-thinking",
     "meta": "meta-llama/llama-4-maverick",
     "cohere": "cohere/command-r-plus-08-2024"
   },
@@ -36,8 +36,8 @@
       "deepseek/deepseek-r1-distill-llama-70b",
       "deepseek/deepseek-r1",
       "deepseek/deepseek-r1-distill-qwen-32b",
-      "perplexity/sonar-reasoning-pro",
-      "baidu/ernie-4.5-21b-a3b-thinking"
+      "baidu/ernie-4.5-21b-a3b-thinking",
+      "perplexity/sonar-reasoning-pro"
     ],
     "vision": [
       "anthropic/claude-opus-4.7-fast",
@@ -66,6 +66,9 @@
       "qwen/qwen3.5-plus-20260420",
       "qwen/qwen3.6-plus",
       "qwen/qwen3.5-plus-02-15",
+      "baidu/ernie-4.5-vl-424b-a47b",
+      "baidu/ernie-4.5-vl-28b-a3b",
+      "baidu/qianfan-ocr-fast",
       "bytedance-seed/seed-2.0-lite",
       "bytedance-seed/seed-2.0-mini",
       "bytedance-seed/seed-1.6-flash",
@@ -74,8 +77,6 @@
       "perplexity/sonar-pro",
       "perplexity/sonar-reasoning-pro",
       "perplexity/sonar",
-      "baidu/ernie-4.5-vl-424b-a47b",
-      "baidu/ernie-4.5-vl-28b-a3b",
       "meta-llama/llama-4-maverick",
       "meta-llama/llama-4-scout",
       "meta-llama/llama-guard-4-12b",
@@ -211,6 +212,17 @@
           "tier": "balanced",
           "input_mtok": 0.14,
           "output_mtok": 0.56,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "baidu/qianfan-ocr-fast",
+          "name": "Baidu: Qianfan-OCR-Fast",
+          "context_k": 66,
+          "tier": "fast",
+          "input_mtok": 0.68,
+          "output_mtok": 2.81,
           "reasoning": false,
           "web_search": false,
           "vision": true
