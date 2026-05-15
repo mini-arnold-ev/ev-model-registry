@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-05-14T18:50:10Z",
+  "updated_at": "2026-05-15T00:50:04Z",
   "update_source": "openrouter-api",
   "flagships": {
     "anthropic": "anthropic/claude-opus-4.7-fast",
@@ -755,8 +755,8 @@
           "name": "Qwen: Qwen3.5 Plus 2026-04-20",
           "context_k": 1000,
           "tier": "flagship",
-          "input_mtok": 0.4,
-          "output_mtok": 2.4,
+          "input_mtok": 0.3,
+          "output_mtok": 1.8,
           "reasoning": false,
           "web_search": false,
           "vision": true
