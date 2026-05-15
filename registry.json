@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-05-15T12:50:05Z",
+  "updated_at": "2026-05-15T18:50:05Z",
   "update_source": "openrouter-api",
   "flagships": {
     "anthropic": "anthropic/claude-opus-4.7-fast",
@@ -390,8 +390,8 @@
           "name": "DeepSeek: DeepSeek V4 Flash",
           "context_k": 1049,
           "tier": "fast",
-          "input_mtok": 0.126,
-          "output_mtok": 0.252,
+          "input_mtok": 0.112,
+          "output_mtok": 0.224,
           "reasoning": false,
           "web_search": false,
           "vision": false
