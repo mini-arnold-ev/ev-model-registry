@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-05-31T00:50:08Z",
+  "updated_at": "2026-05-31T06:50:10Z",
   "update_source": "openrouter-api",
   "flagships": {
     "anthropic": "anthropic/claude-opus-4.8-fast",
@@ -13,7 +13,7 @@
     "bytedance": "bytedance-seed/seed-2.0-lite",
     "liquid": "liquid/lfm-2-24b-a2b",
     "perplexity": "perplexity/sonar-pro-search",
-    "baidu": "baidu/ernie-4.5-21b-a3b",
+    "baidu": "baidu/ernie-4.5-vl-28b-a3b",
     "meta": "meta-llama/llama-4-scout",
     "cohere": "cohere/command-r-plus-08-2024"
   },
@@ -155,19 +155,8 @@
       ]
     },
     "baidu": {
-      "flagship": "baidu/ernie-4.5-21b-a3b",
+      "flagship": "baidu/ernie-4.5-vl-28b-a3b",
       "models": [
-        {
-          "id": "baidu/ernie-4.5-21b-a3b",
-          "name": "Baidu: ERNIE 4.5 21B A3B",
-          "context_k": 131,
-          "tier": "balanced",
-          "input_mtok": 0.07,
-          "output_mtok": 0.28,
-          "reasoning": false,
-          "web_search": false,
-          "vision": false
-        },
         {
           "id": "baidu/ernie-4.5-vl-28b-a3b",
           "name": "Baidu: ERNIE 4.5 VL 28B A3B",
