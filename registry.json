@@ -1,19 +1,19 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-05-18T18:50:04Z",
+  "updated_at": "2026-05-31T00:50:08Z",
   "update_source": "openrouter-api",
   "flagships": {
-    "anthropic": "anthropic/claude-opus-4.7-fast",
+    "anthropic": "anthropic/claude-opus-4.8-fast",
+    "qwen": "qwen/qwen3.7-max",
+    "xai": "x-ai/grok-4.20-multi-agent",
     "google": "google/lyria-3-pro-preview",
     "openai": "openai/gpt-5.5-pro",
-    "xai": "x-ai/grok-4.20-multi-agent",
     "mistral": "mistralai/mistral-large-2512",
-    "qwen": "qwen/qwen3.5-plus-20260420",
     "deepseek": "deepseek/deepseek-v4-pro",
-    "baidu": "baidu/ernie-4.5-21b-a3b-thinking",
     "bytedance": "bytedance-seed/seed-2.0-lite",
     "liquid": "liquid/lfm-2-24b-a2b",
     "perplexity": "perplexity/sonar-pro-search",
+    "baidu": "baidu/ernie-4.5-21b-a3b",
     "meta": "meta-llama/llama-4-scout",
     "cohere": "cohere/command-r-plus-08-2024"
   },
@@ -22,6 +22,7 @@
       "x-ai/grok-4.20-multi-agent",
       "x-ai/grok-4.20",
       "x-ai/grok-4.3",
+      "x-ai/grok-build-0.1",
       "perplexity/sonar-pro-search",
       "perplexity/sonar-pro",
       "perplexity/sonar-reasoning-pro",
@@ -33,16 +34,22 @@
       "deepseek/deepseek-r1",
       "deepseek/deepseek-r1-distill-llama-70b",
       "deepseek/deepseek-r1-distill-qwen-32b",
-      "baidu/ernie-4.5-21b-a3b-thinking",
       "perplexity/sonar-reasoning-pro"
     ],
     "vision": [
+      "anthropic/claude-opus-4.8-fast",
+      "anthropic/claude-opus-4.8",
       "anthropic/claude-opus-4.7-fast",
       "anthropic/claude-opus-4.7",
       "anthropic/claude-opus-4.6-fast",
       "anthropic/claude-opus-4.6",
-      "anthropic/claude-opus-4.5",
-      "anthropic/claude-opus-4.1",
+      "qwen/qwen3.5-plus-20260420",
+      "qwen/qwen3.6-plus",
+      "qwen/qwen3.5-plus-02-15",
+      "x-ai/grok-4.20-multi-agent",
+      "x-ai/grok-4.20",
+      "x-ai/grok-4.3",
+      "x-ai/grok-build-0.1",
       "google/lyria-3-pro-preview",
       "google/gemini-3.1-pro-preview-customtools",
       "google/gemini-3.1-pro-preview",
@@ -55,17 +62,8 @@
       "openai/gpt-5.2-pro",
       "openai/gpt-5.1-codex-max",
       "openai/gpt-5-pro",
-      "x-ai/grok-4.20-multi-agent",
-      "x-ai/grok-4.20",
-      "x-ai/grok-4.3",
       "mistralai/mistral-large-2512",
       "mistralai/pixtral-large-2411",
-      "qwen/qwen3.5-plus-20260420",
-      "qwen/qwen3.6-plus",
-      "qwen/qwen3.5-plus-02-15",
-      "baidu/ernie-4.5-vl-28b-a3b",
-      "baidu/ernie-4.5-vl-424b-a47b",
-      "baidu/qianfan-ocr-fast",
       "bytedance-seed/seed-2.0-lite",
       "bytedance-seed/seed-2.0-mini",
       "bytedance-seed/seed-1.6-flash",
@@ -74,6 +72,8 @@
       "perplexity/sonar-pro",
       "perplexity/sonar-reasoning-pro",
       "perplexity/sonar",
+      "baidu/ernie-4.5-vl-28b-a3b",
+      "baidu/ernie-4.5-vl-424b-a47b",
       "meta-llama/llama-4-scout",
       "meta-llama/llama-4-maverick",
       "meta-llama/llama-guard-4-12b"
@@ -84,8 +84,30 @@
   },
   "providers": {
     "anthropic": {
-      "flagship": "anthropic/claude-opus-4.7-fast",
+      "flagship": "anthropic/claude-opus-4.8-fast",
       "models": [
+        {
+          "id": "anthropic/claude-opus-4.8-fast",
+          "name": "Anthropic: Claude Opus 4.8 (Fast)",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 10.0,
+          "output_mtok": 50.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
+        {
+          "id": "anthropic/claude-opus-4.8",
+          "name": "Anthropic: Claude Opus 4.8",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 5.0,
+          "output_mtok": 25.0,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
         {
           "id": "anthropic/claude-opus-4.7-fast",
           "name": "Anthropic: Claude Opus 4.7 (Fast)",
@@ -129,45 +151,12 @@
           "reasoning": false,
           "web_search": false,
           "vision": true
-        },
-        {
-          "id": "anthropic/claude-opus-4.5",
-          "name": "Anthropic: Claude Opus 4.5",
-          "context_k": 200,
-          "tier": "flagship",
-          "input_mtok": 5.0,
-          "output_mtok": 25.0,
-          "reasoning": false,
-          "web_search": false,
-          "vision": true
-        },
-        {
-          "id": "anthropic/claude-opus-4.1",
-          "name": "Anthropic: Claude Opus 4.1",
-          "context_k": 200,
-          "tier": "flagship",
-          "input_mtok": 15.0,
-          "output_mtok": 75.0,
-          "reasoning": false,
-          "web_search": false,
-          "vision": true
         }
       ]
     },
     "baidu": {
-      "flagship": "baidu/ernie-4.5-21b-a3b-thinking",
+      "flagship": "baidu/ernie-4.5-21b-a3b",
       "models": [
-        {
-          "id": "baidu/ernie-4.5-21b-a3b-thinking",
-          "name": "Baidu: ERNIE 4.5 21B A3B Thinking",
-          "context_k": 131,
-          "tier": "reasoning",
-          "input_mtok": 0.07,
-          "output_mtok": 0.28,
-          "reasoning": true,
-          "web_search": false,
-          "vision": false
-        },
         {
           "id": "baidu/ernie-4.5-21b-a3b",
           "name": "Baidu: ERNIE 4.5 21B A3B",
@@ -211,17 +200,6 @@
           "reasoning": false,
           "web_search": false,
           "vision": false
-        },
-        {
-          "id": "baidu/qianfan-ocr-fast",
-          "name": "Baidu: Qianfan-OCR-Fast",
-          "context_k": 66,
-          "tier": "fast",
-          "input_mtok": 0.68,
-          "output_mtok": 2.81,
-          "reasoning": false,
-          "web_search": false,
-          "vision": true
         }
       ]
     },
@@ -386,8 +364,8 @@
           "name": "DeepSeek: DeepSeek V4 Flash",
           "context_k": 1049,
           "tier": "fast",
-          "input_mtok": 0.112,
-          "output_mtok": 0.224,
+          "input_mtok": 0.0983,
+          "output_mtok": 0.1966,
           "reasoning": false,
           "web_search": false,
           "vision": false
@@ -744,8 +722,19 @@
       ]
     },
     "qwen": {
-      "flagship": "qwen/qwen3.5-plus-20260420",
+      "flagship": "qwen/qwen3.7-max",
       "models": [
+        {
+          "id": "qwen/qwen3.7-max",
+          "name": "Qwen: Qwen3.7 Max",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 1.25,
+          "output_mtok": 3.75,
+          "reasoning": false,
+          "web_search": false,
+          "vision": false
+        },
         {
           "id": "qwen/qwen3.5-plus-20260420",
           "name": "Qwen: Qwen3.5 Plus 2026-04-20",
@@ -800,17 +789,6 @@
           "reasoning": true,
           "web_search": false,
           "vision": false
-        },
-        {
-          "id": "qwen/qwen-plus-2025-07-28",
-          "name": "Qwen: Qwen Plus 0728",
-          "context_k": 1000,
-          "tier": "flagship",
-          "input_mtok": 0.26,
-          "output_mtok": 0.78,
-          "reasoning": false,
-          "web_search": false,
-          "vision": false
         }
       ]
     },
@@ -846,6 +824,17 @@
           "tier": "standard",
           "input_mtok": 1.25,
           "output_mtok": 2.5,
+          "reasoning": false,
+          "web_search": true,
+          "vision": true
+        },
+        {
+          "id": "x-ai/grok-build-0.1",
+          "name": "xAI: Grok Build 0.1",
+          "context_k": 256,
+          "tier": "standard",
+          "input_mtok": 1.0,
+          "output_mtok": 2.0,
           "reasoning": false,
           "web_search": true,
           "vision": true
