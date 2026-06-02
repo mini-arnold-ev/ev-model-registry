@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-02T00:50:04Z",
+  "updated_at": "2026-06-02T06:50:24Z",
   "update_source": "openrouter-api",
   "flagships": {
     "anthropic": "anthropic/claude-opus-4.8-fast",
@@ -178,17 +178,6 @@
           "reasoning": false,
           "web_search": false,
           "vision": true
-        },
-        {
-          "id": "baidu/ernie-4.5-300b-a47b",
-          "name": "Baidu: ERNIE 4.5 300B A47B ",
-          "context_k": 131,
-          "tier": "balanced",
-          "input_mtok": 0.28,
-          "output_mtok": 1.1,
-          "reasoning": false,
-          "web_search": false,
-          "vision": false
         }
       ]
     },
