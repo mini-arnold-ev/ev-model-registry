@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-03T12:50:05Z",
+  "updated_at": "2026-06-03T18:50:04Z",
   "update_source": "openrouter-api",
   "flagships": {
+    "qwen": "qwen/qwen3.7-plus",
     "anthropic": "anthropic/claude-opus-4.8-fast",
-    "qwen": "qwen/qwen3.7-max",
     "xai": "x-ai/grok-4.20-multi-agent",
     "google": "google/lyria-3-pro-preview",
     "openai": "openai/gpt-5.5-pro",
@@ -29,7 +29,6 @@
       "perplexity/sonar"
     ],
     "reasoning": [
-      "qwen/qwen-plus-2025-07-28:thinking",
       "deepseek/deepseek-r1-0528",
       "deepseek/deepseek-r1",
       "deepseek/deepseek-r1-distill-llama-70b",
@@ -37,15 +36,16 @@
       "perplexity/sonar-reasoning-pro"
     ],
     "vision": [
+      "qwen/qwen3.7-plus",
+      "qwen/qwen3.5-plus-20260420",
+      "qwen/qwen3.6-plus",
+      "qwen/qwen3.5-plus-02-15",
       "anthropic/claude-opus-4.8-fast",
       "anthropic/claude-opus-4.8",
       "anthropic/claude-opus-4.7-fast",
       "anthropic/claude-opus-4.7",
       "anthropic/claude-opus-4.6-fast",
       "anthropic/claude-opus-4.6",
-      "qwen/qwen3.5-plus-20260420",
-      "qwen/qwen3.6-plus",
-      "qwen/qwen3.5-plus-02-15",
       "x-ai/grok-4.20-multi-agent",
       "x-ai/grok-4.20",
       "x-ai/grok-4.3",
@@ -700,8 +700,19 @@
       ]
     },
     "qwen": {
-      "flagship": "qwen/qwen3.7-max",
+      "flagship": "qwen/qwen3.7-plus",
       "models": [
+        {
+          "id": "qwen/qwen3.7-plus",
+          "name": "Qwen: Qwen3.7 Plus",
+          "context_k": 1000,
+          "tier": "flagship",
+          "input_mtok": 0.4,
+          "output_mtok": 1.6,
+          "reasoning": false,
+          "web_search": false,
+          "vision": true
+        },
         {
           "id": "qwen/qwen3.7-max",
           "name": "Qwen: Qwen3.7 Max",
@@ -754,17 +765,6 @@
           "input_mtok": 0.65,
           "output_mtok": 3.25,
           "reasoning": false,
-          "web_search": false,
-          "vision": false
-        },
-        {
-          "id": "qwen/qwen-plus-2025-07-28:thinking",
-          "name": "Qwen: Qwen Plus 0728 (thinking)",
-          "context_k": 1000,
-          "tier": "flagship",
-          "input_mtok": 0.26,
-          "output_mtok": 0.78,
-          "reasoning": true,
           "web_search": false,
           "vision": false
         }
