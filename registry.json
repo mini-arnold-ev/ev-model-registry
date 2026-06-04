@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-04T12:50:05Z",
+  "updated_at": "2026-06-04T18:50:04Z",
   "update_source": "openrouter-api",
   "flagships": {
     "qwen": "qwen/qwen3.7-plus",
@@ -496,12 +496,12 @@
           "vision": false
         },
         {
-          "id": "meta-llama/llama-3.2-1b-instruct",
-          "name": "Meta: Llama 3.2 1B Instruct",
+          "id": "meta-llama/llama-3.2-3b-instruct",
+          "name": "Meta: Llama 3.2 3B Instruct",
           "context_k": 131,
           "tier": "standard",
-          "input_mtok": 0.027,
-          "output_mtok": 0.201,
+          "input_mtok": 0.0509,
+          "output_mtok": 0.335,
           "reasoning": false,
           "web_search": false,
           "vision": false
