@@ -1,61 +1,31 @@
 # EV Model Registry
 
-AI model registry for Exponential View services. Tracks flagship models, pricing, and capabilities across all major providers.
+Model catalogue for Exponential View services, fetched from the [OpenRouter models API](https://openrouter.ai/docs/api/api-reference/models/list-all-models-and-their-properties).
 
-**Updated:** Regularly  
-**Source:** OpenRouter API  
-**Schema version:** 2
+## Freshness and scope
 
-## Quick fetch
+Read `registry.json.updated_at` to establish freshness. The intended schedule is 00:50, 06:50, 12:50 and 18:50 UTC. A schedule alone does not prove a successful update.
 
-```bash
-curl -s https://raw.githubusercontent.com/mini-arnold-ev/ev-model-registry/main/registry.json
-```
+The catalogue lists text-input/text-output models and their published metadata. It does not set OpenClaw routing or prove that a particular account can use a model. Runtime defaults and session selections live in the local generated `clawd-v2/MODELS.md` reference.
 
-## Schema
+## Schema version 2
 
-Each model entry:
+Existing `providers`, `flagships`, pricing and capability-index fields are retained. Provider model lists now contain every eligible returned model instead of only six candidates.
 
-```json
-{
-  "id": "perplexity/sonar-reasoning-pro",
-  "name": "Sonar Reasoning Pro",
-  "context_k": 128,
-  "tier": "flagship",
-  "input_mtok": 2.0,
-  "output_mtok": 8.0,
-  "reasoning": true,
-  "web_search": true,
-  "vision": true
-}
-```
+- `id`, `name`, `context_length`, `context_k`, `created`: API identifiers and metadata.
+- `input_mtok`, `output_mtok`: USD per million tokens. Zero is preserved; missing or invalid prices are null.
+- `vision`: established from image input modality.
+- `reasoning`: reasoning controls listed in `supported_parameters`; null if that metadata is missing.
+- `web_search`: true when the API declares `web_search_options`; otherwise null. A provider name alone is not evidence of search support.
+- `input_modalities`, `output_modalities`, `supported_parameters`: source metadata for checking these fields.
+- `tier` and `flagships`: legacy heuristic display candidates. They are not authoritative rankings, latest-version guarantees or model recommendations. Verify current provider information before choosing a model.
 
-## Capability index
+`capability_index` includes only entries whose corresponding capability field is true.
 
-Top-level `capability_index` lets you query across providers:
+## Update guarantees
 
-- `web_search` — models with native web search (Perplexity sonar, Grok)
-- `reasoning` — models with reasoning/thinking modes (o-series, R1, sonar-reasoning, :thinking)
-- `vision` — models that accept image inputs
-- `web_search_and_reasoning` — models with both
+The updater uses a fixed script, without a language-model turn. It rejects empty, malformed or unexpectedly reduced catalogues, checks HTTP failures, and prevents overlapping runs. Failed fetches preserve the previous catalogue and timestamp.
 
-## Providers tracked
+GitHub writes use the existing file SHA to prevent overwriting concurrent edits. The updater reads each published commit back and compares the bytes before installing the local catalogue. Local files are replaced atomically. `update-status.json` on the host records each stage and its outcome; credentials are never included in published files or status output.
 
-Anthropic, OpenAI, Google, xAI, Meta, Mistral, Qwen, DeepSeek, Liquid AI, Perplexity, Cohere, Baidu, ByteDance
-
-## Usage
-
-```javascript
-const reg = await fetch(
-  'https://raw.githubusercontent.com/mini-arnold-ev/ev-model-registry/main/registry.json'
-).then(r => r.json());
-
-// Current Anthropic flagship:
-reg.providers.anthropic.flagship
-
-// Models with web search + reasoning:
-reg.capability_index.web_search_and_reasoning
-
-// All models under $5/MTok input:
-reg.providers.perplexity.models.filter(m => m.input_mtok < 5)
-```
+Before publication, the updater checks the GitHub account and repository write access. It can use an existing named GitHub CLI login, then configured tokens if needed. An expired token cannot hide a valid CLI login. The Desktop repair launcher checks authentication before changing the job and offers GitHub browser sign-in when renewal is required. The scheduled updater never starts an interactive login.
