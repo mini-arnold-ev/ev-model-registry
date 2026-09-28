@@ -1967,7 +1967,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2266,
+          "input_mtok": 0.3995,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
@@ -2008,12 +2008,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.953172,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 1.906344,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2051,12 +2051,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0295,
+          "input_mtok": 0.014,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2177,12 +2177,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.14,
+          "input_mtok": 0.08848,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.28,
+          "output_mtok": 0.17696,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3170,12 +3170,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.0675,
+          "input_mtok": 0.09,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.225,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4323,8 +4323,7 @@
             "text",
             "image",
             "video",
-            "file",
-            "audio"
+            "file"
           ],
           "input_mtok": 0.1,
           "name": "Meta: Muse Spark 1.3 Contributor",
@@ -4360,8 +4359,7 @@
             "text",
             "image",
             "video",
-            "file",
-            "audio"
+            "file"
           ],
           "input_mtok": 1.25,
           "name": "Meta: Muse Spark 1.3",
@@ -4397,8 +4395,7 @@
             "text",
             "image",
             "video",
-            "file",
-            "audio"
+            "file"
           ],
           "input_mtok": 0.1,
           "name": "Meta: Muse Spark 1.2 Contributor",
@@ -4445,7 +4442,6 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -4460,7 +4456,6 @@
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -4476,8 +4471,7 @@
             "text",
             "image",
             "video",
-            "file",
-            "audio"
+            "file"
           ],
           "input_mtok": 1.25,
           "name": "Meta: Muse Spark 1.2",
@@ -4513,8 +4507,7 @@
             "text",
             "image",
             "video",
-            "file",
-            "audio"
+            "file"
           ],
           "input_mtok": 1.25,
           "name": "Meta: Muse Spark 1.1",
@@ -13169,7 +13162,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.325,
+          "input_mtok": 1.4,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
@@ -13253,12 +13246,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.4,
+          "input_mtok": 0.9646,
           "name": "Z.ai: GLM 5.1",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.4,
+          "output_mtok": 3.0316,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13795,12 +13788,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2266,
+          "input_mtok": 0.22592,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.2,
+          "output_mtok": 1.9584,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13837,12 +13830,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0295,
+          "input_mtok": 0.014,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14308,12 +14301,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.325,
+          "input_mtok": 0.1785,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.4,
+          "output_mtok": 2.805,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14349,5 +14342,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-09-28T06:50:00.173614+00:00"
+  "updated_at": "2026-09-28T12:50:00.192751+00:00"
 }
