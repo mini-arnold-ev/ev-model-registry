@@ -22,6 +22,7 @@
       "anthropic/claude-sonnet-4.5",
       "anthropic/claude-sonnet-4.6",
       "anthropic/claude-sonnet-5",
+      "anthropic/claude-sonnet-5.5",
       "arcee-ai/trinity-large-thinking",
       "baidu/ernie-4.5-vl-424b-a47b",
       "bytedance-seed/seed-1.6",
@@ -35,7 +36,6 @@
       "deepseek/deepseek-chat-v3.1",
       "deepseek/deepseek-r1",
       "deepseek/deepseek-r1-0528",
-      "deepseek/deepseek-r1-distill-llama-70b",
       "deepseek/deepseek-v3.1-terminus",
       "deepseek/deepseek-v3.2",
       "deepseek/deepseek-v3.2-exp",
@@ -75,7 +75,6 @@
       "inception/mercury-2.5",
       "inclusionai/ling-3.0-flash",
       "inclusionai/ling-3.0-flash-fin",
-      "inclusionai/ling-3.0-flash-fin:free",
       "inclusionai/ling-3.0-flash-sante:free",
       "inclusionai/ling-3.0-flash-vl",
       "liquid/lfm-2.5-2.6b:free",
@@ -99,6 +98,8 @@
       "moonshotai/kimi-k2.6",
       "moonshotai/kimi-k2.7-code",
       "moonshotai/kimi-k3",
+      "nex-agi/nex-n2.5-mini",
+      "nex-agi/nex-n2.5-pro",
       "nousresearch/hermes-4-405b",
       "nvidia/nemotron-3-nano-30b-a3b",
       "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -286,6 +287,7 @@
       "anthropic/claude-sonnet-4.5",
       "anthropic/claude-sonnet-4.6",
       "anthropic/claude-sonnet-5",
+      "anthropic/claude-sonnet-5.5",
       "baidu/ernie-4.5-vl-424b-a47b",
       "bytedance-seed/seed-1.6",
       "bytedance-seed/seed-1.6-flash",
@@ -354,6 +356,8 @@
       "moonshotai/kimi-k2.6",
       "moonshotai/kimi-k2.7-code",
       "moonshotai/kimi-k3",
+      "nex-agi/nex-n2.5-mini",
+      "nex-agi/nex-n2.5-pro",
       "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "nvidia/nemotron-3.5-content-safety",
       "nvidia/nemotron-3.5-content-safety:free",
@@ -534,6 +538,7 @@
     "minimax": "minimax/minimax-m3",
     "mistral": "mistralai/mistral-large-2512",
     "morph": "morph/morph-v3-large",
+    "nex-agi": "nex-agi/nex-n2.5-pro",
     "openai": "openai/gpt-6-luna-pro",
     "perplexity": "perplexity/sonar-pro-search",
     "qwen": "qwen/qwen3.8-max-prime",
@@ -544,7 +549,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 385,
+  "model_count": 386,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1156,6 +1161,41 @@
             "top_p"
           ],
           "tier": "flagship",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 1000.0,
+          "context_length": 1000000,
+          "created": 1790618686,
+          "id": "anthropic/claude-sonnet-5.5",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "input_mtok": 2.0,
+          "name": "Anthropic: Claude Sonnet 5.5",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 10.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "tier": "reasoning",
           "vision": true,
           "web_search": null
         },
@@ -2008,12 +2048,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.953172,
+          "input_mtok": 0.783,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.906344,
+          "output_mtok": 1.566,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2051,12 +2091,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.014,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.4,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2177,12 +2217,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.08848,
+          "input_mtok": 0.0623,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.17696,
+          "output_mtok": 0.1246,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2260,12 +2300,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.27,
+          "input_mtok": 0.1344,
           "name": "DeepSeek: DeepSeek V3.2 Exp",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.41,
+          "output_mtok": 0.2016,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2404,38 +2444,6 @@
             "tools",
             "top_k",
             "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 8.192,
-          "context_length": 8192,
-          "created": 1737663169,
-          "id": "deepseek/deepseek-r1-distill-llama-70b",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.8,
-          "name": "DeepSeek: R1 Distill Llama 70B",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.8,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
             "top_p"
           ],
           "tier": "reasoning",
@@ -3977,6 +3985,7 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -3985,41 +3994,6 @@
             "seed",
             "stop",
             "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1787846290,
-          "id": "inclusionai/ling-3.0-flash-fin:free",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.0,
-          "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "seed",
-            "stop",
             "temperature",
             "tool_choice",
             "tools",
@@ -6171,6 +6145,77 @@
         }
       ]
     },
+    "nex-agi": {
+      "flagship": "nex-agi/nex-n2.5-pro",
+      "models": [
+        {
+          "context_k": 262.144,
+          "context_length": 262144,
+          "created": 1788890050,
+          "id": "nex-agi/nex-n2.5-pro",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 0.075,
+          "name": "Nex AGI: Nex-N2.5-Pro",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.25,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "flagship",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 262.144,
+          "context_length": 262144,
+          "created": 1788890061,
+          "id": "nex-agi/nex-n2.5-mini",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 0.025,
+          "name": "Nex AGI: Nex-N2.5-Mini",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.1,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "structured_outputs",
+            "temperature",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        }
+      ]
+    },
     "nousresearch": {
       "flagship": null,
       "models": [
@@ -6803,12 +6848,12 @@
             "image",
             "text"
           ],
-          "input_mtok": 2.0,
+          "input_mtok": 4.0,
           "name": "OpenAI: GPT-5.6 Sol Pro",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.0,
+          "output_mtok": 20.0,
           "reasoning": true,
           "supported_parameters": [
             "include_reasoning",
@@ -11876,8 +11921,10 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_completion_tokens",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -11904,12 +11951,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13162,12 +13209,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.4,
+          "input_mtok": 0.1785,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.4,
+          "output_mtok": 2.805,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13830,12 +13877,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.014,
+          "input_mtok": 0.035,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.4,
+          "output_mtok": 0.29,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14000,12 +14047,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 1.0,
+          "input_mtok": 0.875,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 9.0,
+          "output_mtok": 11.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14342,5 +14389,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-09-28T12:50:00.192751+00:00"
+  "updated_at": "2026-09-28T18:50:00.208400+00:00"
 }
