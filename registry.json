@@ -2007,7 +2007,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.4,
+          "input_mtok": 0.48,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
@@ -2048,12 +2048,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.953172,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 1.906344,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2217,12 +2217,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.14,
+          "input_mtok": 0.08848,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.28,
+          "output_mtok": 0.17696,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3178,12 +3178,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.0765,
+          "input_mtok": 0.09,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.255,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6323,8 +6323,8 @@
       "flagship": null,
       "models": [
         {
-          "context_k": 1000.0,
-          "context_length": 1000000,
+          "context_k": 262.144,
+          "context_length": 262144,
           "created": 1786452751,
           "id": "nvidia/nemotron-3.5-lightning",
           "input_modalities": [
@@ -7833,12 +7833,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.037,
           "name": "OpenAI: gpt-oss-120b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.17,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -9943,7 +9943,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0647,
+          "input_mtok": 0.0407,
           "name": "Qwen: Qwen3.8 27B",
           "output_modalities": [
             "text"
@@ -10691,12 +10691,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.13,
+          "input_mtok": 0.12,
           "name": "Qwen: Qwen3 30B A3B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.52,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13251,7 +13251,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.3249,
+          "input_mtok": 0.1949,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
@@ -13836,7 +13836,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.15808,
+          "input_mtok": 0.096,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -13924,7 +13924,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.7,
+          "output_mtok": 1.25,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14390,5 +14390,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-09-29T06:50:00.186458+00:00"
+  "updated_at": "2026-09-29T12:50:00.225318+00:00"
 }
