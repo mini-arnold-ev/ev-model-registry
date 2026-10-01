@@ -23,6 +23,7 @@
       "anthropic/claude-sonnet-4.6",
       "anthropic/claude-sonnet-5",
       "anthropic/claude-sonnet-5.5",
+      "apodex/apodex-1.1-mini:free",
       "arcee-ai/trinity-large-thinking",
       "baidu/ernie-4.5-vl-424b-a47b",
       "bytedance-seed/seed-1.6",
@@ -468,6 +469,7 @@
       "thinkingmachines/inkling:free",
       "typesafe/jev-router",
       "unbiased/pareto",
+      "unbiased/pareto-26.10-preview",
       "x-ai/grok-4.20",
       "x-ai/grok-4.20-multi-agent",
       "x-ai/grok-4.3",
@@ -554,7 +556,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 388,
+  "model_count": 390,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1443,6 +1445,47 @@
           ],
           "tier": "reasoning",
           "vision": true,
+          "web_search": null
+        }
+      ]
+    },
+    "apodex": {
+      "flagship": null,
+      "models": [
+        {
+          "context_k": 262.144,
+          "context_length": 262144,
+          "created": 1790875335,
+          "id": "apodex/apodex-1.1-mini:free",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": 0.0,
+          "name": "Apodex: Apodex 1.1 Mini (free)",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": false,
           "web_search": null
         }
       ]
@@ -4556,7 +4599,6 @@
             "logit_bias",
             "logprobs",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "response_format",
@@ -5818,7 +5860,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.676,
+          "input_mtok": 0.6635,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -6694,7 +6736,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -6760,7 +6803,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -6793,7 +6837,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -6826,7 +6871,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -6859,7 +6905,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -6892,7 +6939,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -6924,7 +6972,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -6957,7 +7006,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -6989,7 +7039,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -7020,7 +7071,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -7052,7 +7104,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "flagship",
           "vision": true,
@@ -7145,7 +7198,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7376,7 +7430,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7413,7 +7468,8 @@
             "seed",
             "stop",
             "structured_outputs",
-            "top_logprobs"
+            "top_logprobs",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7446,7 +7502,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7479,7 +7536,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7512,7 +7570,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7545,7 +7604,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7576,7 +7636,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7609,7 +7670,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7642,7 +7704,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7673,7 +7736,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7704,7 +7768,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7742,7 +7807,8 @@
             "structured_outputs",
             "temperature",
             "top_logprobs",
-            "top_p"
+            "top_p",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7780,7 +7846,8 @@
             "structured_outputs",
             "temperature",
             "top_logprobs",
-            "top_p"
+            "top_p",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7813,7 +7880,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7846,7 +7914,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -7879,7 +7948,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -8391,7 +8461,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "standard",
           "vision": true,
@@ -11905,10 +11976,8 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "logprobs",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -11971,12 +12040,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12011,12 +12080,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12501,6 +12570,33 @@
     "unbiased": {
       "flagship": null,
       "models": [
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
+          "created": 1790863623,
+          "id": "unbiased/pareto-26.10-preview",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 0.8,
+          "name": "Pareto 26.10 Preview",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 3.2,
+          "reasoning": false,
+          "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "tier": "standard",
+          "vision": true,
+          "web_search": null
+        },
         {
           "context_k": 262.144,
           "context_length": 262144,
@@ -13333,12 +13429,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.4,
+          "input_mtok": 0.41,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.4,
+          "output_mtok": 3.99,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13918,12 +14014,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1853,
+          "input_mtok": 0.15312,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.5,
+          "output_mtok": 0.45936,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13960,7 +14056,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0243,
+          "input_mtok": 0.0255,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
@@ -14130,7 +14226,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.676,
+          "input_mtok": 0.6635,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14228,7 +14324,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -14327,7 +14424,8 @@
             "seed",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -14431,12 +14529,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.06,
+          "input_mtok": 0.12,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.694,
+          "output_mtok": 1.14,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14472,5 +14570,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-01T12:50:00.285833+00:00"
+  "updated_at": "2026-10-01T18:50:00.263685+00:00"
 }
