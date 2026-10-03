@@ -2223,7 +2223,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0171,
+          "input_mtok": 0.0188,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -14068,7 +14068,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.11,
+          "input_mtok": 0.14,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14151,7 +14151,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0171,
+          "input_mtok": 0.0188,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14280,7 +14280,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.79,
+          "input_mtok": 0.9895,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14627,5 +14627,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-03T06:50:00.534842+00:00"
+  "updated_at": "2026-10-03T12:50:00.176907+00:00"
 }
