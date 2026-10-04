@@ -2056,12 +2056,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.33,
+          "input_mtok": 0.85,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.2,
+          "output_mtok": 5.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10123,12 +10123,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.42,
+          "input_mtok": 0.425,
           "name": "Qwen: Qwen3.8 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.0,
+          "output_mtok": 2.55,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14280,7 +14280,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.576,
+          "input_mtok": 0.592,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14591,7 +14591,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.4,
+          "output_mtok": 5.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14627,5 +14627,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-04T06:50:00.171479+00:00"
+  "updated_at": "2026-10-04T12:50:00.175588+00:00"
 }
