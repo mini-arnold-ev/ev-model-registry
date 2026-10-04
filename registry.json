@@ -2056,7 +2056,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.22,
+          "input_mtok": 0.33,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
@@ -2140,12 +2140,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.003,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 2.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2266,12 +2266,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.028,
+          "input_mtok": 0.0224,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.056,
+          "output_mtok": 1.28,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5894,7 +5894,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.499,
+          "input_mtok": 0.72,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -13483,7 +13483,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.38,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
@@ -14068,7 +14068,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.176,
+          "input_mtok": 0.1901,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14280,7 +14280,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.3992,
+          "input_mtok": 0.576,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14544,7 +14544,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.024,
+          "input_mtok": 0.0352,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
@@ -14586,7 +14586,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.075,
+          "input_mtok": 0.05,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
@@ -14627,5 +14627,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-04T00:50:00.229918+00:00"
+  "updated_at": "2026-10-04T06:50:00.171479+00:00"
 }
