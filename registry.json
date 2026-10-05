@@ -5900,7 +5900,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 13.0,
+          "output_mtok": 14.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6401,12 +6401,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0595,
+          "input_mtok": 0.06,
           "name": "NVIDIA: Nemotron 3.5 Lightning",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.17,
+          "output_mtok": 0.16,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6978,12 +6978,12 @@
             "image",
             "text"
           ],
-          "input_mtok": 4.0,
+          "input_mtok": 2.0,
           "name": "OpenAI: GPT-5.6 Sol Pro",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 20.0,
+          "output_mtok": 10.0,
           "reasoning": true,
           "supported_parameters": [
             "include_reasoning",
@@ -10366,7 +10366,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.2,
+          "output_mtok": 2.7,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10995,6 +10995,7 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -11007,7 +11008,9 @@
             "temperature",
             "tool_choice",
             "tools",
+            "top_a",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -12090,12 +12093,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12130,12 +12133,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13481,7 +13484,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.104,
+          "input_mtok": 0.0992,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
@@ -14278,7 +14281,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.66,
+          "input_mtok": 0.665,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14584,7 +14587,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.06,
+          "input_mtok": 0.08,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
@@ -14625,5 +14628,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-04T18:50:00.204297+00:00"
+  "updated_at": "2026-10-05T00:50:00.172627+00:00"
 }
