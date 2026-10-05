@@ -201,7 +201,6 @@
       "qwen/qwen3.7-plus",
       "qwen/qwen3.8-2.4t-a95b",
       "qwen/qwen3.8-27b",
-      "qwen/qwen3.8-27b:free",
       "qwen/qwen3.8-flash",
       "qwen/qwen3.8-max-0902",
       "qwen/qwen3.8-max-prime",
@@ -211,7 +210,6 @@
       "sakana/fugu-ultra",
       "sakana/fugu-ultra-v2",
       "sakana/sakana-namazu",
-      "stealth/space-bunny-alpha",
       "stepfun/step-3.5-flash",
       "stepfun/step-3.7-flash",
       "tencent/hunyuan-a13b-instruct",
@@ -452,7 +450,6 @@
       "qwen/qwen3.7-flash",
       "qwen/qwen3.7-plus",
       "qwen/qwen3.8-27b",
-      "qwen/qwen3.8-27b:free",
       "qwen/qwen3.8-flash",
       "qwen/qwen3.8-max-0902",
       "qwen/qwen3.8-max-prime",
@@ -462,7 +459,6 @@
       "sakana/fugu-ultra",
       "sakana/fugu-ultra-v2",
       "sakana/sakana-namazu",
-      "stealth/space-bunny-alpha",
       "stepfun/step-3.7-flash",
       "thinkingmachines/inkling",
       "thinkingmachines/inkling-small",
@@ -557,7 +553,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 392,
+  "model_count": 390,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2381,7 +2377,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.27,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V3.1 Terminus",
           "output_modalities": [
             "text"
@@ -4698,12 +4694,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1,
+          "input_mtok": 0.22,
           "name": "Meta: Llama 3.3 70B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.32,
+          "output_mtok": 0.5,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -5895,7 +5891,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.67,
+          "input_mtok": 1.39,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -10159,42 +10155,6 @@
           "web_search": null
         },
         {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1786722910,
-          "id": "qwen/qwen3.8-27b:free",
-          "input_modalities": [
-            "text",
-            "image",
-            "video"
-          ],
-          "input_mtok": 0.0,
-          "name": "Qwen: Qwen3.8 27B (free)",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "reasoning_effort",
-            "repetition_penalty",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
-        },
-        {
           "context_k": 1048.576,
           "context_length": 1048576,
           "created": 1786551702,
@@ -11969,43 +11929,6 @@
         }
       ]
     },
-    "stealth": {
-      "flagship": null,
-      "models": [
-        {
-          "context_k": 1000.0,
-          "context_length": 1000000,
-          "created": 1790174884,
-          "id": "stealth/space-bunny-alpha",
-          "input_modalities": [
-            "text",
-            "image",
-            "video"
-          ],
-          "input_mtok": 0.0,
-          "name": "Space Bunny Alpha",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
-        }
-      ]
-    },
     "stepfun": {
       "flagship": null,
       "models": [
@@ -12093,12 +12016,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12133,12 +12056,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13442,7 +13365,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.07,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
@@ -13484,12 +13407,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.02,
+          "input_mtok": 0.032,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 16.0,
+          "output_mtok": 12.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14281,7 +14204,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.66,
+          "input_mtok": 0.7714,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14628,5 +14551,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-05T12:50:00.279002+00:00"
+  "updated_at": "2026-10-05T18:50:00.452892+00:00"
 }
