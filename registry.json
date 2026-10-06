@@ -2052,12 +2052,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.4,
+          "input_mtok": 0.66,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 5.0,
+          "output_mtok": 1.98,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2377,7 +2377,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.27,
           "name": "DeepSeek: DeepSeek V3.1 Terminus",
           "output_modalities": [
             "text"
@@ -2387,14 +2387,9 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_tokens",
-            "min_p",
-            "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
-            "seed",
             "stop",
             "structured_outputs",
             "temperature",
@@ -3210,12 +3205,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.0765,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.255,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5891,7 +5886,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 1.39,
+          "input_mtok": 1.19,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -10568,12 +10563,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.55,
+          "input_mtok": 0.45,
           "name": "Qwen: Qwen3.5 397B A17B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.5,
+          "output_mtok": 3.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11387,12 +11382,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.04815,
+          "input_mtok": 0.1,
           "name": "Qwen: Qwen3 30B A3B Instruct 2507",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.19305,
+          "output_mtok": 0.3,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -11424,12 +11419,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0875,
+          "input_mtok": 0.09,
           "name": "Qwen: Qwen3 235B A22B Instruct 2507",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.35,
+          "output_mtok": 0.55,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -12016,12 +12011,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12056,12 +12051,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13407,7 +13402,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.032,
+          "input_mtok": 0.0464,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
@@ -13992,7 +13987,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1901,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14204,7 +14199,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.7714,
+          "input_mtok": 0.6143,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14551,5 +14546,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-05T18:50:00.452892+00:00"
+  "updated_at": "2026-10-06T00:50:00.181851+00:00"
 }
