@@ -2052,12 +2052,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.32,
+          "input_mtok": 0.66,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.96,
+          "output_mtok": 1.98,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2136,12 +2136,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.003,
+          "input_mtok": 0.012563,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.4,
+          "output_mtok": 1.32,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2219,7 +2219,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.009,
+          "input_mtok": 0.0103,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -2262,7 +2262,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0048,
+          "input_mtok": 0.0106,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
@@ -4470,12 +4470,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.35,
+          "input_mtok": 0.3,
           "name": "Meta: Muse Glimmer 30B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.5,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10400,12 +10400,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.08,
           "name": "Qwen: Qwen3.5-35B-A3B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.0,
+          "output_mtok": 0.75,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13987,12 +13987,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.19,
+          "input_mtok": 0.2541,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 5.0,
+          "output_mtok": 4.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14029,12 +14029,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.003,
+          "input_mtok": 0.011421,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.4,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14070,7 +14070,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.009,
+          "input_mtok": 0.0103,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14199,7 +14199,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.84,
+          "input_mtok": 0.83,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14546,5 +14546,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-06T06:50:00.180929+00:00"
+  "updated_at": "2026-10-06T12:50:00.219357+00:00"
 }
