@@ -67,6 +67,7 @@
       "google/gemini-3.6-flash",
       "google/gemini-3.7-flash",
       "google/gemini-3.8-flash",
+      "google/gemini-nano-banana-2.1",
       "google/gemma-4-26b-a4b-it",
       "google/gemma-4-26b-a4b-it:free",
       "google/gemma-4-31b-it",
@@ -93,6 +94,7 @@
       "minimax/minimax-m2.5",
       "minimax/minimax-m2.7",
       "minimax/minimax-m3",
+      "mistralai/mistral-large-4-0",
       "mistralai/mistral-medium-3-5",
       "mistralai/mistral-small-2603",
       "moonshotai/kimi-k2-thinking",
@@ -324,6 +326,7 @@
       "google/gemini-3.6-flash",
       "google/gemini-3.7-flash",
       "google/gemini-3.8-flash",
+      "google/gemini-nano-banana-2.1",
       "google/gemma-3-12b-it",
       "google/gemma-3-27b-it",
       "google/gemma-3-4b-it",
@@ -349,6 +352,7 @@
       "mistralai/ministral-3b-2512",
       "mistralai/ministral-8b-2512",
       "mistralai/mistral-large-2512",
+      "mistralai/mistral-large-4-0",
       "mistralai/mistral-medium-3",
       "mistralai/mistral-medium-3-5",
       "mistralai/mistral-medium-3.1",
@@ -540,7 +544,7 @@
     "gryphe": "gryphe/mythomax-l2-13b",
     "kwaipilot": "kwaipilot/kat-coder-pro-v2.5",
     "minimax": "minimax/minimax-m3",
-    "mistral": "mistralai/mistral-large-2512",
+    "mistral": "mistralai/mistral-large-4-0",
     "morph": "morph/morph-v3-large",
     "nex-agi": "nex-agi/nex-n2.5-pro",
     "openai": "openai/gpt-6.1-sol-pro",
@@ -553,7 +557,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 390,
+  "model_count": 392,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2136,12 +2140,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.012563,
+          "input_mtok": 0.011421,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.32,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2219,7 +2223,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0103,
+          "input_mtok": 0.0069,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -2262,7 +2266,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0106,
+          "input_mtok": 0.0005,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
@@ -2907,6 +2911,40 @@
             "top_p"
           ],
           "tier": "flagship",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 65.536,
+          "context_length": 65536,
+          "created": 1791300825,
+          "id": "google/gemini-nano-banana-2.1",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "input_mtok": 1.5,
+          "name": "Google: Nano Banana 2.1",
+          "output_modalities": [
+            "image",
+            "text"
+          ],
+          "output_mtok": 7.5,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "tier": "reasoning",
           "vision": true,
           "web_search": null
         },
@@ -5213,8 +5251,46 @@
       ]
     },
     "mistral": {
-      "flagship": "mistralai/mistral-large-2512",
+      "flagship": "mistralai/mistral-large-4-0",
       "models": [
+        {
+          "context_k": 524.288,
+          "context_length": 524288,
+          "created": 1791294122,
+          "id": "mistralai/mistral-large-4-0",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 0.68,
+          "name": "Mistral: Mistral Large 4",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 2.09,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "flagship",
+          "vision": true,
+          "web_search": null
+        },
         {
           "context_k": 262.144,
           "context_length": 262144,
@@ -5886,12 +5962,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.95,
+          "input_mtok": 0.69,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 14.0,
+          "output_mtok": 15.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12011,12 +12087,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12051,12 +12127,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13987,7 +14063,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2541,
+          "input_mtok": 0.2514,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14070,7 +14146,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0103,
+          "input_mtok": 0.0069,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14199,7 +14275,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.83,
+          "input_mtok": 0.68,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14463,12 +14539,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0214,
+          "input_mtok": 0.02354,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.5,
+          "output_mtok": 0.6875,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14546,5 +14622,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-06T12:50:00.219357+00:00"
+  "updated_at": "2026-10-06T18:50:00.188823+00:00"
 }
