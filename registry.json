@@ -2055,12 +2055,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.32,
+          "input_mtok": 0.66,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.96,
+          "output_mtok": 1.98,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13436,12 +13436,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.03,
+          "input_mtok": 0.171,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 12.0,
+          "output_mtok": 7.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14021,12 +14021,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2999,
+          "input_mtok": 0.4,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.2,
+          "output_mtok": 4.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14497,7 +14497,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0317,
+          "input_mtok": 0.0214,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
@@ -14539,12 +14539,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.03,
+          "input_mtok": 0.063,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 12.0,
+          "output_mtok": 6.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14580,5 +14580,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-07T06:50:00.165281+00:00"
+  "updated_at": "2026-10-07T12:50:00.209987+00:00"
 }
