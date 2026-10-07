@@ -11,6 +11,7 @@
       "anthropic/claude-fable-5",
       "anthropic/claude-fable-5.1",
       "anthropic/claude-haiku-4.5",
+      "anthropic/claude-haiku-5.5",
       "anthropic/claude-opus-4.1",
       "anthropic/claude-opus-4.5",
       "anthropic/claude-opus-4.6",
@@ -281,6 +282,7 @@
       "anthropic/claude-fable-5",
       "anthropic/claude-fable-5.1",
       "anthropic/claude-haiku-4.5",
+      "anthropic/claude-haiku-5.5",
       "anthropic/claude-opus-4.1",
       "anthropic/claude-opus-4.5",
       "anthropic/claude-opus-4.6",
@@ -556,7 +558,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 391,
+  "model_count": 392,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1168,6 +1170,39 @@
             "top_p"
           ],
           "tier": "flagship",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 1000.0,
+          "context_length": 1000000,
+          "created": 1791397883,
+          "id": "anthropic/claude-haiku-5.5",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "input_mtok": 0.1,
+          "name": "Anthropic: Claude Haiku 5.5",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.5,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "tier": "reasoning",
           "vision": true,
           "web_search": null
         },
@@ -2139,7 +2174,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
@@ -5920,7 +5955,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.62,
+          "input_mtok": 0.5,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -6426,12 +6461,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.06,
+          "input_mtok": 0.049,
           "name": "NVIDIA: Nemotron 3.5 Lightning",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.16,
+          "output_mtok": 0.14,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12045,12 +12080,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12085,12 +12120,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13939,8 +13974,8 @@
           "web_search": null
         },
         {
-          "context_k": 200.0,
-          "context_length": 200000,
+          "context_k": 1000.0,
+          "context_length": 1000000,
           "created": 1777318492,
           "id": "~anthropic/claude-haiku-latest",
           "input_modalities": [
@@ -13948,26 +13983,24 @@
             "image",
             "file"
           ],
-          "input_mtok": 1.0,
+          "input_mtok": 0.1,
           "name": "Anthropic: Claude Haiku Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 5.0,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "include_reasoning",
-            "max_completion_tokens",
             "max_tokens",
             "reasoning",
+            "reasoning_effort",
             "response_format",
             "stop",
             "structured_outputs",
-            "temperature",
             "tool_choice",
             "tools",
-            "top_k",
-            "top_p"
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
@@ -14021,12 +14054,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.4,
+          "input_mtok": 0.2917,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.3,
+          "output_mtok": 4.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14063,7 +14096,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.049,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
@@ -14233,7 +14266,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.61,
+          "input_mtok": 0.49,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14497,7 +14530,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0214,
+          "input_mtok": 0.04,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
@@ -14580,5 +14613,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-07T12:50:00.209987+00:00"
+  "updated_at": "2026-10-07T18:50:00.216629+00:00"
 }
