@@ -215,6 +215,7 @@
       "sakana/sakana-namazu",
       "stepfun/step-3.5-flash",
       "stepfun/step-3.7-flash",
+      "stepfun/step-5-preview",
       "tencent/hunyuan-a13b-instruct",
       "tencent/hy3",
       "tencent/hy3-preview",
@@ -466,6 +467,7 @@
       "sakana/fugu-ultra-v2",
       "sakana/sakana-namazu",
       "stepfun/step-3.7-flash",
+      "stepfun/step-5-preview",
       "thinkingmachines/inkling",
       "thinkingmachines/inkling-small",
       "thinkingmachines/inkling-small:free",
@@ -558,7 +560,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 392,
+  "model_count": 393,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2087,12 +2089,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.32,
+          "input_mtok": 0.66,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.96,
+          "output_mtok": 1.98,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2128,12 +2130,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.297366,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 0.594732,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2171,12 +2173,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.0356,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 1.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2254,7 +2256,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0046,
+          "input_mtok": 0.006,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -2297,7 +2299,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0054,
+          "input_mtok": 0.0075,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
@@ -5952,7 +5954,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.6,
+          "input_mtok": 0.62,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -6036,7 +6038,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.465,
+          "input_mtok": 0.4485,
           "name": "MoonshotAI: Kimi K2.6",
           "output_modalities": [
             "text"
@@ -10382,12 +10384,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.45,
           "name": "Qwen: Qwen3.6 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.0,
+          "output_mtok": 2.7,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11016,7 +11018,6 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -11029,9 +11030,7 @@
             "temperature",
             "tool_choice",
             "tools",
-            "top_a",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -11993,6 +11992,42 @@
     "stepfun": {
       "flagship": null,
       "models": [
+        {
+          "context_k": 1000.0,
+          "context_length": 1000000,
+          "created": 1791462849,
+          "id": "stepfun/step-5-preview",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "input_mtok": 1.0,
+          "name": "StepFun: Step 5 Preview",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 2.7,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        },
         {
           "context_k": 262.144,
           "context_length": 262144,
@@ -14050,7 +14085,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1575,
+          "input_mtok": 0.108,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14092,12 +14127,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.003,
+          "input_mtok": 0.0356,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.4,
+          "output_mtok": 1.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14133,12 +14168,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.00368,
+          "input_mtok": 0.006,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.816293,
+          "output_mtok": 1.28,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14262,7 +14297,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.59,
+          "input_mtok": 0.45,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14531,7 +14566,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.16923,
+          "output_mtok": 3.33595,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14568,7 +14603,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0392,
+          "input_mtok": 0.036,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
@@ -14609,5 +14644,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-08T06:50:00.179263+00:00"
+  "updated_at": "2026-10-08T12:50:00.257534+00:00"
 }
