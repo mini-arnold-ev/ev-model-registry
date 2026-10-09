@@ -2049,12 +2049,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.32,
+          "input_mtok": 0.66,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.96,
+          "output_mtok": 1.98,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2090,12 +2090,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.297366,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 0.594732,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2216,7 +2216,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0104,
+          "input_mtok": 0.0137,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -2259,7 +2259,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0228,
+          "input_mtok": 0.0057,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
@@ -10967,7 +10967,6 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -10980,9 +10979,7 @@
             "temperature",
             "tool_choice",
             "tools",
-            "top_a",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -13410,12 +13407,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.039,
+          "input_mtok": 0.04,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 7.0,
+          "output_mtok": 4.8,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13452,12 +13449,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.084,
+          "input_mtok": 0.06,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 8.0,
+          "output_mtok": 4.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14081,7 +14078,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14117,12 +14114,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.00832,
+          "input_mtok": 0.01096,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.148972,
+          "output_mtok": 0.046749,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14515,7 +14512,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.58731,
+          "output_mtok": 0.448303,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14593,5 +14590,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-09T06:50:00.200698+00:00"
+  "updated_at": "2026-10-09T12:50:00.204477+00:00"
 }
