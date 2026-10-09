@@ -174,17 +174,11 @@
       "poolside/laguna-xs-2.1:free",
       "prism-ml/ternary-bonsai-2-27b",
       "qwen/qwen3-14b",
-      "qwen/qwen3-235b-a22b",
       "qwen/qwen3-235b-a22b-thinking-2507",
       "qwen/qwen3-30b-a3b",
-      "qwen/qwen3-30b-a3b-thinking-2507",
       "qwen/qwen3-32b",
-      "qwen/qwen3-8b",
-      "qwen/qwen3-max-thinking",
       "qwen/qwen3-next-80b-a3b-thinking",
-      "qwen/qwen3-vl-235b-a22b-thinking",
       "qwen/qwen3-vl-30b-a3b-thinking",
-      "qwen/qwen3-vl-8b-thinking",
       "qwen/qwen3.5-122b-a10b",
       "qwen/qwen3.5-27b",
       "qwen/qwen3.5-35b-a3b",
@@ -196,7 +190,6 @@
       "qwen/qwen3.6-27b",
       "qwen/qwen3.6-35b-a3b",
       "qwen/qwen3.6-flash",
-      "qwen/qwen3.6-max-preview",
       "qwen/qwen3.6-plus",
       "qwen/qwen3.7-flash",
       "qwen/qwen3.7-max",
@@ -434,12 +427,9 @@
       "prism-ml/ternary-bonsai-2-27b",
       "qwen/qwen2.5-vl-72b-instruct",
       "qwen/qwen3-vl-235b-a22b-instruct",
-      "qwen/qwen3-vl-235b-a22b-thinking",
       "qwen/qwen3-vl-30b-a3b-instruct",
       "qwen/qwen3-vl-30b-a3b-thinking",
-      "qwen/qwen3-vl-32b-instruct",
       "qwen/qwen3-vl-8b-instruct",
-      "qwen/qwen3-vl-8b-thinking",
       "qwen/qwen3.5-122b-a10b",
       "qwen/qwen3.5-27b",
       "qwen/qwen3.5-35b-a3b",
@@ -558,7 +548,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 392,
+  "model_count": 381,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2090,12 +2080,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.297366,
+          "input_mtok": 0.2088,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.594732,
+          "output_mtok": 0.4176,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2216,7 +2206,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0137,
+          "input_mtok": 0.0048,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -2259,7 +2249,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0057,
+          "input_mtok": 0.0099,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
@@ -4078,16 +4068,13 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "logprobs",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -5908,12 +5895,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.5,
+          "input_mtok": 0.9,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 12.0,
+          "output_mtok": 14.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5992,7 +5979,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.465,
+          "input_mtok": 0.4344,
           "name": "MoonshotAI: Kimi K2.6",
           "output_modalities": [
             "text"
@@ -9756,43 +9743,6 @@
           "web_search": null
         },
         {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1777260242,
-          "id": "qwen/qwen3.6-max-preview",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 1.027,
-          "name": "Qwen: Qwen3.6 Max Preview",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 6.162,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "flagship",
-          "vision": false,
-          "web_search": null
-        },
-        {
           "context_k": 1000.0,
           "context_length": 1000000,
           "created": 1775133557,
@@ -9868,148 +9818,6 @@
           ],
           "tier": "flagship",
           "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1770671901,
-          "id": "qwen/qwen3-max-thinking",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.78,
-          "name": "Qwen: Qwen3 Max Thinking",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 3.9,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "flagship",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1758662808,
-          "id": "qwen/qwen3-max",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.78,
-          "name": "Qwen: Qwen3 Max",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 3.9,
-          "reasoning": false,
-          "supported_parameters": [
-            "frequency_penalty",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "flagship",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 1000.0,
-          "context_length": 1000000,
-          "created": 1758662707,
-          "id": "qwen/qwen3-coder-plus",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.65,
-          "name": "Qwen: Qwen3 Coder Plus",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 3.25,
-          "reasoning": false,
-          "supported_parameters": [
-            "frequency_penalty",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "flagship",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 1000.0,
-          "context_length": 1000000,
-          "created": 1757347599,
-          "id": "qwen/qwen-plus-2025-07-28",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.26,
-          "name": "Qwen: Qwen Plus 0728",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.78,
-          "reasoning": false,
-          "supported_parameters": [
-            "frequency_penalty",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "flagship",
-          "vision": false,
           "web_search": null
         },
         {
@@ -10337,12 +10145,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.45,
+          "input_mtok": 0.32,
           "name": "Qwen: Qwen3.6 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.7,
+          "output_mtok": 3.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10617,44 +10425,6 @@
           "web_search": null
         },
         {
-          "context_k": 131.072,
-          "context_length": 131072,
-          "created": 1760463746,
-          "id": "qwen/qwen3-vl-8b-thinking",
-          "input_modalities": [
-            "image",
-            "text"
-          ],
-          "input_mtok": 0.18,
-          "name": "Qwen: Qwen3 VL 8B Thinking",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 2.1,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
-        },
-        {
           "context_k": 262.144,
           "context_length": 262144,
           "created": 1759794479,
@@ -10663,67 +10433,24 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.2,
+          "input_mtok": 0.29,
           "name": "Qwen: Qwen3 VL 30B A3B Thinking",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.4,
+          "output_mtok": 1.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
-            "logprobs",
             "max_tokens",
-            "presence_penalty",
             "reasoning",
             "response_format",
-            "seed",
-            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 131.072,
-          "context_length": 131072,
-          "created": 1758668690,
-          "id": "qwen/qwen3-vl-235b-a22b-thinking",
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "input_mtok": 0.4,
-          "name": "Qwen: Qwen3 VL 235B A22B Thinking",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 4.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -10769,53 +10496,19 @@
           "web_search": null
         },
         {
-          "context_k": 81.92,
-          "context_length": 81920,
-          "created": 1756399192,
-          "id": "qwen/qwen3-30b-a3b-thinking-2507",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.2,
-          "name": "Qwen: Qwen3 30B A3B Thinking 2507",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 2.4,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 131.072,
-          "context_length": 131072,
+          "context_k": 128.0,
+          "context_length": 128000,
           "created": 1753449557,
           "id": "qwen/qwen3-235b-a22b-thinking-2507",
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.23,
+          "input_mtok": 0.45,
           "name": "Qwen: Qwen3 235B A22B Thinking 2507",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.3,
+          "output_mtok": 3.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10823,8 +10516,6 @@
             "max_tokens",
             "presence_penalty",
             "reasoning",
-            "response_format",
-            "seed",
             "stop",
             "temperature",
             "tool_choice",
@@ -10837,8 +10528,8 @@
           "web_search": null
         },
         {
-          "context_k": 131.072,
-          "context_length": 131072,
+          "context_k": 40.96,
+          "context_length": 40960,
           "created": 1745878604,
           "id": "qwen/qwen3-30b-a3b",
           "input_modalities": [
@@ -10875,42 +10566,8 @@
           "web_search": null
         },
         {
-          "context_k": 131.072,
-          "context_length": 131072,
-          "created": 1745876632,
-          "id": "qwen/qwen3-8b",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.117,
-          "name": "Qwen: Qwen3 8B",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.455,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 131.072,
-          "context_length": 131072,
+          "context_k": 40.96,
+          "context_length": 40960,
           "created": 1745876478,
           "id": "qwen/qwen3-14b",
           "input_modalities": [
@@ -10967,6 +10624,7 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -10979,41 +10637,9 @@
             "temperature",
             "tool_choice",
             "tools",
+            "top_a",
             "top_k",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 131.072,
-          "context_length": 131072,
-          "created": 1745875757,
-          "id": "qwen/qwen3-235b-a22b",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.455,
-          "name": "Qwen: Qwen3 235B A22B",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 1.82,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
+            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -11108,18 +10734,14 @@
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
-            "logprobs",
             "max_tokens",
-            "presence_penalty",
             "response_format",
-            "seed",
             "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "code",
@@ -11198,42 +10820,6 @@
           "web_search": null
         },
         {
-          "context_k": 131.072,
-          "context_length": 131072,
-          "created": 1761231332,
-          "id": "qwen/qwen3-vl-32b-instruct",
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "input_mtok": 0.104,
-          "name": "Qwen: Qwen3 VL 32B Instruct",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.416,
-          "reasoning": false,
-          "supported_parameters": [
-            "frequency_penalty",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "standard",
-          "vision": true,
-          "web_search": null
-        },
-        {
           "context_k": 262.144,
           "context_length": 262144,
           "created": 1760463308,
@@ -11242,12 +10828,12 @@
             "image",
             "text"
           ],
-          "input_mtok": 0.117,
+          "input_mtok": 0.25,
           "name": "Qwen: Qwen3 VL 8B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.455,
+          "output_mtok": 0.75,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -12058,12 +11644,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12098,12 +11684,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13412,7 +12998,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.8,
+          "output_mtok": 7.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13454,7 +13040,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.2,
+          "output_mtok": 8.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14031,7 +13617,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.198,
+          "input_mtok": 0.1282,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14078,7 +13664,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14114,12 +13700,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.01096,
+          "input_mtok": 0.00384,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.046749,
+          "output_mtok": 0.013203,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14243,7 +13829,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.49,
+          "input_mtok": 0.44,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14512,7 +14098,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.448303,
+          "output_mtok": 0.140682,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14590,5 +14176,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-09T12:50:00.204477+00:00"
+  "updated_at": "2026-10-09T18:50:00.193639+00:00"
 }
