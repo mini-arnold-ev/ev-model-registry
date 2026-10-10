@@ -2080,12 +2080,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2088,
+          "input_mtok": 0.9483,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.4176,
+          "output_mtok": 1.8966,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2206,7 +2206,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0046,
+          "input_mtok": 0.006,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -2249,7 +2249,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.03,
+          "input_mtok": 0.0107,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
@@ -2297,7 +2297,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.42,
+          "output_mtok": 0.8,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5895,7 +5895,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.8,
+          "input_mtok": 0.64,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -6021,12 +6021,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.45,
+          "input_mtok": 0.5,
           "name": "MoonshotAI: Kimi K2.5",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.25,
+          "output_mtok": 2.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12998,7 +12998,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 6.0,
+          "output_mtok": 4.8,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13659,7 +13659,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.016,
+          "input_mtok": 0.0025,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
@@ -13700,7 +13700,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0046,
+          "input_mtok": 0.006,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -13829,12 +13829,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.8,
+          "input_mtok": 0.42,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 13.5,
+          "output_mtok": 15.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14093,12 +14093,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.032,
+          "input_mtok": 0.04,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.72,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14140,7 +14140,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 6.0,
+          "output_mtok": 4.8,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14176,5 +14176,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-10T00:50:00.182602+00:00"
+  "updated_at": "2026-10-10T06:50:00.230780+00:00"
 }
