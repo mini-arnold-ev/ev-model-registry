@@ -2206,7 +2206,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0175,
+          "input_mtok": 0.018,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -6533,12 +6533,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.5,
+          "input_mtok": 0.6,
           "name": "NVIDIA: Nemotron 3 Ultra",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2,
+          "output_mtok": 2.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13700,7 +13700,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0175,
+          "input_mtok": 0.018,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14176,5 +14176,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-11T06:50:00.189296+00:00"
+  "updated_at": "2026-10-11T12:50:00.235459+00:00"
 }
