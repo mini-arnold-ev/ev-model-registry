@@ -456,6 +456,8 @@
       "sakana/fugu-ultra",
       "sakana/fugu-ultra-v2",
       "sakana/sakana-namazu",
+      "scaledown/extract",
+      "scaledown/summarize",
       "stepfun/step-3.7-flash",
       "stepfun/step-5-preview",
       "thinkingmachines/inkling",
@@ -550,7 +552,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 382,
+  "model_count": 384,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2041,12 +2043,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.32,
+          "input_mtok": 0.66,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.96,
+          "output_mtok": 1.98,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2082,12 +2084,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.447876,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 0.895752,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2125,12 +2127,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0441,
+          "input_mtok": 0.15,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.891,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2251,7 +2253,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0433,
+          "input_mtok": 0.05,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
@@ -5939,7 +5941,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 13.5,
+          "output_mtok": 10.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11560,6 +11562,59 @@
         }
       ]
     },
+    "scaledown": {
+      "flagship": null,
+      "models": [
+        {
+          "context_k": 1000.0,
+          "context_length": 1000000,
+          "created": 1791893360,
+          "id": "scaledown/summarize",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "input_mtok": 0.04,
+          "name": "ScaleDown: Summarize",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.0,
+          "reasoning": false,
+          "supported_parameters": [
+            "max_tokens"
+          ],
+          "tier": "standard",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 1000.0,
+          "context_length": 1000000,
+          "created": 1791893351,
+          "id": "scaledown/extract",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "input_mtok": 0.04,
+          "name": "ScaleDown: Extract",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.0,
+          "reasoning": false,
+          "supported_parameters": [
+            "max_tokens"
+          ],
+          "tier": "standard",
+          "vision": true,
+          "web_search": null
+        }
+      ]
+    },
     "stepfun": {
       "flagship": null,
       "models": [
@@ -13658,12 +13713,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.25,
+          "input_mtok": 0.25872,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 5.0,
+          "output_mtok": 0.77616,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13705,7 +13760,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.891,
+          "output_mtok": 0.63,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13875,7 +13930,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 13.5,
+          "output_mtok": 10.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14217,5 +14272,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-13T06:50:00.458460+00:00"
+  "updated_at": "2026-10-13T12:50:00.222155+00:00"
 }
