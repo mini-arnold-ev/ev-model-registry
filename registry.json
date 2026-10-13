@@ -24,7 +24,6 @@
       "anthropic/claude-sonnet-4.6",
       "anthropic/claude-sonnet-5",
       "anthropic/claude-sonnet-5.5",
-      "apodex/apodex-1.1-mini:free",
       "arcee-ai/trinity-large-thinking",
       "bytedance-seed/seed-1.6",
       "bytedance-seed/seed-1.6-flash",
@@ -67,6 +66,7 @@
       "google/gemini-3.6-flash",
       "google/gemini-3.7-flash",
       "google/gemini-3.8-flash",
+      "google/gemini-4-argon",
       "google/gemini-nano-banana-2.1",
       "google/gemma-4-26b-a4b-it",
       "google/gemma-4-26b-a4b-it:free",
@@ -76,11 +76,10 @@
       "inception/mercury-2",
       "inception/mercury-2.5",
       "inclusionai/ling-3.0-flash",
-      "inclusionai/ling-3.0-flash-fin",
-      "inclusionai/ling-3.0-flash-sante",
       "inclusionai/ling-3.0-flash-vl",
       "inclusionai/ling-3.1-flash",
       "liquid/lfm-2.5-2.6b:free",
+      "liquid/lfm-2.5-24b-a2b",
       "meituan/longcat-2.0",
       "meta/muse-glimmer-30b",
       "meta/muse-spark-1.1",
@@ -321,6 +320,7 @@
       "google/gemini-3.6-flash",
       "google/gemini-3.7-flash",
       "google/gemini-3.8-flash",
+      "google/gemini-4-argon",
       "google/gemini-nano-banana-2.1",
       "google/gemma-3-12b-it",
       "google/gemma-3-27b-it",
@@ -552,7 +552,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 384,
+  "model_count": 383,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1475,47 +1475,6 @@
         }
       ]
     },
-    "apodex": {
-      "flagship": null,
-      "models": [
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1790875335,
-          "id": "apodex/apodex-1.1-mini:free",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.0,
-          "name": "Apodex: Apodex 1.1 Mini (free)",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        }
-      ]
-    },
     "arcee-ai": {
       "flagship": "arcee-ai/trinity-large-thinking",
       "models": [
@@ -2084,12 +2043,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.447876,
+          "input_mtok": 0.427518,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.895752,
+          "output_mtok": 0.855036,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2127,12 +2086,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.0441,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.63,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2253,12 +2212,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.091,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.28,
+          "output_mtok": 0.182,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2898,6 +2857,43 @@
             "top_p"
           ],
           "tier": "flagship",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
+          "created": 1791907477,
+          "id": "google/gemini-4-argon",
+          "input_modalities": [
+            "audio",
+            "file",
+            "image",
+            "text",
+            "video"
+          ],
+          "input_mtok": 2.0,
+          "name": "Google: Gemini 4 Argon",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 10.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "tier": "reasoning",
           "vision": true,
           "web_search": null
         },
@@ -3948,12 +3944,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0,
+          "input_mtok": 0.075,
           "name": "inclusionAI: Ling 3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0,
+          "output_mtok": 0.225,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3977,8 +3973,8 @@
           "web_search": null
         },
         {
-          "context_k": 262.144,
-          "context_length": 262144,
+          "context_k": 131.072,
+          "context_length": 131072,
           "created": 1789056114,
           "id": "inclusionai/ling-3.0-flash-vl",
           "input_modalities": [
@@ -3986,18 +3982,17 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.021,
+          "input_mtok": 0.06,
           "name": "inclusionAI: Ling 3.0 Flash VL",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0616,
+          "output_mtok": 0.18,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -4011,83 +4006,10 @@
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
           "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1788545946,
-          "id": "inclusionai/ling-3.0-flash-sante",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.042,
-          "name": "inclusionAI: Ling 3.0 Flash Sante",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.1232,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1787846290,
-          "id": "inclusionai/ling-3.0-flash-fin",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.042,
-          "name": "inclusionAI: Ling 3.0 Flash Fin",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.1232,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
           "web_search": null
         },
         {
@@ -4208,6 +4130,43 @@
       "flagship": null,
       "models": [
         {
+          "context_k": 128.0,
+          "context_length": 128000,
+          "created": 1791912025,
+          "id": "liquid/lfm-2.5-24b-a2b",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": 0.1,
+          "name": "LiquidAI: LFM2.5-24B-A2B",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 1.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k"
+          ],
+          "tier": "reasoning",
+          "vision": false,
+          "web_search": null
+        },
+        {
           "context_k": 65.536,
           "context_length": 65536,
           "created": 1786470519,
@@ -4240,8 +4199,7 @@
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
-            "top_p"
+            "top_logprobs"
           ],
           "tier": "reasoning",
           "vision": false,
@@ -10270,12 +10228,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.08,
+          "input_mtok": 0.15,
           "name": "Qwen: Qwen3.5-35B-A3B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.75,
+          "output_mtok": 1.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10665,7 +10623,6 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -10678,9 +10635,7 @@
             "temperature",
             "tool_choice",
             "tools",
-            "top_a",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -11738,12 +11693,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11780,12 +11735,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13136,7 +13091,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 7.0,
+          "output_mtok": 5.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13713,12 +13668,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.25872,
+          "input_mtok": 0.24948,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.77616,
+          "output_mtok": 0.74844,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14231,12 +14186,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.055,
+          "input_mtok": 0.079,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 5.0,
+          "output_mtok": 4.8,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14272,5 +14227,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-13T12:50:00.222155+00:00"
+  "updated_at": "2026-10-13T18:50:00.232359+00:00"
 }
