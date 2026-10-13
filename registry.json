@@ -2041,12 +2041,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.66,
+          "input_mtok": 1.32,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.98,
+          "output_mtok": 3.96,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2082,12 +2082,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.41238,
+          "input_mtok": 0.95526,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.82476,
+          "output_mtok": 1.91052,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2125,12 +2125,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.0441,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.891,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2251,7 +2251,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0256,
+          "input_mtok": 0.0433,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
@@ -3228,12 +3228,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.0765,
+          "input_mtok": 0.09,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.255,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5939,7 +5939,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.0,
+          "output_mtok": 13.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11694,6 +11694,7 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_completion_tokens",
             "max_tokens",
             "min_p",
@@ -11709,6 +11710,7 @@
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -13656,12 +13658,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.24948,
+          "input_mtok": 0.25,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.74844,
+          "output_mtok": 5.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13873,7 +13875,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.0,
+          "output_mtok": 13.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14215,5 +14217,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-13T00:50:00.467105+00:00"
+  "updated_at": "2026-10-13T06:50:00.458460+00:00"
 }
