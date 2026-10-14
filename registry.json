@@ -2045,12 +2045,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.447876,
+          "input_mtok": 0.395328,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.895752,
+          "output_mtok": 0.790656,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2088,7 +2088,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.02016,
+          "input_mtok": 0.01584,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
@@ -3956,13 +3956,17 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
+            "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -5898,7 +5902,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.7,
+          "input_mtok": 0.5,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -11725,12 +11729,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11767,12 +11771,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13034,12 +13038,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.036,
+          "input_mtok": 0.15,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.9,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13118,7 +13122,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.04,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
@@ -13700,7 +13704,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.202,
+          "input_mtok": 0.1307,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -13742,7 +13746,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.02016,
+          "input_mtok": 0.01584,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
@@ -13912,12 +13916,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.536,
+          "input_mtok": 0.49,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 14.0,
+          "output_mtok": 14.9,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14251,7 +14255,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0576,
+          "input_mtok": 0.063,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
@@ -14292,5 +14296,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-14T12:50:00.195362+00:00"
+  "updated_at": "2026-10-14T18:50:00.209773+00:00"
 }
