@@ -2004,12 +2004,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.32,
+          "input_mtok": 0.66,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.96,
+          "output_mtok": 1.98,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2045,12 +2045,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.447876,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 0.895752,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2088,12 +2088,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0037,
+          "input_mtok": 0.02016,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.891,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13700,7 +13700,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.225,
+          "input_mtok": 0.202,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -13742,12 +13742,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0037,
+          "input_mtok": 0.02016,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.891,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13912,7 +13912,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.56,
+          "input_mtok": 0.536,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14251,7 +14251,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.063,
+          "input_mtok": 0.0576,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
@@ -14292,5 +14292,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-14T06:50:00.190330+00:00"
+  "updated_at": "2026-10-14T12:50:00.195362+00:00"
 }
