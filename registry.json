@@ -163,6 +163,7 @@
       "openrouter/auto",
       "openrouter/auto-beta",
       "openrouter/free",
+      "openrouter/pareto-code",
       "perceptron/perceptron-mk1",
       "perceptron/perceptron-mk1.5",
       "perplexity/sonar-deep-research",
@@ -465,8 +466,8 @@
       "thinkingmachines/inkling-small:free",
       "thinkingmachines/inkling:free",
       "typesafe/jev-router",
-      "unbiased/pareto",
       "unbiased/pareto-26.10-preview",
+      "unbiased/pareto-26.9",
       "x-ai/grok-4.20",
       "x-ai/grok-4.20-multi-agent",
       "x-ai/grok-4.3",
@@ -496,6 +497,7 @@
       "~openai/gpt-mini-latest",
       "~openai/gpt-sol-latest",
       "~openai/gpt-terra-latest",
+      "~unbiased/pareto-latest",
       "~x-ai/grok-latest",
       "~z-ai/glm-flash-latest"
     ],
@@ -552,7 +554,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 383,
+  "model_count": 384,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2043,12 +2045,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.427518,
+          "input_mtok": 0.95526,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.855036,
+          "output_mtok": 1.91052,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2086,12 +2088,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0441,
+          "input_mtok": 0.15,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.63,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3226,12 +3228,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.0765,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.255,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4137,16 +4139,17 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1,
+          "input_mtok": 0.05,
           "name": "LiquidAI: LFM2.5-24B-A2B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.0,
+          "output_mtok": 0.7,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
+            "logprobs",
             "max_completion_tokens",
             "max_tokens",
             "min_p",
@@ -4160,7 +4163,8 @@
             "temperature",
             "tool_choice",
             "tools",
-            "top_k"
+            "top_k",
+            "top_logprobs"
           ],
           "tier": "reasoning",
           "vision": false,
@@ -5091,12 +5095,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.255,
           "name": "MiniMax: MiniMax M2",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 1.02,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -9005,6 +9009,51 @@
           "web_search": true
         },
         {
+          "context_k": 2000.0,
+          "context_length": 2000000,
+          "created": 1776747900,
+          "id": "openrouter/pareto-code",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": null,
+          "name": "Pareto Code Router",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": null,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "logprobs",
+            "max_completion_tokens",
+            "max_tokens",
+            "min_p",
+            "parallel_tool_calls",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_a",
+            "top_k",
+            "top_logprobs",
+            "top_p",
+            "verbosity"
+          ],
+          "tier": "reasoning",
+          "vision": false,
+          "web_search": null
+        },
+        {
           "context_k": 200.0,
           "context_length": 200000,
           "created": 1769917427,
@@ -9094,26 +9143,6 @@
           "tier": "reasoning",
           "vision": true,
           "web_search": true
-        },
-        {
-          "context_k": 2000.0,
-          "context_length": 2000000,
-          "created": 1776747900,
-          "id": "openrouter/pareto-code",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": null,
-          "name": "Pareto Code Router",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": null,
-          "reasoning": false,
-          "supported_parameters": [],
-          "tier": "code",
-          "vision": false,
-          "web_search": null
         },
         {
           "context_k": 1000.0,
@@ -10391,12 +10420,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.55,
+          "input_mtok": 0.5,
           "name": "Qwen: Qwen3.5 397B A17B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.5,
+          "output_mtok": 3.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10623,6 +10652,7 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -10635,7 +10665,9 @@
             "temperature",
             "tool_choice",
             "tools",
+            "top_a",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -11693,12 +11725,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11735,12 +11767,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12226,6 +12258,34 @@
       "flagship": null,
       "models": [
         {
+          "context_k": 262.144,
+          "context_length": 262144,
+          "created": 1791930537,
+          "id": "unbiased/pareto-26.9",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 2.5,
+          "name": "Pareto 26.9",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 7.5,
+          "reasoning": false,
+          "supported_parameters": [
+            "max_tokens",
+            "response_format",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "tier": "standard",
+          "vision": true,
+          "web_search": null
+        },
+        {
           "context_k": 1048.576,
           "context_length": 1048576,
           "created": 1790863623,
@@ -12243,34 +12303,6 @@
           "reasoning": false,
           "supported_parameters": [
             "max_tokens",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "tier": "standard",
-          "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1789686178,
-          "id": "unbiased/pareto",
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "input_mtok": 2.5,
-          "name": "Pareto",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 7.5,
-          "reasoning": false,
-          "supported_parameters": [
-            "max_tokens",
-            "response_format",
             "temperature",
             "tool_choice",
             "tools",
@@ -13002,7 +13034,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0261,
+          "input_mtok": 0.036,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
@@ -13044,7 +13076,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.079,
+          "input_mtok": 0.07,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
@@ -13086,12 +13118,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.06,
+          "input_mtok": 0.05,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 5.6,
+          "output_mtok": 7.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13128,12 +13160,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.966,
+          "input_mtok": 1.33,
           "name": "Z.ai: GLM 5.1",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.036,
+          "output_mtok": 4.18,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13668,12 +13700,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.24948,
+          "input_mtok": 0.225,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.74844,
+          "output_mtok": 8.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13710,12 +13742,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0441,
+          "input_mtok": 0.0396,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.63,
+          "output_mtok": 0.891,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13880,12 +13912,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.73,
+          "input_mtok": 0.72,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.0,
+          "output_mtok": 24.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14090,6 +14122,39 @@
         }
       ]
     },
+    "~unbiased": {
+      "flagship": null,
+      "models": [
+        {
+          "context_k": 262.144,
+          "context_length": 262144,
+          "created": 1791933050,
+          "id": "~unbiased/pareto-latest",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 2.5,
+          "name": "Pareto Latest",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 7.5,
+          "reasoning": false,
+          "supported_parameters": [
+            "max_tokens",
+            "response_format",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "tier": "standard",
+          "vision": true,
+          "web_search": null
+        }
+      ]
+    },
     "~x-ai": {
       "flagship": null,
       "models": [
@@ -14144,7 +14209,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0261,
+          "input_mtok": 0.036,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
@@ -14186,12 +14251,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.079,
+          "input_mtok": 0.056,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.8,
+          "output_mtok": 4.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14227,5 +14292,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-13T18:50:00.232359+00:00"
+  "updated_at": "2026-10-14T00:50:00.204013+00:00"
 }
