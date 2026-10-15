@@ -19,7 +19,6 @@
       "anthropic/claude-opus-4.8",
       "anthropic/claude-opus-5",
       "anthropic/claude-opus-5.5",
-      "anthropic/claude-sonnet-4",
       "anthropic/claude-sonnet-4.5",
       "anthropic/claude-sonnet-4.6",
       "anthropic/claude-sonnet-5",
@@ -87,6 +86,7 @@
       "meta/muse-spark-1.2-contributor",
       "meta/muse-spark-1.3",
       "meta/muse-spark-1.3-contributor",
+      "meta/muse-spark-open",
       "meta/muse-wonder",
       "minimax/minimax-m1",
       "minimax/minimax-m2",
@@ -115,6 +115,8 @@
       "nvidia/nemotron-3.5-content-safety:free",
       "nvidia/nemotron-3.5-lightning",
       "nvidia/nemotron-3.5-lightning:free",
+      "nvidia/nemotron-3.5-super-vl",
+      "nvidia/nemotron-3.5-super-vl:free",
       "openai/gpt-5",
       "openai/gpt-5-image",
       "openai/gpt-5-image-mini",
@@ -284,7 +286,6 @@
       "anthropic/claude-opus-4.8",
       "anthropic/claude-opus-5",
       "anthropic/claude-opus-5.5",
-      "anthropic/claude-sonnet-4",
       "anthropic/claude-sonnet-4.5",
       "anthropic/claude-sonnet-4.6",
       "anthropic/claude-sonnet-5",
@@ -342,6 +343,7 @@
       "meta/muse-spark-1.2-contributor",
       "meta/muse-spark-1.3",
       "meta/muse-spark-1.3-contributor",
+      "meta/muse-spark-open",
       "meta/muse-wonder",
       "minimax/minimax-01",
       "minimax/minimax-m3",
@@ -365,6 +367,8 @@
       "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "nvidia/nemotron-3.5-content-safety",
       "nvidia/nemotron-3.5-content-safety:free",
+      "nvidia/nemotron-3.5-super-vl",
+      "nvidia/nemotron-3.5-super-vl:free",
       "openai/gpt-4-turbo",
       "openai/gpt-4.1",
       "openai/gpt-4.1-mini",
@@ -466,7 +470,6 @@
       "thinkingmachines/inkling-small:free",
       "thinkingmachines/inkling:free",
       "typesafe/jev-router",
-      "unbiased/pareto-26.10-preview",
       "unbiased/pareto-26.9",
       "x-ai/grok-4.20",
       "x-ai/grok-4.20-multi-agent",
@@ -554,7 +557,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 384,
+  "model_count": 385,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1442,38 +1445,6 @@
           "tier": "reasoning",
           "vision": true,
           "web_search": null
-        },
-        {
-          "context_k": 200.0,
-          "context_length": 200000,
-          "created": 1747930371,
-          "id": "anthropic/claude-sonnet-4",
-          "input_modalities": [
-            "image",
-            "text",
-            "file"
-          ],
-          "input_mtok": 3.0,
-          "name": "Anthropic: Claude Sonnet 4",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 15.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
         }
       ]
     },
@@ -2045,12 +2016,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.447876,
+          "input_mtok": 0.395328,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.895752,
+          "output_mtok": 0.790656,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2088,12 +2059,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.02376,
+          "input_mtok": 0.0064,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.72,
+          "output_mtok": 0.8,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4305,6 +4276,51 @@
         {
           "context_k": 1048.576,
           "context_length": 1048576,
+          "created": 1792087069,
+          "id": "meta/muse-spark-open",
+          "input_modalities": [
+            "text",
+            "image",
+            "video",
+            "file",
+            "audio"
+          ],
+          "input_mtok": 1.25,
+          "name": "Meta: Muse Spark Open",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 4.25,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
           "created": 1791807945,
           "id": "meta/muse-wonder",
           "input_modalities": [
@@ -5615,12 +5631,12 @@
             "image",
             "text"
           ],
-          "input_mtok": 0.075,
+          "input_mtok": 0.09375,
           "name": "Mistral: Mistral Small 3.2 24B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.2,
+          "output_mtok": 0.25,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -6402,6 +6418,81 @@
     "nvidia": {
       "flagship": null,
       "models": [
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
+          "created": 1792076662,
+          "id": "nvidia/nemotron-3.5-super-vl",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "input_mtok": 0.15,
+          "name": "NVIDIA: Nemotron 3.5 Super VL",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.5,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 1000.0,
+          "context_length": 1000000,
+          "created": 1792076662,
+          "id": "nvidia/nemotron-3.5-super-vl:free",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "input_mtok": 0.0,
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        },
         {
           "context_k": 262.144,
           "context_length": 262144,
@@ -10179,12 +10270,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.32,
+          "input_mtok": 0.25,
           "name": "Qwen: Qwen3.6 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.2,
+          "output_mtok": 2.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11737,12 +11828,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11779,12 +11870,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12288,33 +12379,6 @@
           "supported_parameters": [
             "max_tokens",
             "response_format",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "tier": "standard",
-          "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 1048.576,
-          "context_length": 1048576,
-          "created": 1790863623,
-          "id": "unbiased/pareto-26.10-preview",
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "input_mtok": 0.8,
-          "name": "Pareto 26.10 Preview",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 3.2,
-          "reasoning": false,
-          "supported_parameters": [
-            "max_tokens",
             "temperature",
             "tool_choice",
             "tools",
@@ -13088,12 +13152,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.079,
+          "input_mtok": 0.11,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.8,
+          "output_mtok": 6.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13130,12 +13194,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.02,
+          "input_mtok": 0.65,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 7.0,
+          "output_mtok": 10.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13712,7 +13776,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.202,
+          "input_mtok": 0.1307,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -13754,12 +13818,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.02376,
+          "input_mtok": 0.0064,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.72,
+          "output_mtok": 0.8,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13924,7 +13988,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.4,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
@@ -14263,7 +14327,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.063,
+          "input_mtok": 0.0608,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
@@ -14304,5 +14368,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-15T12:50:00.236269+00:00"
+  "updated_at": "2026-10-15T18:50:00.235270+00:00"
 }
