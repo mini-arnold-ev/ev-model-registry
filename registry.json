@@ -2004,12 +2004,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.32,
+          "input_mtok": 0.66,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.96,
+          "output_mtok": 1.98,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2045,12 +2045,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.447876,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 0.895752,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2088,12 +2088,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.01368,
+          "input_mtok": 0.02376,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.891,
+          "output_mtok": 0.72,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4745,12 +4745,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0509,
+          "input_mtok": 0.05,
           "name": "Meta: Llama 3.2 3B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.335,
+          "output_mtok": 0.33,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -13046,12 +13046,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.036,
+          "input_mtok": 0.15,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.9,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13130,7 +13130,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.037,
+          "input_mtok": 0.02,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
@@ -13712,7 +13712,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.225,
+          "input_mtok": 0.202,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -13754,12 +13754,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.01368,
+          "input_mtok": 0.02376,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.891,
+          "output_mtok": 0.72,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13924,12 +13924,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.29,
+          "input_mtok": 0.3,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 24.0,
+          "output_mtok": 14.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14263,7 +14263,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.06,
+          "input_mtok": 0.063,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
@@ -14304,5 +14304,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-15T06:50:00.212060+00:00"
+  "updated_at": "2026-10-15T12:50:00.236269+00:00"
 }
