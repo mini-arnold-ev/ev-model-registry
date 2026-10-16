@@ -1979,12 +1979,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.32,
+          "input_mtok": 0.66,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.96,
+          "output_mtok": 1.98,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2020,12 +2020,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.447876,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 0.895752,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2146,7 +2146,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0111,
+          "input_mtok": 0.018,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -4659,12 +4659,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.18,
+          "input_mtok": 0.1,
           "name": "Meta: Llama 4 Scout",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.59,
+          "output_mtok": 0.3,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -4695,12 +4695,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.59,
+          "input_mtok": 0.1,
           "name": "Meta: Llama 3.3 70B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.79,
+          "output_mtok": 0.32,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -5990,7 +5990,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 11.936,
+          "output_mtok": 12.533,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13178,7 +13178,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.01908,
+          "input_mtok": 0.01836,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
@@ -13262,12 +13262,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.62,
+          "input_mtok": 0.037,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.42,
+          "output_mtok": 9.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13844,12 +13844,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.25,
+          "input_mtok": 0.24948,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 5.0,
+          "output_mtok": 0.74844,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13927,7 +13927,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.00999,
+          "input_mtok": 0.0162,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14353,7 +14353,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.01908,
+          "input_mtok": 0.01836,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
@@ -14436,5 +14436,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-16T06:50:00.213888+00:00"
+  "updated_at": "2026-10-16T12:50:00.219412+00:00"
 }
