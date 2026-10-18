@@ -480,6 +480,7 @@
       "thinkingmachines/inkling-small:free",
       "thinkingmachines/inkling:free",
       "typesafe/jev-router",
+      "unbiased/pareto-26.10",
       "unbiased/pareto-26.9",
       "x-ai/grok-4.20",
       "x-ai/grok-4.20-multi-agent",
@@ -567,7 +568,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 391,
+  "model_count": 392,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2111,12 +2112,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.0552,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.144,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2194,12 +2195,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0064,
+          "input_mtok": 0.1,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.28,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3758,7 +3759,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.45,
+          "output_mtok": 0.35,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -11268,7 +11269,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1,
+          "input_mtok": 0.09,
           "name": "Qwen: Qwen3 30B A3B Instruct 2507",
           "output_modalities": [
             "text"
@@ -12037,12 +12038,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12077,12 +12078,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12567,6 +12568,33 @@
     "unbiased": {
       "flagship": null,
       "models": [
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
+          "created": 1792073620,
+          "id": "unbiased/pareto-26.10",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 0.8,
+          "name": "Pareto 26.10",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 3.2,
+          "reasoning": false,
+          "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "tier": "standard",
+          "vision": true,
+          "web_search": null
+        },
         {
           "context_k": 262.144,
           "context_length": 262144,
@@ -13359,12 +13387,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.048,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.5,
+          "output_mtok": 0.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13406,7 +13434,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.8,
+          "output_mtok": 3.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13665,12 +13693,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.6,
+          "input_mtok": 0.54,
           "name": "Z.ai: GLM 4.7",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2,
+          "output_mtok": 1.98,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14067,12 +14095,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.08,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.55,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14108,12 +14136,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0064,
+          "input_mtok": 0.0052,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.28,
+          "output_mtok": 0.143616,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14451,24 +14479,23 @@
       "flagship": null,
       "models": [
         {
-          "context_k": 262.144,
-          "context_length": 262144,
+          "context_k": 1048.576,
+          "context_length": 1048576,
           "created": 1791933050,
           "id": "~unbiased/pareto-latest",
           "input_modalities": [
             "text",
             "image"
           ],
-          "input_mtok": 2.5,
+          "input_mtok": 0.8,
           "name": "Pareto Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 7.5,
+          "output_mtok": 3.2,
           "reasoning": false,
           "supported_parameters": [
             "max_tokens",
-            "response_format",
             "temperature",
             "tool_choice",
             "tools",
@@ -14534,12 +14561,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.06,
+          "input_mtok": 0.048,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.6,
+          "output_mtok": 0.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14617,5 +14644,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-17T18:50:00.187974+00:00"
+  "updated_at": "2026-10-18T00:50:00.181582+00:00"
 }
