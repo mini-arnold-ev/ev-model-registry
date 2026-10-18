@@ -2082,8 +2082,10 @@
             "include_reasoning",
             "logit_bias",
             "logprobs",
+            "max_completion_tokens",
             "max_tokens",
             "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -2112,7 +2114,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0552,
+          "input_mtok": 0.0648,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
@@ -13434,7 +13436,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.2,
+          "output_mtok": 4.8,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14095,20 +14097,22 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.08,
+          "input_mtok": 0.05,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.5,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
             "logprobs",
+            "max_completion_tokens",
             "max_tokens",
             "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -14136,12 +14140,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0052,
+          "input_mtok": 0.0065,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.143616,
+          "output_mtok": 0.45,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14644,5 +14648,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-18T00:50:00.181582+00:00"
+  "updated_at": "2026-10-18T06:50:00.171650+00:00"
 }
