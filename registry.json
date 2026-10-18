@@ -2114,7 +2114,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0648,
+          "input_mtok": 0.04,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
@@ -2197,12 +2197,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1,
+          "input_mtok": 0.0086,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.45,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13436,7 +13436,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.8,
+          "output_mtok": 2.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14140,7 +14140,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0065,
+          "input_mtok": 0.0086,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14269,12 +14269,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.27,
+          "input_mtok": 0.25,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 14.0,
+          "output_mtok": 8.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14607,12 +14607,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0632,
+          "input_mtok": 0.075,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.4,
+          "output_mtok": 2.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14648,5 +14648,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-18T06:50:00.171650+00:00"
+  "updated_at": "2026-10-18T12:50:00.197773+00:00"
 }
