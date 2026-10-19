@@ -75,6 +75,7 @@
       "ibm-granite/granite-4.2-8b",
       "inception/mercury-2",
       "inception/mercury-2.5",
+      "inception/mercury-3",
       "inclusionai/ling-3.0-flash",
       "inclusionai/ling-3.0-flash-vl",
       "inclusionai/ling-3.1-flash",
@@ -569,7 +570,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 390,
+  "model_count": 391,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2028,12 +2029,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.400548,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 0.801096,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2115,7 +2116,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0376,
+          "input_mtok": 0.032,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
@@ -3911,6 +3912,37 @@
     "inception": {
       "flagship": null,
       "models": [
+        {
+          "context_k": 1000.0,
+          "context_length": 1000000,
+          "created": 1792158337,
+          "id": "inception/mercury-3",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": 0.1,
+          "name": "Inception: Mercury 3",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.35,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools"
+          ],
+          "tier": "reasoning",
+          "vision": false,
+          "web_search": null
+        },
         {
           "context_k": 260.0,
           "context_length": 260000,
@@ -11978,12 +12010,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12018,12 +12050,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13993,7 +14025,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.202,
+          "input_mtok": 0.1307,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14035,7 +14067,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.047,
+          "input_mtok": 0.04,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
@@ -14078,7 +14110,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.00912,
+          "input_mtok": 0.00392,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14212,7 +14244,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 13.0,
+          "output_mtok": 16.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14545,7 +14577,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.057,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
@@ -14586,5 +14618,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-19T12:50:00.244533+00:00"
+  "updated_at": "2026-10-19T18:50:00.193192+00:00"
 }
