@@ -33,7 +33,6 @@
       "cohere/command-a-plus",
       "cohere/north-mini-code:free",
       "deepseek/deepseek-chat-v3.1",
-      "deepseek/deepseek-r1",
       "deepseek/deepseek-r1-0528",
       "deepseek/deepseek-v3.1-terminus",
       "deepseek/deepseek-v3.2",
@@ -96,6 +95,7 @@
       "minimax/minimax-m2.5",
       "minimax/minimax-m2.7",
       "minimax/minimax-m3",
+      "minimax/minimax-m3.1-flash:free",
       "mistralai/mistral-large-4-0",
       "mistralai/mistral-medium-3-5",
       "mistralai/mistral-small-2603",
@@ -355,6 +355,7 @@
       "meta/muse-wonder",
       "minimax/minimax-01",
       "minimax/minimax-m3",
+      "minimax/minimax-m3.1-flash:free",
       "mistralai/ministral-14b-2512",
       "mistralai/ministral-3b-2512",
       "mistralai/ministral-8b-2512",
@@ -554,7 +555,7 @@
     "deepseek": "deepseek/deepseek-v4-pro-0813",
     "google": "google/gemini-3-pro-image",
     "gryphe": "gryphe/mythomax-l2-13b",
-    "minimax": "minimax/minimax-m3",
+    "minimax": "minimax/minimax-m3.1-flash:free",
     "mistral": "mistralai/mistral-large-4-0",
     "morph": "morph/morph-v3-large",
     "nex-agi": "nex-agi/nex-n2.5-pro",
@@ -568,7 +569,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 392,
+  "model_count": 390,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2070,12 +2071,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.15,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2114,7 +2115,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0456,
+          "input_mtok": 0.0376,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
@@ -2454,41 +2455,6 @@
             "tools",
             "top_k",
             "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 64.0,
-          "context_length": 64000,
-          "created": 1737381095,
-          "id": "deepseek/deepseek-r1",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.7,
-          "name": "DeepSeek: R1",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 2.5,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
             "top_p"
           ],
           "tier": "reasoning",
@@ -4710,8 +4676,8 @@
           "web_search": null
         },
         {
-          "context_k": 1048.576,
-          "context_length": 1048576,
+          "context_k": 524.288,
+          "context_length": 524288,
           "created": 1743881822,
           "id": "meta-llama/llama-4-maverick",
           "input_modalities": [
@@ -5001,43 +4967,44 @@
           "tier": "standard",
           "vision": false,
           "web_search": null
-        },
-        {
-          "context_k": 65.535,
-          "context_length": 65535,
-          "created": 1713225600,
-          "id": "microsoft/wizardlm-2-8x22b",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.62,
-          "name": "WizardLM-2 8x22B",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.62,
-          "reasoning": false,
-          "supported_parameters": [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "standard",
-          "vision": false,
-          "web_search": null
         }
       ]
     },
     "minimax": {
-      "flagship": "minimax/minimax-m3",
+      "flagship": "minimax/minimax-m3.1-flash:free",
       "models": [
+        {
+          "context_k": 1000.0,
+          "context_length": 1000000,
+          "created": 1792379569,
+          "id": "minimax/minimax-m3.1-flash:free",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "input_mtok": 0.0,
+          "name": "MiniMax: MiniMax M3.1 Flash (free)",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "tier": "flagship",
+          "vision": true,
+          "web_search": null
+        },
         {
           "context_k": 1048.576,
           "context_length": 1048576,
@@ -10565,12 +10532,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.195,
+          "input_mtok": 0.27,
           "name": "Qwen: Qwen3.5-27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.56,
+          "output_mtok": 2.16,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11757,39 +11724,6 @@
     "sao10k": {
       "flagship": null,
       "models": [
-        {
-          "context_k": 131.072,
-          "context_length": 131072,
-          "created": 1734535928,
-          "id": "sao10k/l3.3-euryale-70b",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.65,
-          "name": "Sao10K: Llama 3.3 Euryale 70B",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.75,
-          "reasoning": false,
-          "supported_parameters": [
-            "frequency_penalty",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "standard",
-          "vision": false,
-          "web_search": null
-        },
         {
           "context_k": 131.072,
           "context_length": 131072,
@@ -13393,12 +13327,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0312,
+          "input_mtok": 0.048,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.2,
+          "output_mtok": 0.16,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13775,12 +13709,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.5,
+          "input_mtok": 0.55,
           "name": "Z.ai: GLM 4.6",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.0,
+          "output_mtok": 2.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14059,7 +13993,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.225,
+          "input_mtok": 0.202,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14101,12 +14035,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.047,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.15,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14144,7 +14078,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0052,
+          "input_mtok": 0.00912,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14278,7 +14212,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 16.0,
+          "output_mtok": 13.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14569,12 +14503,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0312,
+          "input_mtok": 0.048,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.2,
+          "output_mtok": 0.16,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14611,7 +14545,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.04,
+          "input_mtok": 0.05,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
@@ -14652,5 +14586,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-19T06:50:00.174984+00:00"
+  "updated_at": "2026-10-19T12:50:00.244533+00:00"
 }
