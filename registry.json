@@ -2029,12 +2029,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.447876,
+          "input_mtok": 0.415686,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.895752,
+          "output_mtok": 0.831372,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2116,7 +2116,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.049,
+          "input_mtok": 0.02394,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
@@ -2199,12 +2199,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.44,
+          "input_mtok": 0.04444,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.32,
+          "output_mtok": 0.13332,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6901,12 +6901,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.08,
+          "input_mtok": 0.3,
           "name": "NVIDIA: Nemotron 3 Super",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.45,
+          "output_mtok": 2.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12009,12 +12009,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12049,12 +12049,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14024,12 +14024,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2244,
+          "input_mtok": 0.1307,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6732,
+          "output_mtok": 8.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14109,12 +14109,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0475,
+          "input_mtok": 0.0422,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1568,
+          "output_mtok": 0.1729,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14617,5 +14617,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-21T12:50:00.264691+00:00"
+  "updated_at": "2026-10-21T18:50:00.241808+00:00"
 }
