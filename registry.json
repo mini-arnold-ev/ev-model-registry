@@ -2030,12 +2030,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.442656,
+          "input_mtok": 0.95526,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.885312,
+          "output_mtok": 1.91052,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2117,12 +2117,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.165,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 0.66,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2201,12 +2201,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.04444,
+          "input_mtok": 0.44,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.13332,
+          "output_mtok": 1.32,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3268,12 +3268,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.0765,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.255,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5732,12 +5732,12 @@
             "image",
             "text"
           ],
-          "input_mtok": 0.09375,
+          "input_mtok": 0.075,
           "name": "Mistral: Mistral Small 3.2 24B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.25,
+          "output_mtok": 0.2,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -6094,8 +6094,10 @@
             "include_reasoning",
             "logit_bias",
             "logprobs",
+            "max_completion_tokens",
             "max_tokens",
             "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -12048,12 +12050,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12091,12 +12093,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13168,21 +13170,16 @@
           "output_mtok": 0.609,
           "reasoning": true,
           "supported_parameters": [
-            "frequency_penalty",
             "include_reasoning",
             "logprobs",
             "max_tokens",
-            "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
             "seed",
-            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_logprobs",
             "top_p"
           ],
@@ -13258,7 +13255,6 @@
             "max_tokens",
             "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
             "seed",
             "stop",
@@ -13442,12 +13438,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7,
+          "input_mtok": 0.079,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2,
+          "output_mtok": 1.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14066,7 +14062,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1307,
+          "input_mtok": 0.225,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14151,12 +14147,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0422,
+          "input_mtok": 0.0475,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1729,
+          "output_mtok": 0.1568,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14285,15 +14281,17 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 24.0,
+          "output_mtok": 16.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
             "logprobs",
+            "max_completion_tokens",
             "max_tokens",
             "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -14659,5 +14657,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-22T18:50:00.237410+00:00"
+  "updated_at": "2026-10-23T00:50:00.203164+00:00"
 }
