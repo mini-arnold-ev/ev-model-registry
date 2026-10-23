@@ -1989,12 +1989,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.66,
+          "input_mtok": 1.32,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.98,
+          "output_mtok": 3.96,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2073,12 +2073,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3268,12 +3268,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.0765,
+          "input_mtok": 0.09,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.255,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5007,8 +5007,8 @@
       "flagship": "minimax/minimax-m3.1-flash",
       "models": [
         {
-          "context_k": 1000.0,
-          "context_length": 1000000,
+          "context_k": 1048.576,
+          "context_length": 1048576,
           "created": 1792379569,
           "id": "minimax/minimax-m3.1-flash",
           "input_modalities": [
@@ -5024,14 +5024,25 @@
           "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
+            "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
+            "logprobs",
             "max_tokens",
+            "min_p",
+            "presence_penalty",
             "reasoning",
             "reasoning_effort",
+            "repetition_penalty",
             "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
+            "top_logprobs",
             "top_p"
           ],
           "tier": "flagship",
@@ -10240,12 +10251,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.04,
+          "input_mtok": 0.2,
           "name": "Qwen: Qwen3.8 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.35,
+          "output_mtok": 2.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10483,12 +10494,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.08,
+          "input_mtok": 0.17,
           "name": "Qwen: Qwen3.5-9B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.13,
+          "output_mtok": 0.25,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14062,7 +14073,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.225,
+          "input_mtok": 0.2247,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14657,5 +14668,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-23T00:50:00.203164+00:00"
+  "updated_at": "2026-10-23T06:50:00.174322+00:00"
 }
