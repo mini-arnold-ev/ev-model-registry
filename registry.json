@@ -2033,12 +2033,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.652152,
+          "input_mtok": 0.48981,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.304304,
+          "output_mtok": 0.97962,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2146,6 +2146,7 @@
             "temperature",
             "tool_choice",
             "tools",
+            "top_a",
             "top_k",
             "top_logprobs",
             "top_p"
@@ -14329,7 +14330,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 16.0,
+          "output_mtok": 24.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14622,12 +14623,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.028847,
+          "input_mtok": 0.0175,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.121602,
+          "output_mtok": 0.1425,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14705,5 +14706,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-24T00:50:00.216605+00:00"
+  "updated_at": "2026-10-24T06:50:00.171897+00:00"
 }
