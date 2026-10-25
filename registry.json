@@ -79,6 +79,7 @@
       "inclusionai/ling-3.0-flash",
       "inclusionai/ling-3.0-flash-vl",
       "inclusionai/ling-3.1-flash",
+      "liquid/lfm-2.5-2.6b",
       "liquid/lfm-2.5-2.6b:free",
       "liquid/lfm-2.5-24b-a2b",
       "meituan/longcat-2.0",
@@ -574,7 +575,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 391,
+  "model_count": 392,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -4252,6 +4253,46 @@
           "web_search": null
         },
         {
+          "context_k": 128.0,
+          "context_length": 128000,
+          "created": 1786470519,
+          "id": "liquid/lfm-2.5-2.6b",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": 0.35,
+          "name": "LiquidAI: LFM2.5-2.6B",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.5,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_completion_tokens",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": false,
+          "web_search": null
+        },
+        {
           "context_k": 65.536,
           "context_length": 65536,
           "created": 1786470519,
@@ -4865,12 +4906,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0509,
+          "input_mtok": 0.05,
           "name": "Meta: Llama 3.2 3B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.335,
+          "output_mtok": 0.33,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -10422,12 +10463,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.25,
+          "input_mtok": 0.32,
           "name": "Qwen: Qwen3.6 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.0,
+          "output_mtok": 3.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13419,12 +13460,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0908,
+          "input_mtok": 0.079,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.61,
+          "output_mtok": 1.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14257,12 +14298,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.19,
+          "input_mtok": 0.17,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 8.94,
+          "output_mtok": 16.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14555,12 +14596,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0507,
+          "input_mtok": 0.0513,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0702,
+          "output_mtok": 0.0701,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14597,12 +14638,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.075,
+          "input_mtok": 0.0703,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.295,
+          "output_mtok": 4.3843,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14638,5 +14679,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-24T18:50:00.230855+00:00"
+  "updated_at": "2026-10-25T18:50:00.201654+00:00"
 }
