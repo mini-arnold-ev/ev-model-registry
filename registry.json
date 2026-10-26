@@ -23,7 +23,6 @@
       "anthropic/claude-sonnet-4.6",
       "anthropic/claude-sonnet-5",
       "anthropic/claude-sonnet-5.5",
-      "arcee-ai/trinity-large-thinking",
       "bytedance-seed/seed-1.6",
       "bytedance-seed/seed-1.6-flash",
       "bytedance-seed/seed-2-1-turbo",
@@ -159,6 +158,7 @@
       "openai/gpt-6-sol-pro",
       "openai/gpt-6.1-sol",
       "openai/gpt-6.1-sol-pro",
+      "openai/gpt-6.1-terra",
       "openai/gpt-oss-120b",
       "openai/gpt-oss-20b",
       "openai/o1",
@@ -431,6 +431,7 @@
       "openai/gpt-6-sol-pro",
       "openai/gpt-6.1-sol",
       "openai/gpt-6.1-sol-pro",
+      "openai/gpt-6.1-terra",
       "openai/gpt-chat-latest",
       "openai/o1",
       "openai/o1-pro",
@@ -555,7 +556,6 @@
   "flagships": {
     "amazon": "amazon/nova-pro-v1",
     "anthropic": "anthropic/claude-opus-5.5",
-    "arcee-ai": "arcee-ai/trinity-large-thinking",
     "cohere": "cohere/command-a-plus",
     "deepseek": "deepseek/deepseek-v4-pro-0813",
     "google": "google/gemini-3-pro-image",
@@ -1466,40 +1466,6 @@
         }
       ]
     },
-    "arcee-ai": {
-      "flagship": "arcee-ai/trinity-large-thinking",
-      "models": [
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1775058318,
-          "id": "arcee-ai/trinity-large-thinking",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.25,
-          "name": "Arcee AI: Trinity Large Thinking",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.8,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "flagship",
-          "vision": false,
-          "web_search": null
-        }
-      ]
-    },
     "bytedance": {
       "flagship": null,
       "models": [
@@ -2034,12 +2000,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.741936,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 1.483872,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2121,12 +2087,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.02,
+          "input_mtok": 0.0477,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.0,
+          "output_mtok": 0.1908,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2206,12 +2172,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.44,
+          "input_mtok": 0.04444,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.32,
+          "output_mtok": 0.13332,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6172,7 +6138,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.161,
+          "input_mtok": 0.159,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -7584,6 +7550,39 @@
             "structured_outputs"
           ],
           "tier": "flagship",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 1050.0,
+          "context_length": 1050000,
+          "created": 1793038409,
+          "id": "openai/gpt-6.1-terra",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "input_mtok": 1.0,
+          "name": "OpenAI: GPT-6.1 Terra",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 5.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "tier": "reasoning",
           "vision": true,
           "web_search": null
         },
@@ -12073,12 +12072,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12116,12 +12115,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14085,7 +14084,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2304,
+          "input_mtok": 0.1188,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14127,12 +14126,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.02,
+          "input_mtok": 0.04,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.0,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14170,12 +14169,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0475,
+          "input_mtok": 0.0422,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1568,
+          "output_mtok": 0.1694,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14299,12 +14298,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.161,
+          "input_mtok": 0.151,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 20.0,
+          "output_mtok": 10.1583,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14680,5 +14679,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-26T12:50:00.189514+00:00"
+  "updated_at": "2026-10-26T18:50:00.229734+00:00"
 }
