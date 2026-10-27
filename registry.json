@@ -159,6 +159,7 @@
       "openai/gpt-6.1-sol",
       "openai/gpt-6.1-sol-pro",
       "openai/gpt-6.1-terra",
+      "openai/gpt-6.1-terra-pro",
       "openai/gpt-oss-120b",
       "openai/gpt-oss-20b",
       "openai/o1",
@@ -432,6 +433,7 @@
       "openai/gpt-6.1-sol",
       "openai/gpt-6.1-sol-pro",
       "openai/gpt-6.1-terra",
+      "openai/gpt-6.1-terra-pro",
       "openai/gpt-chat-latest",
       "openai/o1",
       "openai/o1-pro",
@@ -565,7 +567,7 @@
     "moonshotai": "moonshotai/kimi-k3.1-pro",
     "morph": "morph/morph-v3-large",
     "nex-agi": "nex-agi/nex-n2.5-pro",
-    "openai": "openai/gpt-6.1-sol-pro",
+    "openai": "openai/gpt-6.1-terra-pro",
     "perplexity": "perplexity/sonar-pro-search",
     "qwen": "qwen/qwen3.8-max-prime",
     "sakana": "sakana/fugu-max",
@@ -575,7 +577,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 391,
+  "model_count": 392,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1959,12 +1961,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.66,
+          "input_mtok": 1.32,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.98,
+          "output_mtok": 3.96,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2043,12 +2045,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2172,12 +2174,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.44,
+          "input_mtok": 0.119,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.32,
+          "output_mtok": 0.238,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3239,12 +3241,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.0765,
+          "input_mtok": 0.09,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.255,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3622,12 +3624,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.04,
+          "input_mtok": 0.05,
           "name": "Google: Gemma 3 4B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.05,
+          "output_mtok": 0.1,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -6106,12 +6108,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.189,
+          "input_mtok": 0.169,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 20.0,
+          "output_mtok": 11.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -7056,8 +7058,41 @@
       ]
     },
     "openai": {
-      "flagship": "openai/gpt-6.1-sol-pro",
+      "flagship": "openai/gpt-6.1-terra-pro",
       "models": [
+        {
+          "context_k": 1050.0,
+          "context_length": 1050000,
+          "created": 1793038556,
+          "id": "openai/gpt-6.1-terra-pro",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "input_mtok": 1.0,
+          "name": "OpenAI: GPT-6.1 Terra Pro",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 5.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "verbosity"
+          ],
+          "tier": "flagship",
+          "vision": true,
+          "web_search": null
+        },
         {
           "context_k": 1050.0,
           "context_length": 1050000,
@@ -10229,12 +10264,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.039,
+          "input_mtok": 0.2,
           "name": "Qwen: Qwen3.8 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.25,
+          "output_mtok": 2.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13152,12 +13187,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.3045,
+          "input_mtok": 0.48,
           "name": "Xiaomi: MiMo-V2.5-Pro",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.609,
+          "output_mtok": 1.8,
           "reasoning": true,
           "supported_parameters": [
             "include_reasoning",
@@ -13428,7 +13463,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0699,
+          "input_mtok": 0.0769,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
@@ -14052,7 +14087,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2448,
+          "input_mtok": 0.2266,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14094,12 +14129,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.04,
+          "input_mtok": 0.02,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.5,
+          "output_mtok": 1.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14266,12 +14301,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.189,
+          "input_mtok": 0.1605,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 20.0,
+          "output_mtok": 9.7224,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14563,12 +14598,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0413,
+          "input_mtok": 0.0513,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0758,
+          "output_mtok": 0.0701,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14605,12 +14640,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0699,
+          "input_mtok": 0.0703,
           "name": "Z.ai: GLM Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.4,
+          "output_mtok": 4.3843,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14646,5 +14681,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-27T00:50:00.173488+00:00"
+  "updated_at": "2026-10-27T06:50:00.191584+00:00"
 }
