@@ -575,7 +575,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 392,
+  "model_count": 391,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2000,12 +2000,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.741936,
+          "input_mtok": 0.95526,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.483872,
+          "output_mtok": 1.91052,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2087,12 +2087,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0477,
+          "input_mtok": 0.14,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1908,
+          "output_mtok": 0.42,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2172,12 +2172,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.04444,
+          "input_mtok": 0.44,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.13332,
+          "output_mtok": 1.32,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2215,12 +2215,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.091,
+          "input_mtok": 0.14,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.182,
+          "output_mtok": 0.28,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3239,18 +3239,19 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.0765,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.255,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
             "logprobs",
+            "max_completion_tokens",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -3841,41 +3842,6 @@
             "top_p"
           ],
           "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 131.0,
-          "context_length": 131000,
-          "created": 1760927695,
-          "id": "ibm-granite/granite-4.0-h-micro",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.017,
-          "name": "IBM: Granite 4.0 Micro",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.112,
-          "reasoning": false,
-          "supported_parameters": [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "standard",
           "vision": false,
           "web_search": null
         }
@@ -6114,6 +6080,7 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -6122,7 +6089,8 @@
             "stop",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "top_logprobs"
           ],
           "tier": "flagship",
           "vision": true,
@@ -6138,7 +6106,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.159,
+          "input_mtok": 0.189,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -6182,12 +6150,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.6712,
+          "input_mtok": 0.56,
           "name": "MoonshotAI: Kimi K2.7 Code",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.35,
+          "output_mtok": 3.1,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10261,12 +10229,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.2,
+          "input_mtok": 0.039,
           "name": "Qwen: Qwen3.8 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.5,
+          "output_mtok": 1.25,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10589,12 +10557,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.27,
+          "input_mtok": 0.26,
           "name": "Qwen: Qwen3.5-27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.16,
+          "output_mtok": 2.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12072,12 +12040,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12115,12 +12083,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13264,12 +13232,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.119,
+          "input_mtok": 0.4,
           "name": "Xiaomi: MiMo-V2.5",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.238,
+          "output_mtok": 2.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13544,12 +13512,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.4,
+          "input_mtok": 0.966,
           "name": "Z.ai: GLM 5.1",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.4,
+          "output_mtok": 3.036,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14084,7 +14052,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1188,
+          "input_mtok": 0.2448,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14169,12 +14137,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0422,
+          "input_mtok": 0.0475,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1694,
+          "output_mtok": 0.1568,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14298,12 +14266,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.151,
+          "input_mtok": 0.189,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.1583,
+          "output_mtok": 20.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14416,16 +14384,15 @@
             "image",
             "text"
           ],
-          "input_mtok": 2.0,
+          "input_mtok": 1.0,
           "name": "OpenAI: GPT Terra Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 12.0,
+          "output_mtok": 5.0,
           "reasoning": true,
           "supported_parameters": [
             "include_reasoning",
-            "max_completion_tokens",
             "max_tokens",
             "reasoning",
             "reasoning_effort",
@@ -14679,5 +14646,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-26T18:50:00.229734+00:00"
+  "updated_at": "2026-10-27T00:50:00.173488+00:00"
 }
