@@ -161,14 +161,8 @@
       "openai/gpt-6.1-terra-pro",
       "openai/gpt-oss-120b",
       "openai/gpt-oss-20b",
-      "openai/o1",
-      "openai/o1-pro",
       "openai/o3",
-      "openai/o3-mini",
-      "openai/o3-mini-high",
       "openai/o3-pro",
-      "openai/o4-mini",
-      "openai/o4-mini-high",
       "openrouter/auto",
       "openrouter/auto-beta",
       "openrouter/free",
@@ -188,7 +182,6 @@
       "qwen/qwen3-235b-a22b-thinking-2507",
       "qwen/qwen3-30b-a3b",
       "qwen/qwen3-32b",
-      "qwen/qwen3-next-80b-a3b-thinking",
       "qwen/qwen3-vl-30b-a3b-thinking",
       "qwen/qwen3.5-122b-a10b",
       "qwen/qwen3.5-27b",
@@ -386,7 +379,6 @@
       "nvidia/nemotron-3.5-content-safety:free",
       "nvidia/nemotron-3.5-super-vl",
       "nvidia/nemotron-3.5-super-vl:free",
-      "openai/gpt-4-turbo",
       "openai/gpt-4.1",
       "openai/gpt-4.1-mini",
       "openai/gpt-4.1-nano",
@@ -435,12 +427,8 @@
       "openai/gpt-6.1-terra",
       "openai/gpt-6.1-terra-pro",
       "openai/gpt-chat-latest",
-      "openai/o1",
-      "openai/o1-pro",
       "openai/o3",
       "openai/o3-pro",
-      "openai/o4-mini",
-      "openai/o4-mini-high",
       "openrouter/auto",
       "openrouter/auto-beta",
       "openrouter/free",
@@ -578,7 +566,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 392,
+  "model_count": 384,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2003,12 +1991,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.897318,
+          "input_mtok": 0.888966,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.794636,
+          "output_mtok": 1.777932,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4912,12 +4900,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.02,
+          "input_mtok": 0.05,
           "name": "Meta: Llama 3.1 8B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.04,
+          "output_mtok": 0.08,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -5217,22 +5205,12 @@
           "output_mtok": 1.02,
           "reasoning": true,
           "supported_parameters": [
-            "frequency_penalty",
             "include_reasoning",
-            "logprobs",
             "max_tokens",
-            "presence_penalty",
             "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "flagship",
@@ -6109,7 +6087,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.169,
+          "input_mtok": 0.192,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -6287,7 +6265,6 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
-            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -6300,7 +6277,6 @@
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -7498,35 +7474,6 @@
           "web_search": null
         },
         {
-          "context_k": 200.0,
-          "context_length": 200000,
-          "created": 1742423211,
-          "id": "openai/o1-pro",
-          "input_modalities": [
-            "text",
-            "image",
-            "file"
-          ],
-          "input_mtok": 150.0,
-          "name": "OpenAI: o1-pro",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 600.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs"
-          ],
-          "tier": "flagship",
-          "vision": true,
-          "web_search": null
-        },
-        {
           "context_k": 1050.0,
           "context_length": 1050000,
           "created": 1793038409,
@@ -8424,38 +8371,6 @@
         {
           "context_k": 200.0,
           "context_length": 200000,
-          "created": 1744824212,
-          "id": "openai/o4-mini-high",
-          "input_modalities": [
-            "image",
-            "text",
-            "file"
-          ],
-          "input_mtok": 1.1,
-          "name": "OpenAI: o4 Mini High",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 4.4,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 200.0,
-          "context_length": 200000,
           "created": 1744823457,
           "id": "openai/o3",
           "input_modalities": [
@@ -8469,129 +8384,6 @@
             "text"
           ],
           "output_mtok": 8.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 200.0,
-          "context_length": 200000,
-          "created": 1744820942,
-          "id": "openai/o4-mini",
-          "input_modalities": [
-            "image",
-            "text",
-            "file"
-          ],
-          "input_mtok": 1.1,
-          "name": "OpenAI: o4 Mini",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 4.4,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 200.0,
-          "context_length": 200000,
-          "created": 1739372611,
-          "id": "openai/o3-mini-high",
-          "input_modalities": [
-            "text",
-            "file"
-          ],
-          "input_mtok": 1.1,
-          "name": "OpenAI: o3 Mini High",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 4.4,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 200.0,
-          "context_length": 200000,
-          "created": 1738351721,
-          "id": "openai/o3-mini",
-          "input_modalities": [
-            "text",
-            "file"
-          ],
-          "input_mtok": 1.1,
-          "name": "OpenAI: o3 Mini",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 4.4,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 200.0,
-          "context_length": 200000,
-          "created": 1734459999,
-          "id": "openai/o1",
-          "input_modalities": [
-            "text",
-            "image",
-            "file"
-          ],
-          "input_mtok": 15.0,
-          "name": "OpenAI: o1",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 60.0,
           "reasoning": true,
           "supported_parameters": [
             "include_reasoning",
@@ -8902,7 +8694,6 @@
           "reasoning": false,
           "supported_parameters": [
             "max_completion_tokens",
-            "max_tokens",
             "response_format",
             "seed",
             "structured_outputs",
@@ -9056,8 +8847,6 @@
             "logit_bias",
             "logprobs",
             "max_completion_tokens",
-            "max_tokens",
-            "prediction",
             "presence_penalty",
             "response_format",
             "seed",
@@ -9073,42 +8862,6 @@
           "tier": "standard",
           "vision": true,
           "web_search": true
-        },
-        {
-          "context_k": 128.0,
-          "context_length": 128000,
-          "created": 1712620800,
-          "id": "openai/gpt-4-turbo",
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "input_mtok": 10.0,
-          "name": "OpenAI: GPT-4 Turbo",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 30.0,
-          "reasoning": false,
-          "supported_parameters": [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "standard",
-          "vision": true,
-          "web_search": null
         },
         {
           "context_k": 4.095,
@@ -9201,12 +8954,10 @@
             "logit_bias",
             "logprobs",
             "max_completion_tokens",
-            "max_tokens",
             "presence_penalty",
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -10789,44 +10540,6 @@
           "web_search": null
         },
         {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1757612284,
-          "id": "qwen/qwen3-next-80b-a3b-thinking",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.15,
-          "name": "Qwen: Qwen3 Next 80B A3B Thinking",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 1.2,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
           "context_k": 128.0,
           "context_length": 128000,
           "created": 1753449557,
@@ -11097,7 +10810,6 @@
           "supported_parameters": [
             "frequency_penalty",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -11110,7 +10822,6 @@
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "code",
@@ -12085,12 +11796,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12128,12 +11839,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13515,7 +13226,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.014,
+          "input_mtok": 0.0096,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
@@ -14097,7 +13808,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2542,
+          "input_mtok": 0.1318,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14182,12 +13893,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0475,
+          "input_mtok": 0.0422,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1568,
+          "output_mtok": 0.1694,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14311,12 +14022,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.1605,
+          "input_mtok": 0.1824,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 8.94,
+          "output_mtok": 8.504,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14609,12 +14320,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0237,
+          "input_mtok": 0.0259,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1324,
+          "output_mtok": 0.1042,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14692,5 +14403,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-28T12:50:00.250700+00:00"
+  "updated_at": "2026-10-28T18:50:00.231062+00:00"
 }
