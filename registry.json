@@ -1962,12 +1962,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.66,
+          "input_mtok": 1.32,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.98,
+          "output_mtok": 3.96,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2003,12 +2003,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.875394,
+          "input_mtok": 0.95526,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.750788,
+          "output_mtok": 1.91052,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2046,12 +2046,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3242,12 +3242,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.0765,
+          "input_mtok": 0.09,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.255,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3952,8 +3952,8 @@
       "flagship": null,
       "models": [
         {
-          "context_k": 262.144,
-          "context_length": 262144,
+          "context_k": 1000.0,
+          "context_length": 1000000,
           "created": 1790950024,
           "id": "inclusionai/ling-3.1-flash",
           "input_modalities": [
@@ -6109,12 +6109,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.2,
+          "input_mtok": 0.15,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 11.5,
+          "output_mtok": 20.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6932,12 +6932,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.08,
+          "input_mtok": 0.3,
           "name": "NVIDIA: Nemotron 3 Super",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.45,
+          "output_mtok": 2.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13515,7 +13515,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0341,
+          "input_mtok": 0.026,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
@@ -14097,7 +14097,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2565,
+          "input_mtok": 0.2542,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14139,7 +14139,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0182,
+          "input_mtok": 0.0138,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
@@ -14311,12 +14311,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.1605,
+          "input_mtok": 0.15,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 8.94,
+          "output_mtok": 20.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14609,12 +14609,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0345,
+          "input_mtok": 0.0399,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0823,
+          "output_mtok": 0.1,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14692,5 +14692,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-28T00:50:00.177780+00:00"
+  "updated_at": "2026-10-28T06:50:00.179732+00:00"
 }
