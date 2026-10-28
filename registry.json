@@ -183,6 +183,7 @@
       "poolside/laguna-xs-2.1",
       "poolside/laguna-xs-2.1:free",
       "prism-ml/ternary-bonsai-2-27b",
+      "prism-ml/ternary-bonsai-2-9b",
       "qwen/qwen3-14b",
       "qwen/qwen3-235b-a22b-thinking-2507",
       "qwen/qwen3-30b-a3b",
@@ -450,6 +451,7 @@
       "perplexity/sonar-pro-search",
       "perplexity/sonar-reasoning-pro",
       "prism-ml/ternary-bonsai-2-27b",
+      "prism-ml/ternary-bonsai-2-9b",
       "qwen/qwen2.5-vl-72b-instruct",
       "qwen/qwen3-vl-235b-a22b-instruct",
       "qwen/qwen3-vl-30b-a3b-instruct",
@@ -576,7 +578,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 391,
+  "model_count": 392,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2001,12 +2003,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.877134,
+          "input_mtok": 0.875394,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.754268,
+          "output_mtok": 1.750788,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2216,12 +2218,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.04732,
+          "input_mtok": 0.14,
           "name": "DeepSeek: DeepSeek V4 Flash 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.09464,
+          "output_mtok": 0.28,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3240,12 +3242,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.0765,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.255,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4910,12 +4912,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.02,
           "name": "Meta: Llama 3.1 8B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.08,
+          "output_mtok": 0.04,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -6107,7 +6109,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.2,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -6930,12 +6932,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.08,
           "name": "NVIDIA: Nemotron 3 Super",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.4,
+          "output_mtok": 0.45,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -9795,6 +9797,45 @@
         {
           "context_k": 262.144,
           "context_length": 262144,
+          "created": 1792130995,
+          "id": "prism-ml/ternary-bonsai-2-9b",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 0.08,
+          "name": "PrismML: Ternary Bonsai 2 9B",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.13,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 262.144,
+          "context_length": 262144,
           "created": 1789754046,
           "id": "prism-ml/ternary-bonsai-2-27b",
           "input_modalities": [
@@ -10233,12 +10274,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.2,
+          "input_mtok": 0.039,
           "name": "Qwen: Qwen3.8 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.5,
+          "output_mtok": 1.25,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10397,7 +10438,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.95,
+          "output_mtok": 0.9,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10434,12 +10475,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.32,
+          "input_mtok": 0.45,
           "name": "Qwen: Qwen3.6 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.2,
+          "output_mtok": 2.7,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12044,12 +12085,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12087,12 +12128,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13474,7 +13515,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0319,
+          "input_mtok": 0.0341,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
@@ -13516,12 +13557,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.966,
+          "input_mtok": 1.4,
           "name": "Z.ai: GLM 5.1",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.036,
+          "output_mtok": 4.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14056,7 +14097,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1259,
+          "input_mtok": 0.2565,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14098,12 +14139,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.022,
+          "input_mtok": 0.0182,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.46,
+          "output_mtok": 1.8,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14141,12 +14182,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0422,
+          "input_mtok": 0.0475,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1694,
+          "output_mtok": 0.1568,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14270,12 +14311,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.1605,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 11.5,
+          "output_mtok": 8.94,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14651,5 +14692,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-27T18:50:00.228969+00:00"
+  "updated_at": "2026-10-28T00:50:00.177780+00:00"
 }
