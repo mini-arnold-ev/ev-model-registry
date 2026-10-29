@@ -225,7 +225,6 @@
       "thinkingmachines/inkling:free",
       "typesafe/jev-router",
       "upstage/solar-mini4",
-      "upstage/solar-pro-3",
       "upstage/solar-pro4",
       "x-ai/grok-4.20",
       "x-ai/grok-4.20-multi-agent",
@@ -523,7 +522,6 @@
       "openai/gpt-4o-mini",
       "openai/gpt-4o-mini-2024-07-18",
       "openrouter/auto",
-      "openrouter/auto-beta",
       "perplexity/sonar",
       "perplexity/sonar-deep-research",
       "perplexity/sonar-pro",
@@ -536,7 +534,6 @@
     ],
     "web_search_and_reasoning": [
       "openrouter/auto",
-      "openrouter/auto-beta",
       "perplexity/sonar-deep-research",
       "perplexity/sonar-pro-search",
       "perplexity/sonar-reasoning-pro",
@@ -568,7 +565,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 385,
+  "model_count": 384,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1993,12 +1990,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.894012,
+          "input_mtok": 0.856776,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.788024,
+          "output_mtok": 1.713552,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2336,7 +2333,6 @@
             "max_tokens",
             "reasoning",
             "response_format",
-            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
@@ -5292,12 +5288,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 1.36,
+          "input_mtok": 0.7,
           "name": "Mistral: Mistral Large 4",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.18,
+          "output_mtok": 2.1,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -9000,9 +8996,10 @@
             "include_reasoning",
             "logit_bias",
             "logprobs",
+            "max_completion_tokens",
             "max_tokens",
             "min_p",
-            "prediction",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -9018,11 +9015,11 @@
             "top_k",
             "top_logprobs",
             "top_p",
-            "web_search_options"
+            "verbosity"
           ],
           "tier": "reasoning",
           "vision": true,
-          "web_search": true
+          "web_search": null
         },
         {
           "context_k": 2000.0,
@@ -11715,8 +11712,8 @@
       "flagship": null,
       "models": [
         {
-          "context_k": 1000.0,
-          "context_length": 1000000,
+          "context_k": 1048.576,
+          "context_length": 1048576,
           "created": 1791462849,
           "id": "stepfun/step-5-preview",
           "input_modalities": [
@@ -11840,12 +11837,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11883,12 +11880,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12484,40 +12481,6 @@
           ],
           "input_mtok": 0.15,
           "name": "Upstage: Solar Pro 4",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.6,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "parallel_tool_calls",
-            "presence_penalty",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          "tier": "flagship",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 131.072,
-          "context_length": 131072,
-          "created": 1769481200,
-          "id": "upstage/solar-pro-3",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.15,
-          "name": "Upstage: Solar Pro 3",
           "output_modalities": [
             "text"
           ],
@@ -13186,12 +13149,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0457,
+          "input_mtok": 0.15,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0742,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13894,12 +13857,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0233,
+          "input_mtok": 0.0409,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.8,
+          "output_mtok": 1.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13937,12 +13900,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.057,
+          "input_mtok": 0.0509,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1341,
+          "output_mtok": 0.1487,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14364,12 +14327,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0457,
+          "input_mtok": 0.0513,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0742,
+          "output_mtok": 0.0701,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14447,5 +14410,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-29T12:50:00.187219+00:00"
+  "updated_at": "2026-10-29T18:50:00.227735+00:00"
 }
