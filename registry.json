@@ -167,6 +167,7 @@
       "openrouter/auto-beta",
       "openrouter/free",
       "openrouter/pareto-code",
+      "particle-ai/particle-1",
       "perceptron/perceptron-mk1",
       "perceptron/perceptron-mk1.5",
       "perplexity/sonar-deep-research",
@@ -432,6 +433,7 @@
       "openrouter/auto",
       "openrouter/auto-beta",
       "openrouter/free",
+      "particle-ai/particle-1",
       "perceptron/perceptron-mk1",
       "perceptron/perceptron-mk1.5",
       "perplexity/sonar",
@@ -566,7 +568,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 384,
+  "model_count": 385,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1991,12 +1993,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.888966,
+          "input_mtok": 0.95526,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.777932,
+          "output_mtok": 1.91052,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2078,12 +2080,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.14,
+          "input_mtok": 0.045,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.42,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3230,12 +3232,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.0765,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.255,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3808,7 +3810,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.25,
+          "output_mtok": 0.15,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6901,8 +6903,8 @@
           "web_search": null
         },
         {
-          "context_k": 262.144,
-          "context_length": 262144,
+          "context_k": 1048.576,
+          "context_length": 1048576,
           "created": 1773245239,
           "id": "nvidia/nemotron-3-super-120b-a12b",
           "input_modalities": [
@@ -9200,6 +9202,52 @@
         }
       ]
     },
+    "particle-ai": {
+      "flagship": null,
+      "models": [
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
+          "created": 1793207893,
+          "id": "particle-ai/particle-1",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 0.25,
+          "name": "Particle AI: Particle-1",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 1.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        }
+      ]
+    },
     "perceptron": {
       "flagship": null,
       "models": [
@@ -10668,7 +10716,6 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -10681,9 +10728,7 @@
             "temperature",
             "tool_choice",
             "tools",
-            "top_a",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -11796,12 +11841,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11839,12 +11884,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13142,12 +13187,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.0363,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.5,
+          "output_mtok": 0.0429,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13226,12 +13271,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0096,
+          "input_mtok": 0.006,
           "name": "Z.ai: GLM 5.2",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 7.0,
+          "output_mtok": 5.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13524,12 +13569,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.55,
+          "input_mtok": 0.5,
           "name": "Z.ai: GLM 4.6",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2,
+          "output_mtok": 2.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13808,7 +13853,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1318,
+          "input_mtok": 0.1035,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -13850,7 +13895,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0115,
+          "input_mtok": 0.0138,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
@@ -13893,12 +13938,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0422,
+          "input_mtok": 0.0475,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1694,
+          "output_mtok": 0.1568,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14027,7 +14072,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 8.504,
+          "output_mtok": 9.3388,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14320,12 +14365,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0259,
+          "input_mtok": 0.0363,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1042,
+          "output_mtok": 0.0429,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14403,5 +14448,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-28T18:50:00.231062+00:00"
+  "updated_at": "2026-10-29T00:50:00.176699+00:00"
 }
