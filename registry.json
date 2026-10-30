@@ -1949,12 +1949,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.66,
+          "input_mtok": 1.32,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.98,
+          "output_mtok": 3.96,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2033,12 +2033,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3228,12 +3228,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.0765,
+          "input_mtok": 0.09,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.255,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10070,12 +10070,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.039,
+          "input_mtok": 0.15,
           "name": "Qwen: Qwen3.8 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.25,
+          "output_mtok": 1.875,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13823,7 +13823,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 8.0,
+          "output_mtok": 4.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13903,12 +13903,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0429,
+          "input_mtok": 0.0388,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1518,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14032,12 +14032,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.1824,
+          "input_mtok": 0.1795,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 9.3388,
+          "output_mtok": 8.94,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14413,5 +14413,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-30T00:50:00.203729+00:00"
+  "updated_at": "2026-10-30T06:50:01.205021+00:00"
 }
