@@ -1990,12 +1990,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.816234,
+          "input_mtok": 0.9483,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.632468,
+          "output_mtok": 1.8966,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4982,12 +4982,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.075,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -8916,7 +8916,6 @@
             "logit_bias",
             "logprobs",
             "max_completion_tokens",
-            "max_tokens",
             "presence_penalty",
             "response_format",
             "seed",
@@ -9211,12 +9210,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.25,
+          "input_mtok": 0.05,
           "name": "Particle AI: Particle-1",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.0,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11840,12 +11839,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11883,12 +11882,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13152,12 +13151,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.018,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.5,
+          "output_mtok": 0.1402,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13860,12 +13859,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.031,
+          "input_mtok": 0.022,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.27,
+          "output_mtok": 0.192,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13903,12 +13902,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0496,
+          "input_mtok": 0.0331,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1887,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14032,12 +14031,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.171,
+          "input_mtok": 0.1624,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.5572,
+          "output_mtok": 9.75,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14330,12 +14329,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0197,
+          "input_mtok": 0.018,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1142,
+          "output_mtok": 0.1402,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14413,5 +14412,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-30T12:50:00.209972+00:00"
+  "updated_at": "2026-10-30T18:50:00.185001+00:00"
 }
