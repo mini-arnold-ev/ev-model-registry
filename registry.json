@@ -173,10 +173,6 @@
       "perplexity/sonar-deep-research",
       "perplexity/sonar-pro-search",
       "perplexity/sonar-reasoning-pro",
-      "poolside/laguna-s-2.1",
-      "poolside/laguna-s-2.1:free",
-      "poolside/laguna-xs-2.1",
-      "poolside/laguna-xs-2.1:free",
       "prism-ml/ternary-bonsai-2-27b",
       "prism-ml/ternary-bonsai-2-9b",
       "qwen/qwen3-14b",
@@ -565,7 +561,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 384,
+  "model_count": 380,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1949,12 +1945,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.66,
+          "input_mtok": 0.115,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.98,
+          "output_mtok": 4.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4982,12 +4978,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.075,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -9473,119 +9469,6 @@
         }
       ]
     },
-    "poolside": {
-      "flagship": null,
-      "models": [
-        {
-          "context_k": 1048.576,
-          "context_length": 1048576,
-          "created": 1784652683,
-          "id": "poolside/laguna-s-2.1",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.09,
-          "name": "Poolside: Laguna S 2.1",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.18,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1784652683,
-          "id": "poolside/laguna-s-2.1:free",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.0,
-          "name": "Poolside: Laguna S 2.1 (free)",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1783002429,
-          "id": "poolside/laguna-xs-2.1",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.06,
-          "name": "Poolside: Laguna XS 2.1",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.12,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1783002429,
-          "id": "poolside/laguna-xs-2.1:free",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.0,
-          "name": "Poolside: Laguna XS 2.1 (free)",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        }
-      ]
-    },
     "prism-ml": {
       "flagship": null,
       "models": [
@@ -11839,12 +11722,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11882,12 +11765,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13457,12 +13340,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.54,
+          "input_mtok": 0.6,
           "name": "Z.ai: GLM 4.7",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.98,
+          "output_mtok": 2.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13902,12 +13785,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.05764,
+          "input_mtok": 0.0566,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.17292,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14412,5 +14295,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-31T12:50:00.209390+00:00"
+  "updated_at": "2026-10-31T18:50:00.187185+00:00"
 }
