@@ -13151,12 +13151,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0172,
+          "input_mtok": 0.0163,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0471,
+          "output_mtok": 0.1479,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13240,7 +13240,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 7.0,
+          "output_mtok": 6.8,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13864,7 +13864,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.173,
+          "output_mtok": 0.144,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13902,12 +13902,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.058,
+          "input_mtok": 0.05764,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.17292,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14031,12 +14031,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.1558,
+          "input_mtok": 0.1495,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.5478,
+          "output_mtok": 7.15,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14329,12 +14329,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0172,
+          "input_mtok": 0.0163,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0471,
+          "output_mtok": 0.1479,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14412,5 +14412,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-31T06:50:00.192868+00:00"
+  "updated_at": "2026-10-31T12:50:00.209390+00:00"
 }
