@@ -8287,12 +8287,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.017,
           "name": "OpenAI: gpt-oss-120b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.063,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13034,12 +13034,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0163,
+          "input_mtok": 0.0285,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1821,
+          "output_mtok": 0.0923,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13076,12 +13076,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0699,
+          "input_mtok": 0.08,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.4,
+          "output_mtok": 3.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14212,12 +14212,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0163,
+          "input_mtok": 0.0285,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1821,
+          "output_mtok": 0.0923,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14295,5 +14295,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-01T06:50:00.205676+00:00"
+  "updated_at": "2026-11-01T12:50:00.208045+00:00"
 }
