@@ -9952,12 +9952,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.04,
+          "input_mtok": 0.15,
           "name": "Qwen: Qwen3.8 27B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.3,
+          "output_mtok": 1.875,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11722,12 +11722,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11765,12 +11765,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13034,12 +13034,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0163,
+          "input_mtok": 0.0149,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1479,
+          "output_mtok": 0.1543,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13742,12 +13742,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0141,
+          "input_mtok": 0.0108,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.144,
+          "output_mtok": 0.0828,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13785,7 +13785,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0566,
+          "input_mtok": 0.0434,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14212,12 +14212,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0163,
+          "input_mtok": 0.0149,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1479,
+          "output_mtok": 0.1543,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14295,5 +14295,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-10-31T18:50:00.187185+00:00"
+  "updated_at": "2026-11-01T00:50:00.197791+00:00"
 }
