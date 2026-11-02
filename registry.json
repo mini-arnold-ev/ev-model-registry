@@ -2029,12 +2029,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3224,12 +3224,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.025,
+          "input_mtok": 0.04,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.075,
+          "output_mtok": 0.121,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4824,12 +4824,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.0509,
           "name": "Meta: Llama 3.2 3B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.335,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -4979,12 +4979,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.075,
+          "input_mtok": 0.15,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -8288,12 +8288,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.028,
+          "input_mtok": 0.024,
           "name": "OpenAI: gpt-oss-120b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.102,
+          "output_mtok": 0.088,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10697,12 +10697,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.07,
           "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.28,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -14296,5 +14296,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-02T00:50:00.191087+00:00"
+  "updated_at": "2026-11-02T06:50:00.207020+00:00"
 }
