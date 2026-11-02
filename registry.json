@@ -249,6 +249,7 @@
       "z-ai/glm-5.3",
       "z-ai/glm-5.3-flash",
       "z-ai/glm-5.3-flashx",
+      "z-ai/glm-5.3-flashx-legal",
       "z-ai/glm-5.3-prime",
       "z-ai/glm-5v-turbo",
       "~anthropic/claude-fable-latest",
@@ -492,6 +493,7 @@
       "z-ai/glm-4.6v",
       "z-ai/glm-5.3-flash",
       "z-ai/glm-5.3-flashx",
+      "z-ai/glm-5.3-flashx-legal",
       "z-ai/glm-5v-turbo",
       "~anthropic/claude-fable-latest",
       "~anthropic/claude-haiku-latest",
@@ -561,7 +563,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 380,
+  "model_count": 379,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -3224,12 +3226,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.065,
+          "input_mtok": 0.09,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.195,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4979,12 +4981,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.075,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6512,73 +6514,6 @@
             "top_p"
           ],
           "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 131.072,
-          "context_length": 131072,
-          "created": 1723939200,
-          "id": "nousresearch/hermes-3-llama-3.1-70b",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.7,
-          "name": "Nous: Hermes 3 70B Instruct",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.7,
-          "reasoning": false,
-          "supported_parameters": [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "standard",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 131.072,
-          "context_length": 131072,
-          "created": 1723766400,
-          "id": "nousresearch/hermes-3-llama-3.1-405b",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 1.0,
-          "name": "Nous: Hermes 3 405B Instruct",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 1.0,
-          "reasoning": false,
-          "supported_parameters": [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "standard",
           "vision": false,
           "web_search": null
         }
@@ -11723,12 +11658,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11766,12 +11701,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12486,10 +12421,12 @@
             "reasoning_effort",
             "response_format",
             "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_logprobs",
             "top_p"
           ],
@@ -12955,6 +12892,40 @@
     "z-ai": {
       "flagship": null,
       "models": [
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
+          "created": 1793626154,
+          "id": "z-ai/glm-5.3-flashx-legal",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "input_mtok": 0.37,
+          "name": "Z.ai: GLM 5.3 FlashX Legal",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 1.25,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        },
         {
           "context_k": 1000.0,
           "context_length": 1000000,
@@ -13786,7 +13757,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.059,
+          "input_mtok": 0.0514,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14187,10 +14158,12 @@
             "reasoning_effort",
             "response_format",
             "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_logprobs",
             "top_p"
           ],
@@ -14296,5 +14269,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-02T12:50:00.203508+00:00"
+  "updated_at": "2026-11-02T18:50:00.226466+00:00"
 }
