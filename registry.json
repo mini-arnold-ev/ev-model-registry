@@ -2031,12 +2031,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.15,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3226,12 +3226,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.065,
+          "input_mtok": 0.072,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.195,
+          "output_mtok": 0.215,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4756,12 +4756,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1,
+          "input_mtok": 0.2,
           "name": "Meta: Llama 3.3 70B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.32,
+          "output_mtok": 0.52,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -4861,12 +4861,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.4,
+          "input_mtok": 0.72,
           "name": "Meta: Llama 3.1 70B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.4,
+          "output_mtok": 0.72,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -6890,7 +6890,6 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -6903,7 +6902,6 @@
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -8223,12 +8221,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.027,
+          "input_mtok": 0.15,
           "name": "OpenAI: gpt-oss-120b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.099,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13006,12 +13004,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0285,
+          "input_mtok": 0.0313,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0923,
+          "output_mtok": 0.0846,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13886,12 +13884,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.1824,
+          "input_mtok": 0.1719,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 9.3388,
+          "output_mtok": 10.5572,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14186,12 +14184,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0285,
+          "input_mtok": 0.0313,
           "name": "Z.ai: GLM Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0923,
+          "output_mtok": 0.0846,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14269,5 +14267,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-03T06:50:00.188656+00:00"
+  "updated_at": "2026-11-03T12:50:00.229408+00:00"
 }
