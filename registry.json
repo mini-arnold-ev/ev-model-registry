@@ -2031,12 +2031,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3226,12 +3226,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.062,
+          "input_mtok": 0.065,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.187,
+          "output_mtok": 0.195,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4756,12 +4756,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.2,
+          "input_mtok": 0.1,
           "name": "Meta: Llama 3.3 70B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.52,
+          "output_mtok": 0.32,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -4981,12 +4981,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.075,
+          "input_mtok": 0.15,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -8223,12 +8223,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.027,
           "name": "OpenAI: gpt-oss-120b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.099,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13719,7 +13719,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.5,
+          "output_mtok": 0.315,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13886,12 +13886,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.1495,
+          "input_mtok": 0.1824,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 7.15,
+          "output_mtok": 9.3388,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14269,5 +14269,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-03T00:50:00.214451+00:00"
+  "updated_at": "2026-11-03T06:50:00.188656+00:00"
 }
