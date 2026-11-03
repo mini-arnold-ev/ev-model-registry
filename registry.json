@@ -2160,12 +2160,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.119,
+          "input_mtok": 0.059,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.238,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3226,12 +3226,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.062,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.187,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4756,12 +4756,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1,
+          "input_mtok": 0.2,
           "name": "Meta: Llama 3.3 70B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.32,
+          "output_mtok": 0.52,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -10632,12 +10632,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.07,
+          "input_mtok": 0.15,
           "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.28,
+          "output_mtok": 0.6,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -10848,7 +10848,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.1,
           "name": "Qwen: Qwen3 Next 80B A3B Instruct",
           "output_modalities": [
             "text"
@@ -11658,12 +11658,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11701,12 +11701,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13757,7 +13757,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0514,
+          "input_mtok": 0.059,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -14269,5 +14269,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-02T18:50:00.226466+00:00"
+  "updated_at": "2026-11-03T00:50:00.214451+00:00"
 }
