@@ -219,8 +219,6 @@
       "tencent/hy4-preview",
       "thinkingmachines/inkling",
       "thinkingmachines/inkling-small",
-      "thinkingmachines/inkling-small:free",
-      "thinkingmachines/inkling:free",
       "typesafe/jev-router",
       "upstage/solar-mini4",
       "upstage/solar-pro4",
@@ -477,8 +475,6 @@
       "tencent/hy4",
       "thinkingmachines/inkling",
       "thinkingmachines/inkling-small",
-      "thinkingmachines/inkling-small:free",
-      "thinkingmachines/inkling:free",
       "typesafe/jev-router",
       "unbiased/pareto-26.10",
       "unbiased/pareto-26.9",
@@ -567,7 +563,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 381,
+  "model_count": 380,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2164,7 +2160,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.059,
+          "input_mtok": 0.0527,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -2620,6 +2616,41 @@
           ],
           "tier": "reasoning",
           "vision": true,
+          "web_search": null
+        }
+      ]
+    },
+    "gmicloud": {
+      "flagship": null,
+      "models": [
+        {
+          "context_k": 16.384,
+          "context_length": 16384,
+          "created": 1793796436,
+          "id": "gmicloud/ripple-65b-preview",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": 0.2,
+          "name": "ricursiveAI/Ripple-65B-Preview",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.6,
+          "reasoning": false,
+          "supported_parameters": [
+            "logprobs",
+            "max_tokens",
+            "response_format",
+            "seed",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "standard",
+          "vision": false,
           "web_search": null
         }
       ]
@@ -3230,12 +3261,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.07,
+          "input_mtok": 0.1,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.21,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4977,12 +5008,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.075,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6054,17 +6085,22 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
+            "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_logprobs",
             "top_p"
           ],
@@ -8264,12 +8300,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.03,
+          "input_mtok": 0.018,
           "name": "OpenAI: gpt-oss-20b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.13,
+          "output_mtok": 0.09,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10922,12 +10958,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.14,
+          "input_mtok": 0.09,
           "name": "Qwen: Qwen3 235B A22B Instruct 2507",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.8,
+          "output_mtok": 0.55,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -11730,12 +11766,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11773,12 +11809,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12098,40 +12134,6 @@
           "web_search": null
         },
         {
-          "context_k": 1048.576,
-          "context_length": 1048576,
-          "created": 1785443117,
-          "id": "thinkingmachines/inkling-small:free",
-          "input_modalities": [
-            "text",
-            "image",
-            "audio"
-          ],
-          "input_mtok": 0.0,
-          "name": "Thinking Machines: Inkling Small (free)",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "reasoning_effort",
-            "seed",
-            "stop",
-            "temperature",
-            "tools",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
-        },
-        {
           "context_k": 524.288,
           "context_length": 524288,
           "created": 1784325956,
@@ -12163,40 +12165,6 @@
             "tool_choice",
             "tools",
             "top_k",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 1048.576,
-          "context_length": 1048576,
-          "created": 1784325956,
-          "id": "thinkingmachines/inkling:free",
-          "input_modalities": [
-            "text",
-            "image",
-            "audio"
-          ],
-          "input_mtok": 0.0,
-          "name": "Thinking Machines: Inkling (free)",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "reasoning_effort",
-            "seed",
-            "stop",
-            "temperature",
-            "tools",
             "top_p"
           ],
           "tier": "reasoning",
@@ -13077,12 +13045,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0269,
+          "input_mtok": 0.15,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.0996,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13119,12 +13087,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.08,
+          "input_mtok": 0.0699,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.6,
+          "output_mtok": 1.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13785,12 +13753,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.032,
+          "input_mtok": 0.022,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.288,
+          "output_mtok": 0.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13828,7 +13796,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.059,
+          "input_mtok": 0.0527,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -13962,7 +13930,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.1583,
+          "output_mtok": 10.5539,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14340,5 +14308,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-04T12:50:00.316899+00:00"
+  "updated_at": "2026-11-04T18:50:00.198030+00:00"
 }
