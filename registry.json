@@ -2035,12 +2035,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.15,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3230,12 +3230,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.089,
+          "input_mtok": 0.07,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.268,
+          "output_mtok": 0.21,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6082,7 +6082,7 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.2,
+          "input_mtok": 0.192,
           "name": "MoonshotAI: Kimi K3",
           "output_modalities": [
             "text"
@@ -12880,8 +12880,8 @@
           "web_search": null
         },
         {
-          "context_k": 1050.0,
-          "context_length": 1050000,
+          "context_k": 1000.0,
+          "context_length": 1000000,
           "created": 1776874269,
           "id": "xiaomi/mimo-v2.5",
           "input_modalities": [
@@ -12904,7 +12904,6 @@
             "presence_penalty",
             "reasoning",
             "response_format",
-            "seed",
             "stop",
             "structured_outputs",
             "temperature",
@@ -13786,12 +13785,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.0333,
+          "input_mtok": 0.032,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.475,
+          "output_mtok": 0.288,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13958,12 +13957,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.19,
+          "input_mtok": 0.1824,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 8.94,
+          "output_mtok": 10.1583,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14341,5 +14340,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-04T06:50:00.179901+00:00"
+  "updated_at": "2026-11-04T12:50:00.316899+00:00"
 }
