@@ -1948,12 +1948,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.107,
+          "input_mtok": 0.103,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.278,
+          "output_mtok": 4.11,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2032,12 +2032,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.15,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3227,12 +3227,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.025,
+          "input_mtok": 0.036,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.075,
+          "output_mtok": 0.109,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3938,40 +3938,6 @@
       "flagship": null,
       "models": [
         {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1793858375,
-          "id": "inclusionai/ling-3.0-tiny",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.015,
-          "name": "inclusionAI: Ling 3.0 Tiny",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.045,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
           "context_k": 1000.0,
           "context_length": 1000000,
           "created": 1790950024,
@@ -4049,6 +4015,42 @@
           ],
           "tier": "reasoning",
           "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 262.144,
+          "context_length": 262144,
+          "created": 1786034890,
+          "id": "inclusionai/ling-3.0-tiny",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": 0.015,
+          "name": "inclusionAI: Ling 3.0 Tiny",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.045,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": false,
           "web_search": null
         },
         {
@@ -8258,12 +8260,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.012,
+          "input_mtok": 0.15,
           "name": "OpenAI: gpt-oss-120b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.043,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10881,7 +10883,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1,
+          "input_mtok": 0.09,
           "name": "Qwen: Qwen3 Next 80B A3B Instruct",
           "output_modalities": [
             "text"
@@ -13746,7 +13748,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0963,
+          "input_mtok": 0.0927,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -13965,7 +13967,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.5572,
+          "output_mtok": 9.3388,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14343,5 +14345,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-05T06:50:00.199135+00:00"
+  "updated_at": "2026-11-05T12:50:00.224167+00:00"
 }
