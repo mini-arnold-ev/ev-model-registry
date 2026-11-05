@@ -77,6 +77,7 @@
       "inception/mercury-3",
       "inclusionai/ling-3.0-flash",
       "inclusionai/ling-3.0-flash-vl",
+      "inclusionai/ling-3.0-tiny",
       "inclusionai/ling-3.1-flash",
       "liquid/lfm-2.5-2.6b",
       "liquid/lfm-2.5-2.6b:free",
@@ -563,7 +564,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 380,
+  "model_count": 381,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1947,12 +1948,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.115,
+          "input_mtok": 0.107,
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 4.6,
+          "output_mtok": 4.278,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2031,12 +2032,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3226,12 +3227,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.023,
+          "input_mtok": 0.025,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.07,
+          "output_mtok": 0.075,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3936,6 +3937,40 @@
     "inclusionai": {
       "flagship": null,
       "models": [
+        {
+          "context_k": 262.144,
+          "context_length": 262144,
+          "created": 1793858375,
+          "id": "inclusionai/ling-3.0-tiny",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": 0.015,
+          "name": "inclusionAI: Ling 3.0 Tiny",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.045,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "temperature",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": false,
+          "web_search": null
+        },
         {
           "context_k": 1000.0,
           "context_length": 1000000,
@@ -4973,12 +5008,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.075,
+          "input_mtok": 0.15,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -8223,12 +8258,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.018,
+          "input_mtok": 0.012,
           "name": "OpenAI: gpt-oss-120b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.066,
+          "output_mtok": 0.043,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -8265,12 +8300,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.018,
+          "input_mtok": 0.03,
           "name": "OpenAI: gpt-oss-20b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.09,
+          "output_mtok": 0.13,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -9940,10 +9975,8 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "logprobs",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -10923,12 +10956,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.14,
           "name": "Qwen: Qwen3 235B A22B Instruct 2507",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.55,
+          "output_mtok": 0.8,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -13713,7 +13746,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1035,
+          "input_mtok": 0.0963,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "output_modalities": [
             "text"
@@ -14310,5 +14343,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-05T00:50:00.196280+00:00"
+  "updated_at": "2026-11-05T06:50:00.199135+00:00"
 }
