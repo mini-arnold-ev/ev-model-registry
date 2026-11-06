@@ -1992,12 +1992,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 1.6,
+          "input_mtok": 0.95526,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.2,
+          "output_mtok": 1.91052,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2123,12 +2123,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.2156,
+          "input_mtok": 0.44,
           "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6468,
+          "output_mtok": 1.32,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2164,7 +2164,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0434,
+          "input_mtok": 0.059,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -3292,12 +3292,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.062,
+          "input_mtok": 0.0765,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.187,
+          "output_mtok": 0.255,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -8219,12 +8219,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.028,
+          "input_mtok": 0.022,
           "name": "OpenAI: gpt-oss-120b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.103,
+          "output_mtok": 0.083,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11154,7 +11154,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.25,
+          "input_mtok": 0.3,
           "name": "Reflection: Beam 1.0 501B A23B",
           "output_modalities": [
             "text"
@@ -11810,12 +11810,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11853,12 +11853,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13842,7 +13842,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0434,
+          "input_mtok": 0.059,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -13971,12 +13971,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.151,
+          "input_mtok": 0.1824,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.1583,
+          "output_mtok": 10.5539,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14354,5 +14354,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-05T18:50:00.220145+00:00"
+  "updated_at": "2026-11-06T00:50:00.206840+00:00"
 }
