@@ -1990,12 +1990,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.897318,
+          "input_mtok": 0.800748,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.794636,
+          "output_mtok": 1.601496,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2162,7 +2162,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.059,
+          "input_mtok": 0.0448,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
           "output_modalities": [
             "text"
@@ -5073,12 +5073,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.075,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -8189,12 +8189,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.025,
+          "input_mtok": 0.021,
           "name": "OpenAI: gpt-oss-120b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.092,
+          "output_mtok": 0.08,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11304,7 +11304,7 @@
             "text"
           ],
           "input_mtok": 0.2,
-          "name": "ricursiveAI/Ripple-65B-Preview",
+          "name": "Ricursive: Ripple 65B Preview",
           "output_modalities": [
             "text"
           ],
@@ -11780,12 +11780,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11823,12 +11823,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13812,7 +13812,7 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.059,
+          "input_mtok": 0.0448,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "output_modalities": [
             "text"
@@ -13941,12 +13941,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.1824,
+          "input_mtok": 0.1529,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.1522,
+          "output_mtok": 10.5572,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14324,5 +14324,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-06T12:50:00.219338+00:00"
+  "updated_at": "2026-11-06T18:50:00.273773+00:00"
 }
