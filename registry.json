@@ -74,9 +74,6 @@
       "google/gemma-4-31b-it",
       "google/gemma-4-31b-it:free",
       "ibm-granite/granite-4.2-8b",
-      "inception/mercury-2",
-      "inception/mercury-2.5",
-      "inception/mercury-3",
       "inclusionai/ling-3.0-flash",
       "inclusionai/ling-3.0-flash-vl",
       "inclusionai/ling-3.0-tiny",
@@ -567,7 +564,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 381,
+  "model_count": 378,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1997,12 +1994,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.9,
+          "input_mtok": 0.383322,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.5,
+          "output_mtok": 0.766644,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2040,12 +2037,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.006,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3906,104 +3903,6 @@
         }
       ]
     },
-    "inception": {
-      "flagship": null,
-      "models": [
-        {
-          "context_k": 1000.0,
-          "context_length": 1000000,
-          "created": 1792158337,
-          "id": "inception/mercury-3",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.1,
-          "name": "Inception: Mercury 3",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.35,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 260.0,
-          "context_length": 260000,
-          "created": 1788892137,
-          "id": "inception/mercury-2.5",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.04,
-          "name": "Inception: Mercury 2.5",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.15,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 128.0,
-          "context_length": 128000,
-          "created": 1772636275,
-          "id": "inception/mercury-2",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.25,
-          "name": "Inception: Mercury 2",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.75,
-          "reasoning": true,
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        }
-      ]
-    },
     "inclusionai": {
       "flagship": null,
       "models": [
@@ -5160,12 +5059,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.075,
+          "input_mtok": 0.15,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14028,12 +13927,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.1662,
+          "input_mtok": 0.1567,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.1398,
+          "output_mtok": 10.5448,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14411,5 +14310,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-08T00:50:00.175646+00:00"
+  "updated_at": "2026-11-08T06:50:00.185721+00:00"
 }
