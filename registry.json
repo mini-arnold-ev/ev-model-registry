@@ -1994,12 +1994,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.383322,
+          "input_mtok": 0.251604,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.766644,
+          "output_mtok": 0.503208,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2086,7 +2086,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.567,
+          "output_mtok": 0.41,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6276,6 +6276,7 @@
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "repetition_penalty",
@@ -6287,6 +6288,7 @@
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           "tier": "standard",
@@ -8175,12 +8177,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.022,
           "name": "OpenAI: gpt-oss-120b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.083,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13927,12 +13929,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.1567,
+          "input_mtok": 0.1824,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.5448,
+          "output_mtok": 9.3388,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14310,5 +14312,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-08T06:50:00.185721+00:00"
+  "updated_at": "2026-11-08T12:50:00.195168+00:00"
 }
