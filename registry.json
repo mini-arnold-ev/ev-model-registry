@@ -84,6 +84,7 @@
       "liquid/lfm-3-1.7b",
       "liquid/lfm-3-1.7b:free",
       "meituan/longcat-2.0",
+      "meta/muse-ember",
       "meta/muse-glimmer-30b",
       "meta/muse-spark-1.1",
       "meta/muse-spark-1.2",
@@ -92,7 +93,6 @@
       "meta/muse-spark-1.3-contributor",
       "meta/muse-spark-open",
       "meta/muse-wonder",
-      "minimax/minimax-m1",
       "minimax/minimax-m2.5",
       "minimax/minimax-m2.7",
       "minimax/minimax-m3",
@@ -204,6 +204,7 @@
       "recursive/flint-v1.0:free",
       "reflection/beam-1.0-501b-a23b",
       "rekaai/reka-flash-3",
+      "ricursiveai/ripple-65b-preview",
       "sakana/fugu-max",
       "sakana/fugu-ultra",
       "sakana/fugu-ultra-v2",
@@ -342,6 +343,7 @@
       "meta-llama/llama-4-maverick",
       "meta-llama/llama-4-scout",
       "meta-llama/llama-guard-4-12b",
+      "meta/muse-ember",
       "meta/muse-glimmer-30b",
       "meta/muse-spark-1.1",
       "meta/muse-spark-1.2",
@@ -1994,12 +1996,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.897318,
+          "input_mtok": 0.894012,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.794636,
+          "output_mtok": 1.788024,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4429,6 +4431,43 @@
         {
           "context_k": 1048.576,
           "context_length": 1048576,
+          "created": 1794247648,
+          "id": "meta/muse-ember",
+          "input_modalities": [
+            "text",
+            "image",
+            "video",
+            "file",
+            "audio"
+          ],
+          "input_mtok": 0.1,
+          "name": "Meta: Muse Ember",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.5,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
           "created": 1792087069,
           "id": "meta/muse-spark-open",
           "input_modalities": [
@@ -5059,12 +5098,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.075,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5135,8 +5174,8 @@
           "web_search": null
         },
         {
-          "context_k": 204.8,
-          "context_length": 204800,
+          "context_k": 196.608,
+          "context_length": 196608,
           "created": 1773836697,
           "id": "minimax/minimax-m2.7",
           "input_modalities": [
@@ -5150,19 +5189,15 @@
           "output_mtok": 0.84,
           "reasoning": true,
           "supported_parameters": [
-            "frequency_penalty",
             "include_reasoning",
             "max_tokens",
-            "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
             "seed",
             "stop",
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_p"
           ],
           "tier": "flagship",
@@ -5170,8 +5205,8 @@
           "web_search": null
         },
         {
-          "context_k": 204.8,
-          "context_length": 204800,
+          "context_k": 200.0,
+          "context_length": 200000,
           "created": 1770908502,
           "id": "minimax/minimax-m2.5",
           "input_modalities": [
@@ -5203,40 +5238,6 @@
             "tools",
             "top_k",
             "top_logprobs",
-            "top_p"
-          ],
-          "tier": "flagship",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 1000.0,
-          "context_length": 1000000,
-          "created": 1750200414,
-          "id": "minimax/minimax-m1",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.55,
-          "name": "MiniMax: MiniMax M1",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 2.2,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
             "top_p"
           ],
           "tier": "flagship",
@@ -8217,12 +8218,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.018,
+          "input_mtok": 0.03,
           "name": "OpenAI: gpt-oss-20b",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.09,
+          "output_mtok": 0.13,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11295,19 +11296,24 @@
             "text"
           ],
           "output_mtok": 0.6,
-          "reasoning": false,
+          "reasoning": true,
           "supported_parameters": [
+            "include_reasoning",
             "logprobs",
             "max_tokens",
+            "reasoning",
             "response_format",
             "seed",
+            "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_logprobs",
             "top_p"
           ],
-          "tier": "standard",
+          "tier": "reasoning",
           "vision": false,
           "web_search": null
         }
@@ -11608,8 +11614,8 @@
       "flagship": null,
       "models": [
         {
-          "context_k": 1048.576,
-          "context_length": 1048576,
+          "context_k": 1000.0,
+          "context_length": 1000000,
           "created": 1791462849,
           "id": "stepfun/step-5-preview",
           "input_modalities": [
@@ -11766,12 +11772,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11809,12 +11815,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12773,8 +12779,8 @@
           "web_search": null
         },
         {
-          "context_k": 1050.0,
-          "context_length": 1050000,
+          "context_k": 1024.0,
+          "context_length": 1024000,
           "created": 1776874273,
           "id": "xiaomi/mimo-v2.5-pro",
           "input_modalities": [
@@ -12793,7 +12799,6 @@
             "max_tokens",
             "reasoning",
             "response_format",
-            "seed",
             "structured_outputs",
             "temperature",
             "tool_choice",
@@ -13047,12 +13052,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.0335,
+          "input_mtok": 0.15,
           "name": "Z.ai: GLM 5.3 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.083,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13932,7 +13937,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.1522,
+          "output_mtok": 9.3388,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14310,5 +14315,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-09T12:50:00.245511+00:00"
+  "updated_at": "2026-11-09T18:50:00.270672+00:00"
 }
