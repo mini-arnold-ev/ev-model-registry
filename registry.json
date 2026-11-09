@@ -1994,12 +1994,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.897318,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 1.794636,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5152,9 +5152,7 @@
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -5670,12 +5668,12 @@
             "image",
             "text"
           ],
-          "input_mtok": 0.075,
+          "input_mtok": 0.1,
           "name": "Mistral: Mistral Small 3.2 24B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.2,
+          "output_mtok": 0.3,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -13535,12 +13533,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.13,
+          "input_mtok": 0.2,
           "name": "Z.ai: GLM 4.5 Air",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.85,
+          "output_mtok": 1.1,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13929,12 +13927,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.1634,
+          "input_mtok": 0.1824,
           "name": "MoonshotAI: Kimi Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.1489,
+          "output_mtok": 10.1522,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14312,5 +14310,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-09T06:50:00.207531+00:00"
+  "updated_at": "2026-11-09T12:50:00.245511+00:00"
 }
