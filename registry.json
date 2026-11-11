@@ -5288,12 +5288,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.075,
+          "input_mtok": 0.15,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14125,7 +14125,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 9.3388,
+          "output_mtok": 11.0055,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14503,5 +14503,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-11T00:50:00.206331+00:00"
+  "updated_at": "2026-11-11T06:50:00.239918+00:00"
 }
