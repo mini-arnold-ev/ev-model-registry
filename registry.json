@@ -24,7 +24,7 @@
       "anthropic/claude-sonnet-4.6",
       "anthropic/claude-sonnet-5",
       "anthropic/claude-sonnet-5.5",
-      "baidu/ernie-5.5-flash-preview",
+      "baidu/ernie-5.5-flash-preview:free",
       "baidu/ernie-light-dt-1.0-intl",
       "bytedance-seed/seed-1.6",
       "bytedance-seed/seed-1.6-flash",
@@ -1508,16 +1508,16 @@
           "context_k": 1024.0,
           "context_length": 1024000,
           "created": 1794333533,
-          "id": "baidu/ernie-5.5-flash-preview",
+          "id": "baidu/ernie-5.5-flash-preview:free",
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.28,
-          "name": "Baidu: ERNIE-5.5-Flash-Preview",
+          "input_mtok": 0.0,
+          "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.13,
+          "output_mtok": 0.0,
           "reasoning": true,
           "supported_parameters": [
             "include_reasoning",
@@ -5402,12 +5402,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.27,
           "name": "MiniMax: MiniMax M2.5",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 1.08,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -7052,8 +7052,8 @@
           "web_search": null
         },
         {
-          "context_k": 1048.576,
-          "context_length": 1048576,
+          "context_k": 262.144,
+          "context_length": 262144,
           "created": 1773245239,
           "id": "nvidia/nemotron-3-super-120b-a12b",
           "input_modalities": [
@@ -14503,5 +14503,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-11T06:50:00.239918+00:00"
+  "updated_at": "2026-11-11T12:50:00.222090+00:00"
 }
