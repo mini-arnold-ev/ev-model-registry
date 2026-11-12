@@ -67,6 +67,7 @@
       "google/gemini-3.8-flash",
       "google/gemini-4-argon",
       "google/gemini-4-carbon",
+      "google/gemini-4-hydrogen",
       "google/gemini-nano-banana-2.1",
       "google/gemini-omni-1.1-flash",
       "google/gemini-omni-1.2-flash",
@@ -76,6 +77,8 @@
       "google/gemma-4-31b-it:free",
       "ibm-granite/granite-4.2-8b",
       "inclusionai/ling-3.0-flash",
+      "inclusionai/ling-3.0-flash-fin",
+      "inclusionai/ling-3.0-flash-sante",
       "inclusionai/ling-3.0-flash-vl",
       "inclusionai/ling-3.0-tiny",
       "inclusionai/ling-3.1-flash",
@@ -329,6 +332,7 @@
       "google/gemini-3.8-flash",
       "google/gemini-4-argon",
       "google/gemini-4-carbon",
+      "google/gemini-4-hydrogen",
       "google/gemini-nano-banana-2.1",
       "google/gemini-omni-1.1-flash",
       "google/gemini-omni-1.2-flash",
@@ -571,7 +575,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 381,
+  "model_count": 384,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1999,12 +2003,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.95526,
+          "input_mtok": 0.892272,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.91052,
+          "output_mtok": 1.784544,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2086,12 +2090,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.022,
+          "input_mtok": 0.3,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.4,
+          "output_mtok": 1.2,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2874,6 +2878,43 @@
         {
           "context_k": 1048.576,
           "context_length": 1048576,
+          "created": 1794506460,
+          "id": "google/gemini-4-hydrogen",
+          "input_modalities": [
+            "audio",
+            "file",
+            "image",
+            "text",
+            "video"
+          ],
+          "input_mtok": 1.5,
+          "name": "Google: Gemini 4 Hydrogen",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 7.5,
+          "reasoning": true,
+          "supported_parameters": [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
           "created": 1794326871,
           "id": "google/gemini-4-carbon",
           "input_modalities": [
@@ -3336,12 +3377,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.08,
+          "input_mtok": 0.09,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.1,
+          "output_mtok": 0.28,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4022,6 +4063,78 @@
           ],
           "tier": "reasoning",
           "vision": true,
+          "web_search": null
+        },
+        {
+          "context_k": 262.144,
+          "context_length": 262144,
+          "created": 1788545946,
+          "id": "inclusionai/ling-3.0-flash-sante",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": 0.042,
+          "name": "inclusionAI: Ling 3.0 Flash Sante",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.1232,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": false,
+          "web_search": null
+        },
+        {
+          "context_k": 262.144,
+          "context_length": 262144,
+          "created": 1787846290,
+          "id": "inclusionai/ling-3.0-flash-fin",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": 0.042,
+          "name": "inclusionAI: Ling 3.0 Flash Fin",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.1232,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": false,
           "web_search": null
         },
         {
@@ -5176,12 +5289,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.075,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6266,12 +6379,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.532,
+          "input_mtok": 0.5,
           "name": "MoonshotAI: Kimi K2.5",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.325,
+          "output_mtok": 2.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10284,12 +10397,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.086,
+          "input_mtok": 0.167,
           "name": "Qwen: Qwen3.5-9B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.126,
+          "output_mtok": 0.246,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11854,12 +11967,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11896,12 +12009,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13129,11 +13242,17 @@
           "output_mtok": 1.25,
           "reasoning": true,
           "supported_parameters": [
+            "frequency_penalty",
             "include_reasoning",
             "max_tokens",
+            "presence_penalty",
             "reasoning",
             "reasoning_effort",
+            "repetition_penalty",
             "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -13988,18 +14107,18 @@
           "created": 1777318398,
           "id": "~google/gemini-flash-latest",
           "input_modalities": [
-            "text",
-            "image",
-            "video",
+            "audio",
             "file",
-            "audio"
+            "image",
+            "text",
+            "video"
           ],
-          "input_mtok": 0.75,
+          "input_mtok": 1.5,
           "name": "Google: Gemini Flash Latest",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 3.75,
+          "output_mtok": 7.5,
           "reasoning": true,
           "supported_parameters": [
             "include_reasoning",
@@ -14415,5 +14534,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-12T12:50:00.201219+00:00"
+  "updated_at": "2026-11-12T18:50:00.203282+00:00"
 }
