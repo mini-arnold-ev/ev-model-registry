@@ -2042,12 +2042,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.15,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6102,7 +6102,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 8.4085,
+          "output_mtok": 8.7856,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6182,7 +6182,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.7125,
+          "input_mtok": 0.6,
           "name": "MoonshotAI: Kimi K2.7 Code",
           "output_modalities": [
             "text"
@@ -10284,12 +10284,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.032,
+          "input_mtok": 0.086,
           "name": "Qwen: Qwen3.5-9B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.047,
+          "output_mtok": 0.126,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10633,12 +10633,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.1,
+          "input_mtok": 0.12,
           "name": "Qwen: Qwen3 14B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.22,
+          "output_mtok": 0.24,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14415,5 +14415,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-12T06:50:02.203285+00:00"
+  "updated_at": "2026-11-12T12:50:00.201219+00:00"
 }
