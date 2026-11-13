@@ -24,6 +24,7 @@
       "anthropic/claude-sonnet-4.6",
       "anthropic/claude-sonnet-5",
       "anthropic/claude-sonnet-5.5",
+      "apodex/apodex-1.1-mini:free",
       "baidu/ernie-5.5-flash-preview:free",
       "baidu/ernie-light-dt-1.0-intl",
       "bytedance-seed/seed-2-1-turbo",
@@ -175,6 +176,7 @@
       "openrouter/free",
       "openrouter/pareto-code",
       "particle-ai/particle-1",
+      "particle-ai/particle-1:free",
       "perceptron/perceptron-mk1",
       "perceptron/perceptron-mk1.5",
       "perplexity/sonar-deep-research",
@@ -225,6 +227,7 @@
       "tencent/hy4",
       "tencent/hy4-preview",
       "thinkingmachines/inkling",
+      "thinkingmachines/inkling-2-small",
       "thinkingmachines/inkling-2-small:free",
       "thinkingmachines/inkling-small",
       "typesafe/jev-router",
@@ -440,6 +443,7 @@
       "openrouter/auto-code",
       "openrouter/free",
       "particle-ai/particle-1",
+      "particle-ai/particle-1:free",
       "perceptron/perceptron-mk1",
       "perceptron/perceptron-mk1.5",
       "perplexity/sonar",
@@ -483,6 +487,7 @@
       "stepfun/step-5-preview",
       "tencent/hy4",
       "thinkingmachines/inkling",
+      "thinkingmachines/inkling-2-small",
       "thinkingmachines/inkling-2-small:free",
       "thinkingmachines/inkling-small",
       "typesafe/jev-router",
@@ -575,7 +580,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 384,
+  "model_count": 387,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1500,6 +1505,46 @@
         }
       ]
     },
+    "apodex": {
+      "flagship": null,
+      "models": [
+        {
+          "context_k": 262.144,
+          "context_length": 262144,
+          "created": 1790875335,
+          "id": "apodex/apodex-1.1-mini:free",
+          "input_modalities": [
+            "text"
+          ],
+          "input_mtok": 0.0,
+          "name": "Apodex: Apodex 1.1 Mini (free)",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": false,
+          "web_search": null
+        }
+      ]
+    },
     "baidu": {
       "flagship": null,
       "models": [
@@ -2003,12 +2048,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.892272,
+          "input_mtok": 0.95526,
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.784544,
+          "output_mtok": 1.91052,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2090,12 +2135,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.022,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 0.4,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3377,12 +3422,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.0765,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.28,
+          "output_mtok": 0.255,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5190,6 +5235,8 @@
             "max_tokens",
             "stop",
             "temperature",
+            "tool_choice",
+            "tools",
             "top_k",
             "top_p"
           ],
@@ -6215,7 +6262,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 8.7856,
+          "output_mtok": 8.4114,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -9441,6 +9488,47 @@
           "tier": "reasoning",
           "vision": true,
           "web_search": null
+        },
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
+          "created": 1793207893,
+          "id": "particle-ai/particle-1:free",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 0.0,
+          "name": "Particle AI: Particle-1 (free)",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
         }
       ]
     },
@@ -10397,12 +10485,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.167,
+          "input_mtok": 0.107,
           "name": "Qwen: Qwen3.5-9B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.246,
+          "output_mtok": 0.158,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11967,12 +12055,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12009,12 +12097,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12294,6 +12382,48 @@
     "thinkingmachines": {
       "flagship": null,
       "models": [
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
+          "created": 1794261847,
+          "id": "thinkingmachines/inkling-2-small",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 0.3,
+          "name": "Thinking Machines: Inkling 2 Small",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 1.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        },
         {
           "context_k": 1048.576,
           "context_length": 1048576,
@@ -13043,12 +13173,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.48,
+          "input_mtok": 0.435,
           "name": "Xiaomi: MiMo-V2.5-Pro",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.8,
+          "output_mtok": 0.87,
           "reasoning": true,
           "supported_parameters": [
             "include_reasoning",
@@ -13315,12 +13445,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0699,
+          "input_mtok": 0.084,
           "name": "Z.ai: GLM 5.3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.4,
+          "output_mtok": 3.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14534,5 +14664,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-12T18:50:00.203282+00:00"
+  "updated_at": "2026-11-13T00:50:00.179851+00:00"
 }
