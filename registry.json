@@ -24,7 +24,6 @@
       "anthropic/claude-sonnet-4.6",
       "anthropic/claude-sonnet-5",
       "anthropic/claude-sonnet-5.5",
-      "apodex/apodex-1.1-mini:free",
       "baidu/ernie-5.5-flash-preview:free",
       "baidu/ernie-light-dt-1.0-intl",
       "bytedance-seed/seed-2-1-turbo",
@@ -78,8 +77,6 @@
       "google/gemma-4-31b-it:free",
       "ibm-granite/granite-4.2-8b",
       "inclusionai/ling-3.0-flash",
-      "inclusionai/ling-3.0-flash-fin",
-      "inclusionai/ling-3.0-flash-sante",
       "inclusionai/ling-3.0-flash-vl",
       "inclusionai/ling-3.0-tiny",
       "inclusionai/ling-3.1-flash",
@@ -580,7 +577,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 387,
+  "model_count": 384,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -1505,46 +1502,6 @@
         }
       ]
     },
-    "apodex": {
-      "flagship": null,
-      "models": [
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1790875335,
-          "id": "apodex/apodex-1.1-mini:free",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.0,
-          "name": "Apodex: Apodex 1.1 Mini (free)",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        }
-      ]
-    },
     "baidu": {
       "flagship": null,
       "models": [
@@ -2091,12 +2048,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.038,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 0.5,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4001,7 +3958,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.15,
+          "output_mtok": 0.25,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -4108,78 +4065,6 @@
           ],
           "tier": "reasoning",
           "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1788545946,
-          "id": "inclusionai/ling-3.0-flash-sante",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.042,
-          "name": "inclusionAI: Ling 3.0 Flash Sante",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.1232,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1787846290,
-          "id": "inclusionai/ling-3.0-flash-fin",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.042,
-          "name": "inclusionAI: Ling 3.0 Flash Fin",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.1232,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
           "web_search": null
         },
         {
@@ -4361,6 +4246,8 @@
             "response_format",
             "structured_outputs",
             "temperature",
+            "tool_choice",
+            "tools",
             "top_k",
             "top_logprobs",
             "top_p"
@@ -5443,8 +5330,8 @@
           "web_search": null
         },
         {
-          "context_k": 200.0,
-          "context_length": 200000,
+          "context_k": 198.0,
+          "context_length": 198000,
           "created": 1770908502,
           "id": "minimax/minimax-m2.5",
           "input_modalities": [
@@ -5455,7 +5342,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.08,
+          "output_mtok": 0.95,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6312,8 +6199,10 @@
             "include_reasoning",
             "logit_bias",
             "logprobs",
+            "max_completion_tokens",
             "max_tokens",
             "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -6654,6 +6543,8 @@
             "response_format",
             "structured_outputs",
             "temperature",
+            "tool_choice",
+            "tools",
             "top_k",
             "top_logprobs",
             "top_p"
@@ -10485,12 +10376,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.098,
+          "input_mtok": 0.027,
           "name": "Qwen: Qwen3.5-9B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.145,
+          "output_mtok": 0.04,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14289,8 +14180,10 @@
             "include_reasoning",
             "logit_bias",
             "logprobs",
+            "max_completion_tokens",
             "max_tokens",
             "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -14658,5 +14551,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-13T06:50:00.229748+00:00"
+  "updated_at": "2026-11-13T12:50:00.213963+00:00"
 }
