@@ -81,8 +81,6 @@
       "inclusionai/ling-3.0-tiny",
       "inclusionai/ling-3.1-flash",
       "kt/midm-k-3.0-pro",
-      "liquid/lfm-2.5-2.6b",
-      "liquid/lfm-2.5-2.6b:free",
       "liquid/lfm-2.5-24b-a2b",
       "liquid/lfm-3-1.7b",
       "liquid/lfm-3-1.7b:free",
@@ -577,7 +575,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 384,
+  "model_count": 382,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -4380,86 +4378,6 @@
           "tier": "reasoning",
           "vision": false,
           "web_search": null
-        },
-        {
-          "context_k": 128.0,
-          "context_length": 128000,
-          "created": 1786470519,
-          "id": "liquid/lfm-2.5-2.6b",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.35,
-          "name": "LiquidAI: LFM2.5-2.6B",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.5,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_completion_tokens",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 65.536,
-          "context_length": 65536,
-          "created": 1786470519,
-          "id": "liquid/lfm-2.5-2.6b:free",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.0,
-          "name": "LiquidAI: LFM2.5-2.6B (free)",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "logprobs",
-            "max_completion_tokens",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
         }
       ]
     },
@@ -5223,12 +5141,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.075,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10376,12 +10294,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.027,
+          "input_mtok": 0.165,
           "name": "Qwen: Qwen3.5-9B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.04,
+          "output_mtok": 0.242,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11946,12 +11864,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11988,12 +11906,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13268,6 +13186,7 @@
             "reasoning",
             "reasoning_effort",
             "response_format",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -14551,5 +14470,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-13T12:50:00.213963+00:00"
+  "updated_at": "2026-11-13T18:50:00.257694+00:00"
 }
