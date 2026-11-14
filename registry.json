@@ -2407,12 +2407,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.5,
+          "input_mtok": 0.571,
           "name": "DeepSeek: R1 0528",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.15,
+          "output_mtok": 2.286,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5181,12 +5181,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.075,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -9304,7 +9304,7 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.06,
           "name": "Particle AI: Particle-1",
           "output_modalities": [
             "text"
@@ -10332,12 +10332,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.158,
+          "input_mtok": 0.084,
           "name": "Qwen: Qwen3.5-9B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.232,
+          "output_mtok": 0.123,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11902,12 +11902,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11944,12 +11944,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14506,5 +14506,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-14T12:50:00.216365+00:00"
+  "updated_at": "2026-11-14T18:50:00.189506+00:00"
 }
