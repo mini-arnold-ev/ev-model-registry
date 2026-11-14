@@ -80,6 +80,7 @@
       "inclusionai/ling-3.0-flash-vl",
       "inclusionai/ling-3.0-tiny",
       "inclusionai/ling-3.1-flash",
+      "inclusionai/ling-3.2-flash:free",
       "kt/midm-k-3.0-pro",
       "liquid/lfm-2.5-24b-a2b",
       "liquid/lfm-3-1.7b",
@@ -344,6 +345,7 @@
       "google/lyria-3-clip-preview",
       "google/lyria-3-pro-preview",
       "inclusionai/ling-3.0-flash-vl",
+      "inclusionai/ling-3.2-flash:free",
       "meta-llama/llama-4-maverick",
       "meta-llama/llama-4-scout",
       "meta-llama/llama-guard-4-12b",
@@ -575,7 +577,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 382,
+  "model_count": 383,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2090,12 +2092,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.3,
+          "input_mtok": 0.0507,
           "name": "DeepSeek: DeepSeek V4.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 1.2,
+          "output_mtok": 0.2028,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -2478,12 +2480,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.32,
+          "input_mtok": 0.2574,
           "name": "DeepSeek: DeepSeek V3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.89,
+          "output_mtok": 1.0287,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -3377,12 +3379,12 @@
             "text",
             "video"
           ],
-          "input_mtok": 0.09,
+          "input_mtok": 0.0675,
           "name": "Google: Gemma 4 26B A4B ",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.225,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3989,6 +3991,42 @@
     "inclusionai": {
       "flagship": null,
       "models": [
+        {
+          "context_k": 1048.576,
+          "context_length": 1048576,
+          "created": 1794591958,
+          "id": "inclusionai/ling-3.2-flash:free",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "input_mtok": 0.0,
+          "name": "inclusionAI: Ling 3.2 Flash (free)",
+          "output_modalities": [
+            "text"
+          ],
+          "output_mtok": 0.0,
+          "reasoning": true,
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          "tier": "reasoning",
+          "vision": true,
+          "web_search": null
+        },
         {
           "context_k": 1000.0,
           "context_length": 1000000,
@@ -4716,6 +4754,7 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -4730,6 +4769,7 @@
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           "tier": "reasoning",
@@ -4994,12 +5034,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.05,
+          "input_mtok": 0.0509,
           "name": "Meta: Llama 3.2 3B Instruct",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.335,
           "reasoning": false,
           "supported_parameters": [
             "frequency_penalty",
@@ -6117,10 +6157,8 @@
             "include_reasoning",
             "logit_bias",
             "logprobs",
-            "max_completion_tokens",
             "max_tokens",
             "min_p",
-            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -7725,12 +7763,12 @@
             "image",
             "text"
           ],
-          "input_mtok": 4.4,
+          "input_mtok": 4.0,
           "name": "OpenAI: GPT-5.6 Sol",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 22.0,
+          "output_mtok": 20.0,
           "reasoning": true,
           "supported_parameters": [
             "include_reasoning",
@@ -10044,8 +10082,8 @@
           "web_search": null
         },
         {
-          "context_k": 1048.575,
-          "context_length": 1048575,
+          "context_k": 1024.0,
+          "context_length": 1024000,
           "created": 1786722910,
           "id": "qwen/qwen3.8-27b",
           "input_modalities": [
@@ -10294,12 +10332,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.165,
+          "input_mtok": 0.17,
           "name": "Qwen: Qwen3.5-9B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.242,
+          "output_mtok": 0.25,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11864,12 +11902,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.7506,
+          "input_mtok": 0.834,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2509,
+          "output_mtok": 2.501,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11906,12 +11944,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.0825,
+          "input_mtok": 0.132,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.33,
+          "output_mtok": 0.528,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14099,10 +14137,8 @@
             "include_reasoning",
             "logit_bias",
             "logprobs",
-            "max_completion_tokens",
             "max_tokens",
             "min_p",
-            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "reasoning_effort",
@@ -14470,5 +14506,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-13T18:50:00.257694+00:00"
+  "updated_at": "2026-11-14T00:50:00.181263+00:00"
 }
