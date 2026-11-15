@@ -184,7 +184,6 @@
       "qwen/qwen3-235b-a22b-thinking-2507",
       "qwen/qwen3-30b-a3b",
       "qwen/qwen3-32b",
-      "qwen/qwen3-vl-30b-a3b-thinking",
       "qwen/qwen3.5-122b-a10b",
       "qwen/qwen3.5-27b",
       "qwen/qwen3.5-35b-a3b",
@@ -214,10 +213,8 @@
       "sakana/fugu-ultra",
       "sakana/fugu-ultra-v2",
       "sakana/sakana-namazu",
-      "stepfun/step-3.5-flash",
       "stepfun/step-3.7-flash",
       "stepfun/step-5-preview",
-      "tencent/hunyuan-a13b-instruct",
       "tencent/hy3",
       "tencent/hy3-preview",
       "tencent/hy4",
@@ -452,7 +449,6 @@
       "qwen/qwen2.5-vl-72b-instruct",
       "qwen/qwen3-vl-235b-a22b-instruct",
       "qwen/qwen3-vl-30b-a3b-instruct",
-      "qwen/qwen3-vl-30b-a3b-thinking",
       "qwen/qwen3-vl-8b-instruct",
       "qwen/qwen3.5-122b-a10b",
       "qwen/qwen3.5-27b",
@@ -577,7 +573,7 @@
     "~deepseek": "~deepseek/deepseek-pro-latest",
     "~google": "~google/gemini-pro-latest"
   },
-  "model_count": 383,
+  "model_count": 380,
   "providers": {
     "aion-labs": {
       "flagship": null,
@@ -2048,12 +2044,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.02,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.108,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -3958,7 +3954,7 @@
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.25,
+          "output_mtok": 0.15,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5181,12 +5177,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.15,
+          "input_mtok": 0.075,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.6,
+          "output_mtok": 0.3,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6102,12 +6098,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.2403,
+          "input_mtok": 2.0,
           "name": "MoonshotAI: Kimi K3.1 Pro",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 8.4023,
+          "output_mtok": 10.0,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10332,12 +10328,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.022,
+          "input_mtok": 0.035,
           "name": "Qwen: Qwen3.5-9B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.032,
+          "output_mtok": 0.052,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10564,39 +10560,6 @@
             "tools",
             "top_k",
             "top_logprobs",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": true,
-          "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1759794479,
-          "id": "qwen/qwen3-vl-30b-a3b-thinking",
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "input_mtok": 0.29,
-          "name": "Qwen: Qwen3 VL 30B A3B Thinking",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 1.0,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
             "top_p"
           ],
           "tier": "reasoning",
@@ -10841,11 +10804,8 @@
           "output_mtok": 0.6,
           "reasoning": false,
           "supported_parameters": [
-            "frequency_penalty",
             "max_tokens",
-            "response_format",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -11825,36 +11785,6 @@
           "tier": "reasoning",
           "vision": true,
           "web_search": null
-        },
-        {
-          "context_k": 262.144,
-          "context_length": 262144,
-          "created": 1769728337,
-          "id": "stepfun/step-3.5-flash",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.1,
-          "name": "StepFun: Step 3.5 Flash",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.3,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
         }
       ]
     },
@@ -11902,12 +11832,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.834,
+          "input_mtok": 0.7506,
           "name": "Tencent: Hy4 preview",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.501,
+          "output_mtok": 2.2509,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -11944,12 +11874,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.132,
+          "input_mtok": 0.0825,
           "name": "Tencent: Hy3",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.528,
+          "output_mtok": 0.33,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -12000,36 +11930,6 @@
             "temperature",
             "tool_choice",
             "tools",
-            "top_p"
-          ],
-          "tier": "reasoning",
-          "vision": false,
-          "web_search": null
-        },
-        {
-          "context_k": 131.072,
-          "context_length": 131072,
-          "created": 1751987664,
-          "id": "tencent/hunyuan-a13b-instruct",
-          "input_modalities": [
-            "text"
-          ],
-          "input_mtok": 0.14,
-          "name": "Tencent: Hunyuan A13B Instruct",
-          "output_modalities": [
-            "text"
-          ],
-          "output_mtok": 0.57,
-          "reasoning": true,
-          "supported_parameters": [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "top_k",
             "top_p"
           ],
           "tier": "reasoning",
@@ -14506,5 +14406,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-15T12:50:00.230260+00:00"
+  "updated_at": "2026-11-15T18:50:00.234857+00:00"
 }
