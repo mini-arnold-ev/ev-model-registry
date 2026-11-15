@@ -2048,12 +2048,12 @@
             "text",
             "image"
           ],
-          "input_mtok": 0.038,
+          "input_mtok": 0.15,
           "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.5,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -5181,12 +5181,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.075,
+          "input_mtok": 0.15,
           "name": "MiniMax: MiniMax M3.1 Flash",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.3,
+          "output_mtok": 0.6,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -6102,12 +6102,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 2.0,
+          "input_mtok": 0.2375,
           "name": "MoonshotAI: Kimi K3.1 Pro",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 10.0,
+          "output_mtok": 8.4114,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -10332,12 +10332,12 @@
             "image",
             "video"
           ],
-          "input_mtok": 0.063,
+          "input_mtok": 0.17,
           "name": "Qwen: Qwen3.5-9B",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 0.093,
+          "output_mtok": 0.25,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -13551,12 +13551,12 @@
           "input_modalities": [
             "text"
           ],
-          "input_mtok": 0.6,
+          "input_mtok": 0.4,
           "name": "Z.ai: GLM 4.7",
           "output_modalities": [
             "text"
           ],
-          "output_mtok": 2.2,
+          "output_mtok": 1.75,
           "reasoning": true,
           "supported_parameters": [
             "frequency_penalty",
@@ -14506,5 +14506,5 @@
   "selection_basis": "Legacy tier/flagship fields are heuristic display candidates, not rankings or runtime defaults. Verify official provider information before selecting a model.",
   "source_url": "https://openrouter.ai/api/v1/models",
   "update_source": "openrouter-api",
-  "updated_at": "2026-11-15T00:50:00.218593+00:00"
+  "updated_at": "2026-11-15T06:50:00.201695+00:00"
 }
